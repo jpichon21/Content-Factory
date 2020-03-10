@@ -1,0 +1,440 @@
+@import 'include-media.scss';
+
+/*******BREAKPOINTS********/
+$breakpoints: (small: 0px, xsmall: 345px, mobile: 435px, tablet: 768px, large: 1024px, xlarge: 1280px, xxlarge: 1440px, laptop: 1780px);
+
+/*******VARIABLES*********/
+$color-blue: #0000ff;
+$color-black: #131313;
+$color-grey: #f0f0f0;
+$color-midgrey: #cccccc;
+$color-gradient-dark: #4b4bf6;
+$color-gradient-light: #9191f0;
+$color-bcgradient-clear: #383838;
+$color-bcgradient-dark: #131313;
+$color-darkblue: #0000c8;
+
+/**********FONTS**************/
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: 
+        url('../html5blank-stable/fonts/HelveticaNeue/HelveticaNeueL.ttf') format('ttf'),
+        url('../html5blank-stable/fonts/HelveticaNeue/HelveticaNeueLight.otf') format('otf'),
+        url('../html5blank-stable/fonts/HelveticaNeue/HelveticaNeueLight.woff') format('woff'),
+        url('../html5blank-stable/fonts/HelveticaNeue/HelveticaNeueLight.eof') format('eof');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Bold';
+    src: 
+        url('../html5blank-stable/fonts/HelveticaNeue/HelveticaNeueBd.ttf') format('ttf'),
+        url('../html5blank-stable/fonts/HelveticaNeue/HelveticaNeueBold.otf') format('otf'),
+        url('../html5blank-stable/fonts/HelveticaNeue/HelveticaNeueBold.woff') format('woff'),
+        url('../html5blank-stable/fonts/HelveticaNeue/HelveticaNeueBold.eof') format('eof');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.benton-light{
+    font-family: benton-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.benton-regular{
+    font-family: benton-sans, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.benton-bold{
+    font-family: benton-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/** LAYOUT **/
+
+html{
+    overflow-x: hidden;
+}
+
+ul, li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a.active, a:active, a:focus, a:hover{
+    text-decoration: none!important;
+}
+
+.header.clear{
+    display: none;
+}
+
+.centered{
+    margin: 0 auto!important;
+}
+
+.container{
+    margin: 0!important;
+    padding: 0!important
+}
+
+.leftContent{
+    float: left;
+    @include media('<=tablet') {
+        display: block;
+        float: none;
+    }
+}
+
+.rightContent{
+    float: right;
+    @include media('<=tablet') {
+        display: block;
+        float: none;
+    }
+}
+
+.col-9{
+    @include media('<=tablet') {
+        width: 90%!important;
+    }
+    @include media('<=mobile') {
+        width: 98%!important;
+    }
+}
+
+.col-6, .col-7, .col-8, .col-5, .col-4{
+    @include media('<=tablet') {
+        width: 100%!important;
+    }
+}
+
+.col-1{
+    @include media('<=tablet') {
+        display: none!important;
+    }
+}
+
+
+/** FONT STYLES **/
+
+
+/** SECTIONS **/
+
+header{
+    height: 78px;
+    #menuNav{
+        padding: 8px;
+        position: relative;
+    }
+    nav{
+        ul{
+            position: absolute;
+            right: 0px;
+            top: 7px;
+            li{
+                display: inline-block;
+                margin: 0px 0.8vw;
+                a{
+                    font-size: 16px;
+                    font-family: 'Helvetica Neue', sans-serif;
+                    color: $color-black;
+                    font-weight: 600;
+                    &.active{
+                        font-family: 'Helvetica Bold', sans-serif;
+                    }
+                }
+                &.separator{
+                    color: $color-midgrey;
+                }
+            }
+        }
+    }
+
+}
+
+#headerHero{
+    position: relative;
+    height: 90vh;
+    background-image: url('img/content/hero-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    .content{
+        padding-top: 22vh;
+    }
+    h2{
+        font-family: 'Helvetica Neue Bold', sans-serif;
+        color: $color-black;
+        font-size: 72px;
+        line-height: 72px;
+    }
+    #headerHeroBtn{
+        margin-top: 40px;
+        background-color: $color-blue;
+        color: #fff;
+        padding: 26px;
+        display: block;
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Helvetica Neue Bold', sans-serif;
+    }
+    #bottomHeaderBanner{
+    background: linear-gradient(355deg, rgba(75,75,246,1) 0%, rgba(145,145,240,0.2780509691559867) 100%);
+    position: absolute;
+    bottom: 6px;
+    display: none;
+    ul{
+        display: inline-block;
+        color: #fff;
+        width: 100%;
+        li{
+            font-family: 'Helvetica Neue', sans-serif;
+            vertical-align: top;
+            display: inline-block;
+            max-width: 340px;
+            margin: 0px 18px;
+            font-size: 28px;
+        }
+    }
+    height: 129px;
+}
+}
+
+
+
+#blackBanner{
+    min-height: 220px;
+    background: linear-gradient(97deg, rgba(56,56,56,1) 0%, rgba(19,19,19,1) 100%);
+    color: #fff;
+    .content{
+        padding: 26px 0px;
+        p{
+            font-family: 'Helvetica Neue';
+            text-align: center;
+            font-size: 19px;
+        }
+        #logosList{
+            text-align: center;
+            li{
+                display: inline-block;
+                margin: 0px 28px;
+            }
+        }
+    }
+}
+
+#firstBanner{
+    min-height: 347px;
+    .content{
+        padding-top: 5vw;
+    }
+    h3, p{
+        color: $color-blue;
+    }
+    .separator{
+        background-color: $color-blue;
+        height: 100px;
+        width: 6px;
+        display: block;
+        float: left;
+        margin-right: 6px;
+    }
+    h3{
+        font-family: 'Helvetica Neue Bold', sans-serif;
+        font-size: 36px;
+    }
+    p{
+        font-size: 19px;
+    }
+}
+
+#bluePart{
+    min-height: 1081px;
+    background-color: $color-blue;
+    color: #fff;
+    #smartPhone{
+        @include media('<=tablet') {
+            max-width: 320px;
+            margin: 0 auto;
+        }
+    }
+    .content{
+        padding-top: 87px;
+    }
+    .rightContent{
+        h3{
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 53px;
+            padding-bottom: 64px;
+        }
+        h4{
+            font-family: 'Helvetica Neue Bold', sans-serif;
+            margin-bottom: 36px;
+        }
+        p{
+            font-family: 'Helvetica Neue', sans-serif;
+            padding-bottom: 52px;
+            position: relative;
+        }
+        p:before{
+            content:'';
+            background-color: $color-darkblue;
+            width: 6px;
+            height: 142px;
+            margin: 0px 16px;
+            float: left;
+        }
+        /*       p:before{
+            content:'';
+            background-color: $color-darkblue;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 6px;
+            margin: 0px 16px;
+        }*/
+        p, h4{
+            font-size: 19px;
+        }
+        padding-bottom: 64px;
+    }
+}
+
+#useCases{
+    min-height: 664px;
+    background-color: white;
+    .title-container{
+        padding-top: 95px;
+        h3{
+            color: $color-black;
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 46px;
+            font-weight: 400;
+            text-align: center;
+            span{
+                color: $color-blue;
+                font-family: 'Helvetica Bold', sans-serif;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+#socialMedia{
+    background-color: #f0f0f0;
+    min-height: 1005px;
+    h3,p, li{
+        font-family: 'Helvetica Neue', sans-serif;
+        font-weight: 600;
+    }
+    p, h4, li{
+        font-size: 16px;
+    }
+    h3{
+        font-size: 46px;
+        span{
+            font-family: 'Helvetica Neue Bold', sans-serif;
+        }
+    }
+    h4{
+        font-family: 'Helvetica Neue Bold', sans-serif;
+        color: $color-blue;
+        font-weight: 600;
+    }
+    p{
+        font-weight: 600;
+    }
+    li{
+        margin-top: .1rem;
+    }
+    .title-container{
+        padding-top: 64px;
+    }
+   .row.last{
+       padding-bottom: 64px;
+   }
+}
+
+#statsBanner{
+    background-color: $color-blue;
+    color:#fff;
+    font-family: 'Helvetica Neue Bold', sans-serif;
+    min-height: 230px;
+    text-align: center;
+    .content{
+        padding: 32px 0px;
+        .stat{
+            display: inline-block;
+            text-align: center;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            @include media('<=tablet') {
+                display: block;
+            }
+            span{
+                display: block;
+                margin: 0 3vw;
+            }
+            .stat-number{
+                font-size: 62px;
+                margin-bottom: -26px;
+            }
+            .stat-text{
+                font-size: 39px;
+            }
+        }
+    }
+
+}
+
+#whiteBook{
+    min-height: 430px;
+    background-image: url('img/content/white_book_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:#fff;
+    .content{
+        padding: 98px 0px;
+        h3,p{
+            font-family: 'Helvetica Neue', sans-serif;
+            font-weight: 600;;
+        }
+        h3{
+            font-size: 46px;
+            span{
+                font-family: 'Helvetica Bold', sans-serif;
+            }
+        }
+        p{
+            font-size: 16px;
+        }
+        .button{
+            font-family: 'Helvetica Neue Bold', sans-serif;
+            font-size: 18px;
+            display: block;
+            color: #fff;
+            cursor: pointer;
+            border: 4px solid #fff;
+            padding: 13px;
+            background-color: #ffffff40;
+            text-align: center;
+        }
+    }
+
+}
+
+#footer{
+    height: 120px;
+    background-color: $color-black;
+}

@@ -1,0 +1,324 @@
+/*******BREAKPOINTS********/
+/*******VARIABLES*********/
+/**********FONTS**************/
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("../html5blank-stable/fonts/HelveticaNeue/HelveticaNeueL.ttf") format("ttf"), url("../html5blank-stable/fonts/HelveticaNeue/HelveticaNeueLight.otf") format("otf"), url("../html5blank-stable/fonts/HelveticaNeue/HelveticaNeueLight.woff") format("woff"), url("../html5blank-stable/fonts/HelveticaNeue/HelveticaNeueLight.eof") format("eof");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Helvetica Neue Bold';
+  src: url("../html5blank-stable/fonts/HelveticaNeue/HelveticaNeueBd.ttf") format("ttf"), url("../html5blank-stable/fonts/HelveticaNeue/HelveticaNeueBold.otf") format("otf"), url("../html5blank-stable/fonts/HelveticaNeue/HelveticaNeueBold.woff") format("woff"), url("../html5blank-stable/fonts/HelveticaNeue/HelveticaNeueBold.eof") format("eof");
+  font-weight: normal;
+  font-style: normal; }
+
+.benton-light {
+  font-family: benton-sans, sans-serif;
+  font-weight: 300;
+  font-style: normal; }
+
+.benton-regular {
+  font-family: benton-sans, sans-serif;
+  font-weight: 500;
+  font-style: normal; }
+
+.benton-bold {
+  font-family: benton-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal; }
+
+/** LAYOUT **/
+html {
+  overflow-x: hidden; }
+
+ul, li {
+  text-decoration: none;
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+a.active, a:active, a:focus, a:hover {
+  text-decoration: none !important; }
+
+.header.clear {
+  display: none; }
+
+.centered {
+  margin: 0 auto !important; }
+
+.container {
+  margin: 0 !important;
+  padding: 0 !important; }
+
+.leftContent {
+  float: left; }
+  @media (max-width: 768px) {
+    .leftContent {
+      display: block;
+      float: none; } }
+
+.rightContent {
+  float: right; }
+  @media (max-width: 768px) {
+    .rightContent {
+      display: block;
+      float: none; } }
+
+@media (max-width: 768px) {
+  .col-9 {
+    width: 90% !important; } }
+
+@media (max-width: 435px) {
+  .col-9 {
+    width: 98% !important; } }
+
+@media (max-width: 768px) {
+  .col-6, .col-7, .col-8, .col-5, .col-4 {
+    width: 100% !important; } }
+
+@media (max-width: 768px) {
+  .col-1 {
+    display: none !important; } }
+
+/** FONT STYLES **/
+/** SECTIONS **/
+header {
+  height: 78px; }
+  header #menuNav {
+    padding: 8px;
+    position: relative; }
+  header nav ul {
+    position: absolute;
+    right: 0px;
+    top: 7px; }
+    header nav ul li {
+      display: inline-block;
+      margin: 0px 0.8vw; }
+      header nav ul li a {
+        font-size: 16px;
+        font-family: 'Helvetica Neue', sans-serif;
+        color: #131313;
+        font-weight: 600; }
+        header nav ul li a.active {
+          font-family: 'Helvetica Bold', sans-serif; }
+      header nav ul li.separator {
+        color: #cccccc; }
+
+#headerHero {
+  position: relative;
+  height: 90vh;
+  background-image: url("img/content/hero-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  #headerHero .content {
+    padding-top: 22vh; }
+  #headerHero h2 {
+    font-family: 'Helvetica Neue Bold', sans-serif;
+    color: #131313;
+    font-size: 72px;
+    line-height: 72px; }
+  #headerHero #headerHeroBtn {
+    margin-top: 40px;
+    background-color: #0000ff;
+    color: #fff;
+    padding: 26px;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Helvetica Neue Bold', sans-serif; }
+  #headerHero #bottomHeaderBanner {
+    background: linear-gradient(355deg, #4b4bf6 0%, rgba(145, 145, 240, 0.278051) 100%);
+    position: absolute;
+    bottom: 6px;
+    display: none;
+    height: 129px; }
+    #headerHero #bottomHeaderBanner ul {
+      display: inline-block;
+      color: #fff;
+      width: 100%; }
+      #headerHero #bottomHeaderBanner ul li {
+        font-family: 'Helvetica Neue', sans-serif;
+        vertical-align: top;
+        display: inline-block;
+        max-width: 340px;
+        margin: 0px 18px;
+        font-size: 28px; }
+
+#blackBanner {
+  min-height: 220px;
+  background: linear-gradient(97deg, #383838 0%, #131313 100%);
+  color: #fff; }
+  #blackBanner .content {
+    padding: 26px 0px; }
+    #blackBanner .content p {
+      font-family: 'Helvetica Neue';
+      text-align: center;
+      font-size: 19px; }
+    #blackBanner .content #logosList {
+      text-align: center; }
+      #blackBanner .content #logosList li {
+        display: inline-block;
+        margin: 0px 28px; }
+
+#firstBanner {
+  min-height: 347px; }
+  #firstBanner .content {
+    padding-top: 5vw; }
+  #firstBanner h3, #firstBanner p {
+    color: #0000ff; }
+  #firstBanner .separator {
+    background-color: #0000ff;
+    height: 100px;
+    width: 6px;
+    display: block;
+    float: left;
+    margin-right: 6px; }
+  #firstBanner h3 {
+    font-family: 'Helvetica Neue Bold', sans-serif;
+    font-size: 36px; }
+  #firstBanner p {
+    font-size: 19px; }
+
+#bluePart {
+  min-height: 1081px;
+  background-color: #0000ff;
+  color: #fff; }
+  @media (max-width: 768px) {
+    #bluePart #smartPhone {
+      max-width: 320px;
+      margin: 0 auto; } }
+  #bluePart .content {
+    padding-top: 87px; }
+  #bluePart .rightContent {
+    /*       p:before{
+            content:'';
+            background-color: $color-darkblue;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 6px;
+            margin: 0px 16px;
+        }*/
+    padding-bottom: 64px; }
+    #bluePart .rightContent h3 {
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: 53px;
+      padding-bottom: 64px; }
+    #bluePart .rightContent h4 {
+      font-family: 'Helvetica Neue Bold', sans-serif;
+      margin-bottom: 36px; }
+    #bluePart .rightContent p {
+      font-family: 'Helvetica Neue', sans-serif;
+      padding-bottom: 52px;
+      position: relative; }
+    #bluePart .rightContent p:before {
+      content: '';
+      background-color: #0000c8;
+      width: 6px;
+      height: 142px;
+      margin: 0px 16px;
+      float: left; }
+    #bluePart .rightContent p, #bluePart .rightContent h4 {
+      font-size: 19px; }
+
+#useCases {
+  min-height: 664px;
+  background-color: white; }
+  #useCases .title-container {
+    padding-top: 95px; }
+    #useCases .title-container h3 {
+      color: #131313;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: 46px;
+      font-weight: 400;
+      text-align: center; }
+      #useCases .title-container h3 span {
+        color: #0000ff;
+        font-family: 'Helvetica Bold', sans-serif;
+        font-style: italic; }
+
+#socialMedia {
+  background-color: #f0f0f0;
+  min-height: 1005px; }
+  #socialMedia h3, #socialMedia p, #socialMedia li {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 600; }
+  #socialMedia p, #socialMedia h4, #socialMedia li {
+    font-size: 16px; }
+  #socialMedia h3 {
+    font-size: 46px; }
+    #socialMedia h3 span {
+      font-family: 'Helvetica Neue Bold', sans-serif; }
+  #socialMedia h4 {
+    font-family: 'Helvetica Neue Bold', sans-serif;
+    color: #0000ff;
+    font-weight: 600; }
+  #socialMedia p {
+    font-weight: 600; }
+  #socialMedia li {
+    margin-top: .1rem; }
+  #socialMedia .title-container {
+    padding-top: 64px; }
+  #socialMedia .row.last {
+    padding-bottom: 64px; }
+
+#statsBanner {
+  background-color: #0000ff;
+  color: #fff;
+  font-family: 'Helvetica Neue Bold', sans-serif;
+  min-height: 230px;
+  text-align: center; }
+  #statsBanner .content {
+    padding: 32px 0px; }
+    #statsBanner .content .stat {
+      display: inline-block;
+      text-align: center;
+      padding-top: 32px;
+      padding-bottom: 32px; }
+      @media (max-width: 768px) {
+        #statsBanner .content .stat {
+          display: block; } }
+      #statsBanner .content .stat span {
+        display: block;
+        margin: 0 3vw; }
+      #statsBanner .content .stat .stat-number {
+        font-size: 62px;
+        margin-bottom: -26px; }
+      #statsBanner .content .stat .stat-text {
+        font-size: 39px; }
+
+#whiteBook {
+  min-height: 430px;
+  background-image: url("img/content/white_book_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff; }
+  #whiteBook .content {
+    padding: 98px 0px; }
+    #whiteBook .content h3, #whiteBook .content p {
+      font-family: 'Helvetica Neue', sans-serif;
+      font-weight: 600; }
+    #whiteBook .content h3 {
+      font-size: 46px; }
+      #whiteBook .content h3 span {
+        font-family: 'Helvetica Bold', sans-serif; }
+    #whiteBook .content p {
+      font-size: 16px; }
+    #whiteBook .content .button {
+      font-family: 'Helvetica Neue Bold', sans-serif;
+      font-size: 18px;
+      display: block;
+      color: #fff;
+      cursor: pointer;
+      border: 4px solid #fff;
+      padding: 13px;
+      background-color: #ffffff40;
+      text-align: center; }
+
+#footer {
+  height: 120px;
+  background-color: #131313; }
