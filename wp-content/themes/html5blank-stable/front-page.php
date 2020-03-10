@@ -55,17 +55,15 @@
             ------------------------------------->
             <section id="headerHero" class="container">
                 <div class="content column col-9 centered">
+                    <div class="row columns">
+                        <h2 class="column col-8"> <?php echo the_field('headerhero'); ?> </h2>
+                    </div>
 
-                    <!--div class="content">
-                                <?php 
-                                        $image = get_field('header_hero_image');
-                                        if( !empty( $image ) ): ?>
-                                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                                <?php endif; ?>
-                            </div-->
+                    <div class="row columns">
+                        <a id="headerHeroBtn" class="column col-6" href=""><?php echo the_field('header_hero_btn'); ?> </a>
+                    </div>
 
-                    <h2 class="colum col-8"> <?php echo the_field('headerhero'); ?> </h2>
-                    <a id="headerHeroBtn" class="column col-6" href=""><?php echo the_field('header_hero_btn'); ?> </a>
+
                 </div>
         
 
@@ -89,18 +87,23 @@
             ------------------------------------->
             <section id="blackBanner">
                 <div class="content column col-9 centered">
-                    <div class="column col-12 centered">
-                        <p>Creative factory est utilisée est appréciée au quotidien par...</p>
+
+                    <div class="row columns">
+                        <div class="column col-12 ">
+                            <p>Creative factory est utilisée est appréciée au quotidien par...</p>
+                        </div>
                     </div>
-                    <div class="column col-12 centered">
-                        <ul id="logosList">
-                            <li class="colum col-2"><img src="<?php echo esc_url($menulogo['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></li>
-                            <li class="colum col-2"><img src="<?php echo esc_url($menulogo['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></li>
-                            <li class="colum col-2"><img src="<?php echo esc_url($menulogo['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></li>
-                            <li class="colum col-2"><img src="<?php echo esc_url($menulogo['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></li>
-                            <li class="colum col-1"><img src="<?php echo esc_url($menulogo['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></li>
-                        </ul>
+
+                    <div class="row columns">
+                                <div class="column col-1"></div>
+                                <div class="column col-2"><img src="<?php echo esc_url($menulogo['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></div>
+                                <div class="column col-2"><img src="<?php echo esc_url($menulogo['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></div>
+                                <div class="column col-2"><img src="<?php echo esc_url($menulogo['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></div>
+                                <div class="column col-2"><img src="<?php echo esc_url($menulogo['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></div>
+                                <div class="column col-2"><img src="<?php echo esc_url($menulogo['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></div>
+                                <div class="column col-1"></div>
                     </div>
+
                 </div>
             </section>
             <!-----------------------------------
@@ -114,14 +117,17 @@
             <section id="firstBanner">
                 <div class="content column col-9 centered">
 
-                    <div class="column col-6 leftContent">
-              
-                        <h3><?php echo the_field('titre_banner_1'); ?></h3>
-                    </div>
+                    <div class="columns">
+                        <div class="column col-5">
+                            <h3><?php echo the_field('titre_banner_1'); ?></h3>
+                        </div>
 
-                    <div class="column col-6 rightContent">      
-                    <span class="separator"></span>                 
-                        <p><?php echo the_field('description_banner_1'); ?></p>
+                        <div class="column col-1"></div>
+
+                        <div class="column col-6">      
+                                    
+                            <p><?php echo the_field('description_banner_1'); ?></p>
+                        </div>
                     </div>
 
 
@@ -136,30 +142,39 @@
             ----------COMMENT CA MARCHE ?--------
             ------------------------------------->
             <section id="bluePart">
+                
                 <div class="content column col-9 centered">
-                <div class="colum col-6 leftContent">
-                    <?php 
-                        $imageccm = get_field('image_ccm');
-                        if( !empty( $imageccm ) ): ?>
-                        <img id="smartPhone" src="<?php echo esc_url($imageccm['url']); ?>" alt="<?php echo esc_attr($imageccm['alt']); ?>" />
-                    <?php endif; ?>
+
+                    <div class="columns">
+
+                        <div class="column col-6 image-container">
+                            <?php 
+                                $imageccm = get_field('image_ccm');
+                                if( !empty( $imageccm ) ): ?>
+                                <img id="smartPhone" src="<?php echo esc_url($imageccm['url']); ?>" alt="<?php echo esc_attr($imageccm['alt']); ?>" />
+                            <?php endif; ?>
+                        </div>
+
+                            <div class="column col-6 rightContent">
+                                <h3> Comment <strong>cela marche ?</strong></h3>
+                                <div>
+                                    <h4><?php echo the_field('titre_ccm_1'); ?></h4>
+                                    <p><?php echo the_field('texte_ccm_1'); ?></p>
+                                </div>
+                                <div>
+                                    <h4><?php echo the_field('titre_ccm_2'); ?></h4>
+                                    <p><?php echo the_field('texte_ccm_2'); ?></p>
+                                </div>
+                                <div>
+                                    <h4><?php echo the_field('titre_ccm_3'); ?></h4>
+                                    <p><?php echo the_field('texte_ccm_3'); ?></p>
+                                </div>
+                            </div>
+
+                        </div>
+
                 </div>
-                    <div class="column col-6 rightContent">
-                        <h3> Comment <strong>cela marche ?</strong></h3>
-                        <div>
-                            <h4><?php echo the_field('titre_ccm_1'); ?></h4>
-                            <p><?php echo the_field('texte_ccm_1'); ?></p>
-                        </div>
-                        <div>
-                            <h4><?php echo the_field('titre_ccm_2'); ?></h4>
-                            <p><?php echo the_field('texte_ccm_2'); ?></p>
-                        </div>
-                        <div>
-                            <h4><?php echo the_field('titre_ccm_3'); ?></h4>
-                            <p><?php echo the_field('texte_ccm_3'); ?></p>
-                        </div>
-                    </div>
-                </div>
+
             </section>
             <!-----------------------------------
             -------------------------------------
@@ -172,10 +187,13 @@
             <section id="useCases">
 
                 <div class="content column col-9 centered">
+                    <div class="columns">
 
-                    <div class="title-container col-7 centered">
-                        <h3>Creative Factory est adaptée à tous les cas <span>d'usage marketing</span></h3>
-                    </div>
+                        <div class="title-container col-7 centered">
+                            <h3>Creative Factory est adaptée à tous les cas <span>d'usage marketing</span></h3>
+                        </div>
+                        
+                    <div class="columns">
 
                 </div>
             </section>
@@ -191,15 +209,15 @@
 
                 <div class="content column col-9 centered">
 
-                    <div class="row columns ">
-                        <div class="image-container col-5 ">
+                    <div class="row columns">
+                        <div class="image-container col-6 ">
                             <?php 
                                 $imgsocial1 = get_field('image_social_media_1');
                                 if( !empty( $imgsocial1 ) ): ?>
                                 <img src="<?php echo esc_url($imgsocial1['url']); ?>" alt="<?php echo esc_attr($imgsocial1['alt']); ?>" />
                             <?php endif; ?>
                         </div>
-                        <div class="gutter col-1"></div>
+                
 
                         <div class="title-container col-6 ">
                                     <h3>Prises de parole <br><span>Social Media </span></h3>
@@ -290,12 +308,146 @@
                     </div>
 
               
-
                 </div>
             </section>
             <!-----------------------------------
             -------------------------------------
             ------------------------------------->
+
+            
+             <!-----------------------------------
+            ---------------EXPERTISE-------------
+            ------------------------------------->
+            <section id="expertsTeam">
+
+                <div class="content column col-9 centered">
+
+                    <div class="row columns">
+                        <div class="column col-12 center-text">
+                        <?php 
+                                $teamlogo = get_field('team_logo');
+                                if( !empty( $teamlogo ) ): ?>
+                                <img src="<?php echo esc_url($teamlogo['url']); ?>" alt="<?php echo esc_attr($teamlogo['alt']); ?>" />
+                            <?php endif; ?>
+                        </div>
+                    </div>
+
+   
+                    <div class="row columns">
+                        <div class="column col-12 center-text">
+                            <h3>des équipes expertes<br><span>+ de 10 ans d'expérience</span><h3>
+                        </div>
+
+                    </div>
+
+                    <div class="row columns" id="cardsContainer">
+
+                        <!--carte 1-->
+                        <div class="card card-offset">
+                            <div class="card-image">
+                                <?php 
+                                    $cardimage1 = get_field('image_carte_1');
+                                    if( !empty( $cardimage1 ) ): ?>
+                                    <img src="<?php echo esc_url($cardimage1['url']); ?>" alt="<?php echo esc_attr($cardimage1['alt']); ?>" />
+                                <?php endif; ?>
+                            </div>
+
+                            <div class="card-content center-text">
+                                <h4>Des équipes spécialisées</h4>
+                                <p>Des créatifs (Directeur de création, concepteur rédacteur, directeur artistique, artistes, manager)</p>
+                                <p>Des influenceurs (Youtubeurs, blogueur, influenceurs Instagram et Snapchat)</p>
+                                <p>Des stratèges (Direction conseil, Digital strategist, planneur strategique)</p>
+                            </div>
+                      
+                        </div>
+
+                        
+                        <!--carte 2-->
+                        <div class="card">
+                            <div class="card-image">
+                                <?php 
+                                    $cardimage2 = get_field('image_carte_2');
+                                    if( !empty( $cardimage2 ) ): ?>
+                                    <img src="<?php echo esc_url($cardimage2['url']); ?>" alt="<?php echo esc_attr($cardimage2['alt']); ?>" />
+                                <?php endif; ?>
+                            </div>
+
+                            <div class="card-content center-text">
+                                <h4>Des équipes spécialisées</h4>
+                                <p>Des créatifs (Directeur de création, concepteur rédacteur, directeur artistique, artistes, manager)</p>
+                                <p>Des influenceurs (Youtubeurs, blogueur, influenceurs Instagram et Snapchat)</p>
+                                <p>Des stratèges (Direction conseil, Digital strategist, planneur strategique)</p>
+                            </div>
+                      
+                        </div>
+
+                        
+                        <!--carte 3-->
+                        <div class="card card-offset">
+                        <div class="card-image">
+                                <?php 
+                                    $cardimage3 = get_field('image_carte_3');
+                                    if( !empty( $cardimage3 ) ): ?>
+                                    <img src="<?php echo esc_url($cardimage3['url']); ?>" alt="<?php echo esc_attr($cardimage3['alt']); ?>" />
+                                <?php endif; ?>
+                            </div>
+
+                            <div class="card-content center-text">
+                                <h4>Des équipes spécialisées</h4>
+                                <p>Des créatifs (Directeur de création, concepteur rédacteur, directeur artistique, artistes, manager)</p>
+                                <p>Des influenceurs (Youtubeurs, blogueur, influenceurs Instagram et Snapchat)</p>
+                                <p>Des stratèges (Direction conseil, Digital strategist, planneur strategique)</p>
+                            </div>
+                      
+                        </div>
+
+                    </div>
+        
+                </div>
+            </section>
+            <!-----------------------------------
+            -------------------------------------
+            ------------------------------------->
+
+                       
+             <!-----------------------------------
+            ----------------CRÉDITS--------------
+            ------------------------------------->
+            <section id="Credits">
+                <div class="content column col-9 centered">
+
+                    <div class="row column">
+                        <div class="col-12 text-center">
+                            <h3>Votre pack de <span>crédits</span></h3>
+                        </div>
+                    </div>
+
+                    <div class="row columns">
+                        <div class="col-12 text-center">
+                            <h4>Le Pack 1<h4>
+                            <p>A partir de 4000 euros pour 40 heures de travail + le studio + le matériel</p>
+                        </div>
+                    </div>
+
+                    <div class="row columns">
+                        <div class="col-12 buttonContainer">
+                                <a class="button col-4 centered">Commencer</a>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+            <section>
+
+
+            <!-----------------------------------
+            -------------------------------------
+            ------------------------------------->
+
+
+
+
     </div>
 
 </body>

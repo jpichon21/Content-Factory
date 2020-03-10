@@ -52,19 +52,23 @@ a.active, a:active, a:focus, a:hover {
   margin: 0 !important;
   padding: 0 !important; }
 
-.leftContent {
-  float: left; }
-  @media (max-width: 768px) {
-    .leftContent {
-      display: block;
-      float: none; } }
+.center-text {
+  text-align: center; }
 
-.rightContent {
-  float: right; }
-  @media (max-width: 768px) {
-    .rightContent {
-      display: block;
-      float: none; } }
+.card {
+  padding: 0px !important; }
+
+.button {
+  font-family: 'Helvetica Neue Bold', sans-serif;
+  font-size: 18px;
+  display: block;
+  color: #fff;
+  cursor: pointer;
+  border: 4px solid #fff;
+  padding: 13px;
+  text-align: center; }
+  .button:focus, .button:active, .button:visited, .button:hover {
+    color: #fff !important; }
 
 @media (max-width: 768px) {
   .col-9 {
@@ -75,7 +79,7 @@ a.active, a:active, a:focus, a:hover {
     width: 98% !important; } }
 
 @media (max-width: 768px) {
-  .col-6, .col-7, .col-8, .col-5, .col-4 {
+  .col-6, .col-7, .col-8, .col-5, .col-4, .col-2 {
     width: 100% !important; } }
 
 @media (max-width: 768px) {
@@ -108,12 +112,12 @@ header {
 
 #headerHero {
   position: relative;
-  height: 90vh;
+  min-height: 96vh;
   background-image: url("img/content/hero-img.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
   #headerHero .content {
-    padding-top: 22vh; }
+    padding: 22vh 0px; }
   #headerHero h2 {
     font-family: 'Helvetica Neue Bold', sans-serif;
     color: #131313;
@@ -147,48 +151,46 @@ header {
         font-size: 28px; }
 
 #blackBanner {
-  min-height: 220px;
   background: linear-gradient(97deg, #383838 0%, #131313 100%);
   color: #fff; }
   #blackBanner .content {
-    padding: 26px 0px; }
+    padding: 46px 0px;
+    text-align: center; }
     #blackBanner .content p {
       font-family: 'Helvetica Neue';
       text-align: center;
       font-size: 19px; }
-    #blackBanner .content #logosList {
-      text-align: center; }
-      #blackBanner .content #logosList li {
-        display: inline-block;
-        margin: 0px 28px; }
 
-#firstBanner {
-  min-height: 347px; }
-  #firstBanner .content {
-    padding-top: 5vw; }
-  #firstBanner h3, #firstBanner p {
-    color: #0000ff; }
-  #firstBanner .separator {
-    background-color: #0000ff;
-    height: 100px;
-    width: 6px;
-    display: block;
-    float: left;
-    margin-right: 6px; }
-  #firstBanner h3 {
-    font-family: 'Helvetica Neue Bold', sans-serif;
-    font-size: 36px; }
-  #firstBanner p {
-    font-size: 19px; }
+#firstBanner .content {
+  padding: 64px 0px; }
+
+#firstBanner h3, #firstBanner p {
+  color: #0000ff; }
+
+#firstBanner .separator {
+  background-color: #0000ff;
+  height: 100px;
+  width: 6px;
+  display: block;
+  float: left;
+  margin-right: 6px; }
+
+#firstBanner h3 {
+  font-family: 'Helvetica Neue Bold', sans-serif;
+  font-size: 36px; }
+
+#firstBanner p {
+  font-size: 19px; }
 
 #bluePart {
   min-height: 1081px;
   background-color: #0000ff;
   color: #fff; }
+  #bluePart .image-container {
+    text-align: center; }
   @media (max-width: 768px) {
     #bluePart #smartPhone {
-      max-width: 320px;
-      margin: 0 auto; } }
+      max-width: 320px; } }
   #bluePart .content {
     padding-top: 87px; }
   #bluePart .rightContent {
@@ -226,17 +228,16 @@ header {
       font-size: 19px; }
 
 #useCases {
-  min-height: 664px;
   background-color: white; }
-  #useCases .title-container {
-    padding-top: 95px; }
-    #useCases .title-container h3 {
+  #useCases .content {
+    padding: 64px 0px; }
+    #useCases .content .title-container h3 {
       color: #131313;
       font-family: 'Helvetica Neue', sans-serif;
       font-size: 46px;
       font-weight: 400;
       text-align: center; }
-      #useCases .title-container h3 span {
+      #useCases .content .title-container h3 span {
         color: #0000ff;
         font-family: 'Helvetica Bold', sans-serif;
         font-style: italic; }
@@ -265,6 +266,8 @@ header {
     padding-top: 64px; }
   #socialMedia .row.last {
     padding-bottom: 64px; }
+  #socialMedia img {
+    max-width: 100%; }
 
 #statsBanner {
   background-color: #0000ff;
@@ -309,15 +312,55 @@ header {
     #whiteBook .content p {
       font-size: 16px; }
     #whiteBook .content .button {
-      font-family: 'Helvetica Neue Bold', sans-serif;
-      font-size: 18px;
-      display: block;
-      color: #fff;
-      cursor: pointer;
-      border: 4px solid #fff;
-      padding: 13px;
-      background-color: #ffffff40;
-      text-align: center; }
+      background-color: #ffffff40; }
+
+#expertsTeam {
+  background-color: #f0f0f0; }
+  #expertsTeam #cardsContainer {
+    padding-top: 76px; }
+    #expertsTeam #cardsContainer .card {
+      background-color: #f0f0f0;
+      border-radius: 0px;
+      border: none;
+      width: 378px;
+      overflow: hidden; }
+      #expertsTeam #cardsContainer .card .card-image {
+        width: 100%; }
+      #expertsTeam #cardsContainer .card .card-content {
+        padding: 36px 64px; }
+        #expertsTeam #cardsContainer .card .card-content h4 {
+          font-family: 'Helvetica Neue Bold', sans-serif;
+          font-size: 19px;
+          margin-bottom: 18px; }
+        #expertsTeam #cardsContainer .card .card-content p {
+          font-family: 'Helvetica Neue', sans-serif;
+          font-size: 16px; }
+    #expertsTeam #cardsContainer .card-offset {
+      margin-top: 64px; }
+  #expertsTeam .content {
+    padding: 120px 0px; }
+    #expertsTeam .content h3 {
+      font-family: 'Helvetica Neue Bold', sans-serif; }
+      #expertsTeam .content h3 span {
+        font-family: 'Helvetica Neue', sans-serif; }
+    #expertsTeam .content h3, #expertsTeam .content span {
+      font-size: 42px; }
+
+#Credits {
+  background-color: #0000ff;
+  color: #fff; }
+  #Credits .content {
+    padding: 76px 0px; }
+    #Credits .content h3, #Credits .content h4 {
+      font-family: 'Helvetica Neue', sans-serif; }
+    #Credits .content h3 {
+      font-size: 46px; }
+      #Credits .content h3 span {
+        font-family: 'Helvetica Neue Bold', sans-serif; }
+    #Credits .content h4 {
+      font-size: 16px; }
+    #Credits .content .buttonContainer {
+      margin-top: 16px; }
 
 #footer {
   height: 120px;
