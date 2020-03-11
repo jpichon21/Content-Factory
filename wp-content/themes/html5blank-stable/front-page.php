@@ -600,10 +600,12 @@
 
     <script>
         $('.multiple-items').slick({
-            infinite: false,
+            infinite: true,
             slidesToShow: 4,
             slidesToScroll: 4,
-            dots: true
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 2000
         });
     </script>
 
