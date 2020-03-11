@@ -34,17 +34,17 @@
                     <img id="menuLogo" src="<?php echo esc_url($menulogo['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                 <?php endif; ?>
                 <ul class>
-                    <li><a href="#">Comment ça marche ?</a></li>
+                    <li><a href="#CCM">Comment ça marche ?</a></li>
                     <li class="separator"> | </li>
-                    <li><a href="#">Les formats</a></li>
+                    <li><a href="#Formats">Les formats</a></li>
                     <li class="separator"> | </li>
                     <li><a href="#">Exemples</a></li>
                     <li class="separator"> | </li>
-                    <li><a href="#">Chiffres</a></li>
+                    <li><a href="#Stats">Chiffres</a></li>
                     <li class="separator"> | </li>
-                    <li><a href="#">Prix</a></li>
+                    <li><a href="#Credits">Prix</a></li>
                     <li class="separator"> | </li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#Contact">Contact</a></li>
 
                 </ul>
             </nav>
@@ -60,7 +60,7 @@
                     </div>
 
                     <div class="row columns">
-                        <a id="headerHeroBtn" class="column col-6" href=""><?php echo the_field('header_hero_btn'); ?> </a>
+                        <a id="headerHeroBtn" class="column col-6" href="<?php echo the_field('header_hero_lien'); ?>"><?php echo the_field('header_hero_btn'); ?> </a>
                     </div>
 
 
@@ -90,17 +90,44 @@
 
                     <div class="row columns">
                         <div class="column col-12 ">
-                            <p>Creative factory est utilisée est appréciée au quotidien par...</p>
+                            <p><?php echo the_field('tagline_references'); ?></p>
                         </div>
                     </div>
 
                     <div class="row columns">
                                 <div class="column col-1"></div>
-                                <div class="column col-2"><img src="<?php echo esc_url($menulogo['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></div>
-                                <div class="column col-2"><img src="<?php echo esc_url($menulogo['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></div>
-                                <div class="column col-2"><img src="<?php echo esc_url($menulogo['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></div>
-                                <div class="column col-2"><img src="<?php echo esc_url($menulogo['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></div>
-                                <div class="column col-2"><img src="<?php echo esc_url($menulogo['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></div>
+
+                                    <?php 
+                                        $image_reference_1 = get_field('image_reference_1');
+                                        if( !empty( $image_reference_1 ) ): ?>
+                                        <div class="column col-2"><img src="<?php echo esc_url($image_reference_1['url']); ?>" alt="<?php echo esc_attr($image_reference_1['alt']); ?>" /></div>
+                                    <?php endif; ?>
+
+                                    <?php 
+                                        $image_reference_2 = get_field('image_reference_2');
+                                        if( !empty( $image_reference_2 ) ): ?>
+                                        <div class="column col-2"><img src="<?php echo esc_url($image_reference_2['url']); ?>" alt="<?php echo esc_attr($image_reference_2['alt']); ?>" /></div>
+                                    <?php endif; ?>
+                    
+                                    <?php 
+                                        $image_reference_3 = get_field('image_reference_3');
+                                        if( !empty( $image_reference_3 ) ): ?>
+                                        <div class="column col-2"><img src="<?php echo esc_url($image_reference_3['url']); ?>" alt="<?php echo esc_attr($image_reference_3['alt']); ?>" /></div>
+                                    <?php endif; ?>
+                    
+                                    <?php 
+                                        $image_reference_4 = get_field('image_reference_4');
+                                        if( !empty( $image_reference_4 ) ): ?>
+                                        <div class="column col-2"><img src="<?php echo esc_url($image_reference_4['url']); ?>" alt="<?php echo esc_attr($image_reference_4['alt']); ?>" /></div>
+                                    <?php endif; ?>
+                    
+                                    <?php 
+                                        $image_reference_5 = get_field('image_reference_5');
+                                        if( !empty( $image_reference_5 ) ): ?>
+                                        <div class="column col-2"><img src="<?php echo esc_url($image_reference_5['url']); ?>" alt="<?php echo esc_attr($image_reference_5['alt']); ?>" /></div>
+                                    <?php endif; ?>
+                    
+                    
                                 <div class="column col-1"></div>
                     </div>
 
@@ -141,7 +168,7 @@
             <!-----------------------------------
             ----------COMMENT CA MARCHE ?--------
             ------------------------------------->
-            <section id="bluePart">
+            <section id="CCM">
                 
                 <div class="content column col-9 centered">
 
@@ -182,9 +209,9 @@
 
 
             <!-----------------------------------
-            ------------------USECASES-----------
+            ------------------FORMATS------------
             ------------------------------------->
-            <section id="useCases">
+            <section id="Formats">
 
                 <div class="content column col-9 centered">
                     <div class="columns">
@@ -220,28 +247,34 @@
                 
 
                         <div class="title-container col-6 ">
-                                    <h3>Prises de parole <br><span>Social Media </span></h3>
-                                    <p>Pour enrichir leurs prises de parole Social Media et dynamiser les contenus sur les multiples plateformes du groupe Pierre & Vacances Center Parcs, nous avons mis en place une Content Factory avec plus de 350 Content Credits annuel, de nombreux shootings pour créer une banque d’images Social Media dédiée, ainsi qu’un content maker 2 jours par semaine pour absorber les besoins croissants de production.</p>
-                                    <h4>KPIs Creative Factory</h4>
+                                <?php
+                                    $contenu_social_media_1 = get_field('contenu_social_media_1');
+                                    if( $contenu_social_media_1 ): ?>
+                                    <h3><?php echo $contenu_social_media_1['titre']; ?> <br><span><?php echo $contenu_social_media_1['sous_titre']; ?></span></h3>
+                                    <p><?php echo $contenu_social_media_1['description']; ?></p>
+                                    <h4><?php echo $contenu_social_media_1['titre_liste']; ?></h4>
                                     <ul>
-                                        <li>1,2M de vues en 2017 contre 706K en 2016</li>
-                                        <li>+300 contenus produits par la Content Factory en un an</li>
-                                        <li>(la moitié en contenus animés)</li>
-                                    </ul>
+                                        <li><?php echo $contenu_social_media_1['objet_1']; ?></li>
+                                        <li><?php echo $contenu_social_media_1['objet_2']; ?></li>
+                                    </ul>               
+                                <?php endif; ?>
                         </div>
                     </div>
 
                     <div class="row columns last">
 
                         <div class="title-container col-5 ">
-                                    <h3>Prises de parole <br><span>Social Media </span></h3>
-                                    <p>Pour enrichir leurs prises de parole Social Media et dynamiser les contenus sur les multiples plateformes du groupe Pierre & Vacances Center Parcs, nous avons mis en place une Content Factory avec plus de 350 Content Credits annuel, de nombreux shootings pour créer une banque d’images Social Media dédiée, ainsi qu’un content maker 2 jours par semaine pour absorber les besoins croissants de production.</p>
-                                    <h4>KPIs Creative Factory</h4>
-                                    <ul>
-                                        <li>1,2M de vues en 2017 contre 706K en 2016</li>
-                                        <li>+300 contenus produits par la Content Factory en un an</li>
-                                        <li>(la moitié en contenus animés)</li>
-                                    </ul>
+                                    <?php
+                                        $contenu_social_media_2 = get_field('contenu_social_media_2');
+                                        if( $contenu_social_media_2 ): ?>
+                                        <h3><?php echo $contenu_social_media_2['titre']; ?> <br><span><?php echo $contenu_social_media_2['sous_titre']; ?></span></h3>
+                                        <p><?php echo $contenu_social_media_2['description']; ?></p>
+                                        <h4><?php echo $contenu_social_media_2['titre_liste']; ?></h4>
+                                        <ul>
+                                            <li><?php echo $contenu_social_media_2['objet_1']; ?></li>
+                                            <li><?php echo $contenu_social_media_2['objet_2']; ?></li>
+                                        </ul>               
+                                    <?php endif; ?>
                         </div>
 
                         <div class="gutter col-1"></div>
@@ -268,22 +301,22 @@
             <!-----------------------------------
             -------------------STATS-------------
             ------------------------------------->
-            <section id="statsBanner">
+            <section id="Stats">
 
                 <div class="content column col-9 centered">
 
                     <div class="stat">
-                            <span class="stat-number">150</span>
+                            <span class="stat-number"><?php echo the_field('nb_clients'); ?></span>
                             <span class="stat-text">clients</span>
                     </div>
 
                     <div class="stat">
-                            <span class="stat-number">+13 000</span>
+                            <span class="stat-number"><?php echo the_field('nb_contenus'); ?></span>
                             <span class="stat-text">contenus/an</span>
                     </div>
 
                     <div class="stat">
-                            <span class="stat-number">40</span>
+                            <span class="stat-number"><?php echo the_field('nb_experts'); ?></span>
                             <span class="stat-text">experts</span>
                     </div>
 
@@ -298,16 +331,14 @@
             -------------LIVRE BLANC-------------
             ------------------------------------->
             <section id="whiteBook">
-
                 <div class="content columns col-9 centered">
-                    <h3 class="col-12"><span>Téléchargez</span> notre Livre Blanc !</h3>
-                    <p class="col-4">Ce livre contient les best practices en création de contenu à mettre en place en 2020</p>
+                    <h3 class="col-12"><span><?php echo the_field('titre_livre_blanc'); ?></h3>
+                    <p class="col-4"><?php echo the_field('description_livre_blanc'); ?></p>
 
                     <div class="col-12 buttonContainer">
-                        <a class="button col-4">Téléchargez gratuitement</a>
+                        <a href="<?php echo the_field('lien_livre_blanc'); ?>"class="button col-4"><?php echo the_field('texte_bouton_livre_blanc'); ?></a>
                     </div>
 
-              
                 </div>
             </section>
             <!-----------------------------------
@@ -335,71 +366,94 @@
    
                     <div class="row columns">
                         <div class="column col-12 center-text">
-                            <h3>des équipes expertes<br><span>+ de 10 ans d'expérience</span><h3>
+                            <h3><?php echo the_field('team_title'); ?><br><span><?php echo the_field('team_subtitle'); ?></span><h3>
                         </div>
 
                     </div>
 
                     <div class="row columns" id="cardsContainer">
 
-                        <!--carte 1-->
-                        <div class="card card-offset">
-                            <div class="card-image">
-                                <?php 
-                                    $cardimage1 = get_field('image_carte_1');
-                                    if( !empty( $cardimage1 ) ): ?>
-                                    <img src="<?php echo esc_url($cardimage1['url']); ?>" alt="<?php echo esc_attr($cardimage1['alt']); ?>" />
-                                <?php endif; ?>
-                            </div>
+         
 
-                            <div class="card-content center-text">
-                                <h4>Des équipes spécialisées</h4>
-                                <p>Des créatifs (Directeur de création, concepteur rédacteur, directeur artistique, artistes, manager)</p>
-                                <p>Des influenceurs (Youtubeurs, blogueur, influenceurs Instagram et Snapchat)</p>
-                                <p>Des stratèges (Direction conseil, Digital strategist, planneur strategique)</p>
-                            </div>
-                      
-                        </div>
+                                <!--carte 1-->
+                                <div class="card card-offset">
+                                    <div class="card-image">
+                                        <?php 
+                                            $cardimage1 = get_field('image_carte_1');
+                                            if( !empty( $cardimage1 ) ): ?>
+                                            <img src="<?php echo esc_url($cardimage1['url']); ?>" alt="<?php echo esc_attr($cardimage1['alt']); ?>" />
+                                        <?php endif; ?>
+                                    </div>
 
                         
-                        <!--carte 2-->
-                        <div class="card">
-                            <div class="card-image">
-                                <?php 
-                                    $cardimage2 = get_field('image_carte_2');
-                                    if( !empty( $cardimage2 ) ): ?>
-                                    <img src="<?php echo esc_url($cardimage2['url']); ?>" alt="<?php echo esc_attr($cardimage2['alt']); ?>" />
-                                <?php endif; ?>
-                            </div>
+                                    <div class="card-content center-text">
+                                        <?php
+                                            $contenu_carte_1 = get_field('contenu_carte_1');
+                                            if( $contenu_carte_1 ): ?>
+                                                    <h4><?php echo $contenu_carte_1['titre_carte']; ?></h4>
+                                                    <p><?php echo $contenu_carte_1['paragraphe_1']; ?></p>
+                                                    <p><?php echo $contenu_carte_1['paragraphe_2']; ?></p>
+                                                    <p><?php echo $contenu_carte_1['paragraphe_3']; ?></p>    
+                                        <?php endif; ?>
+                                    </div>
+                                </div>
 
-                            <div class="card-content center-text">
-                                <h4>Des équipes spécialisées</h4>
-                                <p>Des créatifs (Directeur de création, concepteur rédacteur, directeur artistique, artistes, manager)</p>
-                                <p>Des influenceurs (Youtubeurs, blogueur, influenceurs Instagram et Snapchat)</p>
-                                <p>Des stratèges (Direction conseil, Digital strategist, planneur strategique)</p>
-                            </div>
-                      
-                        </div>
+                                
+                                <!--carte 2-->
+                                <div class="card">
+                                    <div class="card-image">
+                                        <?php 
+                                            $cardimage2 = get_field('image_carte_2');
+                                            if( !empty( $cardimage2 ) ): ?>
+                                            <img src="<?php echo esc_url($cardimage2['url']); ?>" alt="<?php echo esc_attr($cardimage2['alt']); ?>" />
+                                        <?php endif; ?>
+                                    </div>
 
-                        
-                        <!--carte 3-->
-                        <div class="card card-offset">
-                        <div class="card-image">
-                                <?php 
-                                    $cardimage3 = get_field('image_carte_3');
-                                    if( !empty( $cardimage3 ) ): ?>
-                                    <img src="<?php echo esc_url($cardimage3['url']); ?>" alt="<?php echo esc_attr($cardimage3['alt']); ?>" />
-                                <?php endif; ?>
-                            </div>
+                                    <div class="card-content center-text">
+                                        <?php
+                                            $contenu_carte_2 = get_field('contenu_carte_2');
+                                            if( $contenu_carte_2 ): ?>
+                                                    <h4><?php echo $contenu_carte_2['titre_carte']; ?></h4>
+                                                    <p><?php echo $contenu_carte_2['paragraphe_1']; ?></p>
+                                                    <p><?php echo $contenu_carte_2['paragraphe_2']; ?></p>
+                                                    <p><?php echo $contenu_carte_2['paragraphe_3']; ?></p>    
+                                        <?php endif; ?>
+                                    </div>
+                                </div>
 
-                            <div class="card-content center-text">
-                                <h4>Des équipes spécialisées</h4>
-                                <p>Des créatifs (Directeur de création, concepteur rédacteur, directeur artistique, artistes, manager)</p>
-                                <p>Des influenceurs (Youtubeurs, blogueur, influenceurs Instagram et Snapchat)</p>
-                                <p>Des stratèges (Direction conseil, Digital strategist, planneur strategique)</p>
-                            </div>
-                      
-                        </div>
+                                
+                                <!--carte 3-->
+                                <div class="card card-offset">
+                                    <div class="card-image">
+                                        <?php 
+                                            $cardimage3 = get_field('image_carte_3');
+                                            if( !empty( $cardimage3 ) ): ?>
+                                            <img src="<?php echo esc_url($cardimage3['url']); ?>" alt="<?php echo esc_attr($cardimage3['alt']); ?>" />
+                                        <?php endif; ?>
+                                    </div>
+
+                                    <div class="card-content center-text">
+                                    <?php
+                                            $contenu_carte_3 = get_field('contenu_carte_3');
+                                            if( $contenu_carte_3 ): ?>
+                                                    <h4><?php echo $contenu_carte_3['titre_carte']; ?></h4>
+                                                    <p><?php echo $contenu_carte_3['paragraphe_1']; ?></p>
+                                                    <p>
+                                                        <?php echo $contenu_carte_3['objet_1']; ?>
+                                                        <br>
+                                                        <?php echo $contenu_carte_3['objet_2']; ?>
+                                                        <br>
+                                                        <?php echo $contenu_carte_3['objet_3']; ?>
+                                                        <br>
+                                                        <?php echo $contenu_carte_3['objet_4']; ?>
+                                                    </p>
+                                           
+                                        <?php endif; ?>
+                                    </div>
+        
+                                </div>
+                                
+              
 
                     </div>
         
@@ -415,45 +469,64 @@
             ------------------------------------->
             <section id="Credits">
                 <div class="content column col-9 centered">
-
                     <div class="row column">
                         <div class="col-12 text-center">
-                            <h3>Votre pack de <span>crédits</span></h3>
+                            <h3><?php echo the_field('titre_credits'); ?></h3>
                         </div>
                     </div>
 
                     <div class="row columns">
                         <div class="col-12 text-center">
-                            <h4>Le Pack 1<h4>
-                            <p>A partir de 4000 euros pour 40 heures de travail + le studio + le matériel</p>
+                            <h4><?php echo the_field('titre_pack_credits'); ?><h4>
+                            <p><?php echo the_field('description_pack_credits'); ?></p>
                         </div>
                     </div>
 
                     <div class="row columns">
                         <div class="col-12 buttonContainer">
-                                <a class="button col-4 centered">Commencer</a>
+                                <a href="<?php echo the_field('lien_pack_credits'); ?>" class="button col-4 centered"><?php echo the_field('bouton_pack_credits'); ?></a>
                         </div>
                     </div>
-                    
-
                 </div>
-
-            <section>
-
+            </section>
 
             <!-----------------------------------
             -------------------------------------
             ------------------------------------->
 
+            <!-----------------------------------
+            ----------------CONTACT--------------
+            ------------------------------------->
+            <section id="Contact">
+                <div class="content column col-9 centered">
 
+                    <div class="row columns">
+                        <div class="col-6 centered text-center">
+                            <h3><?php echo the_field('titre_contact'); ?><h3>
+                        </div>
+                    </div>
 
+                    <div class="columns">
+               
+                            <?php echo the_field('formulaire_de_contact'); ?>                   
+                      
+                    </div>
+                </div>
+            </section>
+            <!-----------------------------------
+            -------------------------------------
+            ------------------------------------->
 
     </div>
 
 </body>
 
     <footer id="footer">
-        <div class="content column col-9 centered"></div>
+        <div class="content column col-9 centered">
+
+     
+        
+        </div>
     </footer>
 
 

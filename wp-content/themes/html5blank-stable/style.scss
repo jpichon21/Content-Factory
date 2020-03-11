@@ -57,8 +57,13 @@ $color-darkblue: #0000c8;
 
 /** LAYOUT **/
 
-html{
+html {
+    scroll-behavior: smooth;
     overflow-x: hidden;
+  }
+
+*{
+    box-sizing: border-box;
 }
 
 ul, li {
@@ -130,8 +135,6 @@ a.active, a:active, a:focus, a:hover{
 }
 
 
-/** FONT STYLES **/
-
 
 /** SECTIONS **/
 
@@ -181,6 +184,9 @@ header{
         color: $color-black;
         font-size: 72px;
         line-height: 72px;
+        strong{
+            color:$color-blue;
+        }
     }
     #headerHeroBtn{
         margin-top: 40px;
@@ -221,6 +227,9 @@ header{
     .content{
         padding: 46px 0px;
         text-align: center;
+        img{
+            max-width: 220px;
+        }
         p{
             font-family: 'Helvetica Neue';
             text-align: center;
@@ -253,7 +262,7 @@ header{
     }
 }
 
-#bluePart{
+#CCM{
     min-height: 1081px;
     background-color: $color-blue;
     color: #fff;
@@ -309,7 +318,7 @@ header{
     }
 }
 
-#useCases{
+#Formats{
     background-color: white;
     .content{
         padding: 64px 0px;
@@ -368,7 +377,7 @@ header{
    }
 }
 
-#statsBanner{
+#Stats{
     background-color: $color-blue;
     color:#fff;
     font-family: 'Helvetica Neue Bold', sans-serif;
@@ -410,7 +419,6 @@ header{
         padding: 98px 0px;
         h3,p{
             font-family: 'Helvetica Neue', sans-serif;
-            font-weight: 600;;
         }
         h3{
             font-size: 46px;
@@ -433,13 +441,18 @@ header{
     #cardsContainer{
         padding-top: 76px;
         .card{
-            background-color: $color-grey;
+            background-color: #fff;
             border-radius: 0px;
-            border:none;
-            width: 378px;
+            border: none;
+            width: 33.3%;
             overflow: hidden;
+            @include media('<=tablet') {
+                width: 100%!important;
+            }
             .card-image{
-                width: 100%;
+                img{
+                    width: 100%;
+                }
             }
             .card-content{
                 padding: 36px 64px;
@@ -457,6 +470,9 @@ header{
         }
         .card-offset{
             margin-top: 64px;
+            @include media('<=tablet') {
+                margin-top: 0px;
+            }
         }
     }
     .content{
@@ -492,10 +508,60 @@ header{
         }
         .buttonContainer{
             margin-top: 16px;
-        }
-        
+        } 
     }
+}
 
+#Contact{
+    background-color: #fff;
+    .content{
+        padding: 72px 0px;
+        h3{
+            font-size: 44px;
+            font-family: 'Helvetica Neue', sans-serif;
+            font-weight: 600;
+            margin-bottom: 0px;
+            strong{
+                color: $color-blue;
+                font-family: 'Helvetica Neue Bold', sans-serif;
+            }
+        }
+    }
+    .wpcf7{
+        margin: 0 auto;
+    }
+    form{
+        padding-top: 46px;
+        .col-6, .col-12{
+            @include media('<=tablet') {
+                margin-bottom: 18px;
+            }
+        }
+        .row{
+            margin-bottom: 36px;
+            @include media('<=tablet') {
+                margin-bottom: 0px;
+            }
+        }
+        textarea, input[type=submit]{
+            width: 100%;
+        }
+        textarea, input[type=submit], input{
+            border: none;
+            padding: 10px 20px;
+            outline: none;
+            background-color: #f0f0f0;
+            width: 100%;
+        }
+        input[type=submit]{
+            background-color: $color-blue;
+            color: #fff;
+            font-weight: 600;
+            font-family: 'Helvetica Neue Bold', sans-serif;
+            font-size: 18px;
+            padding: 16px ;
+        }
+    }
 }
 
 #footer{

@@ -30,7 +30,11 @@
 
 /** LAYOUT **/
 html {
+  scroll-behavior: smooth;
   overflow-x: hidden; }
+
+* {
+  box-sizing: border-box; }
 
 ul, li {
   text-decoration: none;
@@ -86,7 +90,6 @@ a.active, a:active, a:focus, a:hover {
   .col-1 {
     display: none !important; } }
 
-/** FONT STYLES **/
 /** SECTIONS **/
 header {
   height: 78px; }
@@ -123,6 +126,8 @@ header {
     color: #131313;
     font-size: 72px;
     line-height: 72px; }
+    #headerHero h2 strong {
+      color: #0000ff; }
   #headerHero #headerHeroBtn {
     margin-top: 40px;
     background-color: #0000ff;
@@ -156,6 +161,8 @@ header {
   #blackBanner .content {
     padding: 46px 0px;
     text-align: center; }
+    #blackBanner .content img {
+      max-width: 220px; }
     #blackBanner .content p {
       font-family: 'Helvetica Neue';
       text-align: center;
@@ -182,18 +189,18 @@ header {
 #firstBanner p {
   font-size: 19px; }
 
-#bluePart {
+#CCM {
   min-height: 1081px;
   background-color: #0000ff;
   color: #fff; }
-  #bluePart .image-container {
+  #CCM .image-container {
     text-align: center; }
   @media (max-width: 768px) {
-    #bluePart #smartPhone {
+    #CCM #smartPhone {
       max-width: 320px; } }
-  #bluePart .content {
+  #CCM .content {
     padding-top: 87px; }
-  #bluePart .rightContent {
+  #CCM .rightContent {
     /*       p:before{
             content:'';
             background-color: $color-darkblue;
@@ -206,38 +213,38 @@ header {
             margin: 0px 16px;
         }*/
     padding-bottom: 64px; }
-    #bluePart .rightContent h3 {
+    #CCM .rightContent h3 {
       font-family: 'Helvetica Neue', sans-serif;
       font-size: 53px;
       padding-bottom: 64px; }
-    #bluePart .rightContent h4 {
+    #CCM .rightContent h4 {
       font-family: 'Helvetica Neue Bold', sans-serif;
       margin-bottom: 36px; }
-    #bluePart .rightContent p {
+    #CCM .rightContent p {
       font-family: 'Helvetica Neue', sans-serif;
       padding-bottom: 52px;
       position: relative; }
-    #bluePart .rightContent p:before {
+    #CCM .rightContent p:before {
       content: '';
       background-color: #0000c8;
       width: 6px;
       height: 142px;
       margin: 0px 16px;
       float: left; }
-    #bluePart .rightContent p, #bluePart .rightContent h4 {
+    #CCM .rightContent p, #CCM .rightContent h4 {
       font-size: 19px; }
 
-#useCases {
+#Formats {
   background-color: white; }
-  #useCases .content {
+  #Formats .content {
     padding: 64px 0px; }
-    #useCases .content .title-container h3 {
+    #Formats .content .title-container h3 {
       color: #131313;
       font-family: 'Helvetica Neue', sans-serif;
       font-size: 46px;
       font-weight: 400;
       text-align: center; }
-      #useCases .content .title-container h3 span {
+      #Formats .content .title-container h3 span {
         color: #0000ff;
         font-family: 'Helvetica Bold', sans-serif;
         font-style: italic; }
@@ -269,29 +276,29 @@ header {
   #socialMedia img {
     max-width: 100%; }
 
-#statsBanner {
+#Stats {
   background-color: #0000ff;
   color: #fff;
   font-family: 'Helvetica Neue Bold', sans-serif;
   min-height: 230px;
   text-align: center; }
-  #statsBanner .content {
+  #Stats .content {
     padding: 32px 0px; }
-    #statsBanner .content .stat {
+    #Stats .content .stat {
       display: inline-block;
       text-align: center;
       padding-top: 32px;
       padding-bottom: 32px; }
       @media (max-width: 768px) {
-        #statsBanner .content .stat {
+        #Stats .content .stat {
           display: block; } }
-      #statsBanner .content .stat span {
+      #Stats .content .stat span {
         display: block;
         margin: 0 3vw; }
-      #statsBanner .content .stat .stat-number {
+      #Stats .content .stat .stat-number {
         font-size: 62px;
         margin-bottom: -26px; }
-      #statsBanner .content .stat .stat-text {
+      #Stats .content .stat .stat-text {
         font-size: 39px; }
 
 #whiteBook {
@@ -303,8 +310,7 @@ header {
   #whiteBook .content {
     padding: 98px 0px; }
     #whiteBook .content h3, #whiteBook .content p {
-      font-family: 'Helvetica Neue', sans-serif;
-      font-weight: 600; }
+      font-family: 'Helvetica Neue', sans-serif; }
     #whiteBook .content h3 {
       font-size: 46px; }
       #whiteBook .content h3 span {
@@ -319,12 +325,15 @@ header {
   #expertsTeam #cardsContainer {
     padding-top: 76px; }
     #expertsTeam #cardsContainer .card {
-      background-color: #f0f0f0;
+      background-color: #fff;
       border-radius: 0px;
       border: none;
-      width: 378px;
+      width: 33.3%;
       overflow: hidden; }
-      #expertsTeam #cardsContainer .card .card-image {
+      @media (max-width: 768px) {
+        #expertsTeam #cardsContainer .card {
+          width: 100% !important; } }
+      #expertsTeam #cardsContainer .card .card-image img {
         width: 100%; }
       #expertsTeam #cardsContainer .card .card-content {
         padding: 36px 64px; }
@@ -337,6 +346,9 @@ header {
           font-size: 16px; }
     #expertsTeam #cardsContainer .card-offset {
       margin-top: 64px; }
+      @media (max-width: 768px) {
+        #expertsTeam #cardsContainer .card-offset {
+          margin-top: 0px; } }
   #expertsTeam .content {
     padding: 120px 0px; }
     #expertsTeam .content h3 {
@@ -361,6 +373,46 @@ header {
       font-size: 16px; }
     #Credits .content .buttonContainer {
       margin-top: 16px; }
+
+#Contact {
+  background-color: #fff; }
+  #Contact .content {
+    padding: 72px 0px; }
+    #Contact .content h3 {
+      font-size: 44px;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-weight: 600;
+      margin-bottom: 0px; }
+      #Contact .content h3 strong {
+        color: #0000ff;
+        font-family: 'Helvetica Neue Bold', sans-serif; }
+  #Contact .wpcf7 {
+    margin: 0 auto; }
+  #Contact form {
+    padding-top: 46px; }
+    @media (max-width: 768px) {
+      #Contact form .col-6, #Contact form .col-12 {
+        margin-bottom: 18px; } }
+    #Contact form .row {
+      margin-bottom: 36px; }
+      @media (max-width: 768px) {
+        #Contact form .row {
+          margin-bottom: 0px; } }
+    #Contact form textarea, #Contact form input[type=submit] {
+      width: 100%; }
+    #Contact form textarea, #Contact form input[type=submit], #Contact form input {
+      border: none;
+      padding: 10px 20px;
+      outline: none;
+      background-color: #f0f0f0;
+      width: 100%; }
+    #Contact form input[type=submit] {
+      background-color: #0000ff;
+      color: #fff;
+      font-weight: 600;
+      font-family: 'Helvetica Neue Bold', sans-serif;
+      font-size: 18px;
+      padding: 16px; }
 
 #footer {
   height: 120px;
