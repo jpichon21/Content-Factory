@@ -96,6 +96,12 @@ header {
   header #menuNav {
     padding: 8px;
     position: relative; }
+    header #menuNav a:visited {
+      color: #131313 !important; }
+    header #menuNav a:focus, header #menuNav a:hover, header #menuNav a:active {
+      color: #0000ff !important;
+      font-weight: 800;
+      transition: 0.5s ease; }
   header nav ul {
     position: absolute;
     right: 0px;
@@ -115,12 +121,12 @@ header {
 
 #headerHero {
   position: relative;
-  min-height: 96vh;
+  min-height: 92vh;
   background-image: url("img/content/hero-img.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
   #headerHero .content {
-    padding: 22vh 0px; }
+    padding: 18vh 0px; }
   #headerHero h2 {
     font-family: 'Helvetica Neue Bold', sans-serif;
     color: #131313;
@@ -140,20 +146,30 @@ header {
   #headerHero #bottomHeaderBanner {
     background: linear-gradient(355deg, #4b4bf6 0%, rgba(145, 145, 240, 0.278051) 100%);
     position: absolute;
-    bottom: 6px;
-    display: none;
-    height: 129px; }
-    #headerHero #bottomHeaderBanner ul {
-      display: inline-block;
-      color: #fff;
-      width: 100%; }
-      #headerHero #bottomHeaderBanner ul li {
+    bottom: 0px; }
+    #headerHero #bottomHeaderBanner .content {
+      padding: 32px 0px; }
+      #headerHero #bottomHeaderBanner .content p {
+        color: #fff;
         font-family: 'Helvetica Neue', sans-serif;
         vertical-align: top;
         display: inline-block;
+        position: relative;
         max-width: 340px;
         margin: 0px 18px;
-        font-size: 28px; }
+        font-size: 26px;
+        line-height: 26px;
+        padding-left: 26px;
+        padding-right: 26px; }
+      #headerHero #bottomHeaderBanner .content p:before {
+        background: #fff;
+        content: '';
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 8px;
+        height: 100%; }
 
 #blackBanner {
   background: linear-gradient(97deg, #383838 0%, #131313 100%);
@@ -259,31 +275,31 @@ header {
       outline: none;
       cursor: pointer; }
 
-#socialMedia {
+#Exemples {
   background-color: #f0f0f0;
   min-height: 1005px; }
-  #socialMedia h3, #socialMedia p, #socialMedia li {
+  #Exemples h3, #Exemples p, #Exemples li {
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: 600; }
-  #socialMedia p, #socialMedia h4, #socialMedia li {
+  #Exemples p, #Exemples h4, #Exemples li {
     font-size: 16px; }
-  #socialMedia h3 {
+  #Exemples h3 {
     font-size: 46px; }
-    #socialMedia h3 span {
+    #Exemples h3 span {
       font-family: 'Helvetica Neue Bold', sans-serif; }
-  #socialMedia h4 {
+  #Exemples h4 {
     font-family: 'Helvetica Neue Bold', sans-serif;
     color: #0000ff;
     font-weight: 600; }
-  #socialMedia p {
+  #Exemples p {
     font-weight: 600; }
-  #socialMedia li {
+  #Exemples li {
     margin-top: .1rem; }
-  #socialMedia .title-container {
+  #Exemples .title-container {
     padding-top: 64px; }
-  #socialMedia .row.last {
+  #Exemples .row.last {
     padding-bottom: 64px; }
-  #socialMedia img {
+  #Exemples img {
     max-width: 100%; }
 
 #Stats {

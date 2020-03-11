@@ -44,14 +44,13 @@
                     <li class="separator"> | </li>
                     <li><a href="#Formats">Les formats</a></li>
                     <li class="separator"> | </li>
-                    <li><a href="#">Exemples</a></li>
+                    <li><a href="#Exemples">Exemples</a></li>
                     <li class="separator"> | </li>
                     <li><a href="#Stats">Chiffres</a></li>
                     <li class="separator"> | </li>
                     <li><a href="#Credits">Prix</a></li>
                     <li class="separator"> | </li>
                     <li><a href="#Contact">Contact</a></li>
-
                 </ul>
             </nav>
         </header>
@@ -64,22 +63,26 @@
                     <div class="row columns">
                         <h2 class="column col-8"> <?php echo the_field('headerhero'); ?> </h2>
                     </div>
-
                     <div class="row columns">
                         <a id="headerHeroBtn" class="column col-6" href="<?php echo the_field('header_hero_lien'); ?>"><?php echo the_field('header_hero_btn'); ?> </a>
                     </div>
-
-
                 </div>
         
 
                 <div id="bottomHeaderBanner" class="container">
-                    <div class="column col-9 centered">
-                        <ul > 
-                            <li><?php echo the_field('header_hero_garantie1'); ?></li>
-                            <li><?php echo the_field('header_hero_garantie2'); ?></li>
-                            <li><?php echo the_field('header_hero_garantie3'); ?></li>
-                        </ul>
+                    <div class="content column col-9 centered">
+                        <div class="columns">
+                            <div class="col-4">
+                                    <p><?php echo the_field('header_hero_garantie1'); ?>
+                            </div>
+                            <div class="col-4">
+                                    <p><?php echo the_field('header_hero_garantie2'); ?>
+                            </div>
+                            
+                            <div class="col-4">
+                                    <p><?php echo the_field('header_hero_garantie3'); ?>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -312,7 +315,7 @@
             <!-----------------------------------
             -------------SOCIAL MEDIA------------
             ------------------------------------->
-            <section id="socialMedia">
+            <section id="Exemples">
 
                 <div class="content column col-9 centered">
 
@@ -605,7 +608,7 @@
             slidesToScroll: 4,
             dots: true,
             autoplay: true,
-            autoplaySpeed: 2000
+            autoplaySpeed: 6000
         });
     </script>
 
