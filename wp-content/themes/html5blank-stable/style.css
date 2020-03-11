@@ -174,14 +174,6 @@ header {
 #firstBanner h3, #firstBanner p {
   color: #0000ff; }
 
-#firstBanner .separator {
-  background-color: #0000ff;
-  height: 100px;
-  width: 6px;
-  display: block;
-  float: left;
-  margin-right: 6px; }
-
 #firstBanner h3 {
   font-family: 'Helvetica Neue Bold', sans-serif;
   font-size: 36px; }
@@ -189,8 +181,21 @@ header {
 #firstBanner p {
   font-size: 19px; }
 
+#firstBanner .description {
+  position: relative;
+  padding-left: 52px; }
+
+#firstBanner .description:before {
+  background: #0000c8;
+  content: '';
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 26px;
+  width: 8px;
+  height: 100%; }
+
 #CCM {
-  min-height: 1081px;
   background-color: #0000ff;
   color: #fff; }
   #CCM .image-container {
@@ -199,19 +204,8 @@ header {
     #CCM #smartPhone {
       max-width: 320px; } }
   #CCM .content {
-    padding-top: 87px; }
+    padding: 87px 0px; }
   #CCM .rightContent {
-    /*       p:before{
-            content:'';
-            background-color: $color-darkblue;
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 6px;
-            margin: 0px 16px;
-        }*/
     padding-bottom: 64px; }
     #CCM .rightContent h3 {
       font-family: 'Helvetica Neue', sans-serif;
@@ -222,15 +216,18 @@ header {
       margin-bottom: 36px; }
     #CCM .rightContent p {
       font-family: 'Helvetica Neue', sans-serif;
-      padding-bottom: 52px;
-      position: relative; }
+      margin-bottom: 52px;
+      position: relative;
+      padding-left: 52px; }
     #CCM .rightContent p:before {
+      background: #0000c8;
       content: '';
-      background-color: #0000c8;
-      width: 6px;
-      height: 142px;
-      margin: 0px 16px;
-      float: left; }
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 26px;
+      width: 8px;
+      height: 100%; }
     #CCM .rightContent p, #CCM .rightContent h4 {
       font-size: 19px; }
 
@@ -246,8 +243,21 @@ header {
       text-align: center; }
       #Formats .content .title-container h3 span {
         color: #0000ff;
-        font-family: 'Helvetica Bold', sans-serif;
+        font-family: 'Helvetia Neue Bold', sans-serif;
         font-style: italic; }
+  #Formats .slider {
+    padding: 68px 0px; }
+    #Formats .slider img {
+      max-width: 220px;
+      margin: 0 auto; }
+    #Formats .slider p {
+      text-align: center;
+      font-family: 'Helvetia Neue Bold', sans-serif;
+      font-size: 16px;
+      font-weight: 600; }
+    #Formats .slider .slick-slide {
+      outline: none;
+      cursor: pointer; }
 
 #socialMedia {
   background-color: #f0f0f0;
@@ -376,6 +386,10 @@ header {
 
 #Contact {
   background-color: #fff; }
+  #Contact .wpcf7-response-output {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center; }
   #Contact .content {
     padding: 72px 0px; }
     #Contact .content h3 {

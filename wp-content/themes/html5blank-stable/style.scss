@@ -245,14 +245,6 @@ header{
     h3, p{
         color: $color-blue;
     }
-    .separator{
-        background-color: $color-blue;
-        height: 100px;
-        width: 6px;
-        display: block;
-        float: left;
-        margin-right: 6px;
-    }
     h3{
         font-family: 'Helvetica Neue Bold', sans-serif;
         font-size: 36px;
@@ -260,10 +252,23 @@ header{
     p{
         font-size: 19px;
     }
+    .description{
+        position: relative;
+        padding-left: 52px;
+    }
+    .description:before{
+        background: $color-darkblue;
+        content: '';
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 26px;
+        width: 8px;
+        height: 100%;
+    }
 }
 
 #CCM{
-    min-height: 1081px;
     background-color: $color-blue;
     color: #fff;
     .image-container{
@@ -275,7 +280,7 @@ header{
         }
     }
     .content{
-        padding-top: 87px;
+        padding: 87px 0px;
     }
     .rightContent{
         h3{
@@ -289,28 +294,20 @@ header{
         }
         p{
             font-family: 'Helvetica Neue', sans-serif;
-            padding-bottom: 52px;
+            margin-bottom: 52px;
             position: relative;
+            padding-left: 52px;
         }
         p:before{
-            content:'';
-            background-color: $color-darkblue;
-            width: 6px;
-            height: 142px;
-            margin: 0px 16px;
-            float: left;
-        }
-        /*       p:before{
-            content:'';
-            background-color: $color-darkblue;
-            display: block;
+            background: $color-darkblue;
+            content: '';
+            display: flex;
             position: absolute;
             top: 0;
-            left: 0;
+            left: 26px;
+            width: 8px;
             height: 100%;
-            width: 6px;
-            margin: 0px 16px;
-        }*/
+        }
         p, h4{
             font-size: 19px;
         }
@@ -331,10 +328,27 @@ header{
                 text-align: center;
                 span{
                     color: $color-blue;
-                    font-family: 'Helvetica Bold', sans-serif;
+                    font-family: 'Helvetia Neue Bold', sans-serif;
                     font-style: italic;
                 }
             }
+        }
+    }
+    .slider{
+        padding: 68px 0px;
+        img{
+            max-width: 220px;
+            margin: 0 auto;
+        }
+        p{
+            text-align: center;
+            font-family: 'Helvetia Neue Bold', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .slick-slide{
+            outline: none;
+            cursor: pointer;
         }
     }
 }
@@ -514,6 +528,11 @@ header{
 
 #Contact{
     background-color: #fff;
+    .wpcf7-response-output{
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
     .content{
         padding: 72px 0px;
         h3{
@@ -531,6 +550,7 @@ header{
         margin: 0 auto;
     }
     form{
+     
         padding-top: 46px;
         .col-6, .col-12{
             @include media('<=tablet') {

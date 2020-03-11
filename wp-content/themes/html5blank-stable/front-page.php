@@ -13,12 +13,18 @@
 
     <title>Content Factory</title>
 
-    <meta name="description" content="">
+    <meta name="description" content="Site interne de la Content Factory">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://use.typekit.net/zuv7hqs.css">
     <link rel="stylesheet" src="main.css">
+
     <link rel="stylesheet" src="<?php echo get_template_directory_uri() . '/spectre.min.css'; ?>">
+    <link rel="stylesheet" src="<?php echo get_template_directory_uri() . '/slick.css'; ?>">
+    <link rel="stylesheet" src="<?php echo get_template_directory_uri() . '/slick-theme.css'; ?>">
+
+    <script src="<?php echo get_template_directory_uri() . '/js/jquery-3.4.1.min.js'; ?>"></script>
+    <script src="<?php echo get_template_directory_uri() . '/js/slick.min.js'; ?>"></script>
 
 </head>
 
@@ -153,7 +159,7 @@
 
                         <div class="column col-6">      
                                     
-                            <p><?php echo the_field('description_banner_1'); ?></p>
+                            <p class="description"><?php echo the_field('description_banner_1'); ?></p>
                         </div>
                     </div>
 
@@ -214,15 +220,89 @@
             <section id="Formats">
 
                 <div class="content column col-9 centered">
-                    <div class="columns">
-
+                    <div class="row columns">
                         <div class="title-container col-7 centered">
-                            <h3>Creative Factory est adaptée à tous les cas <span>d'usage marketing</span></h3>
+                            <h3><?php echo the_field('titre_formats'); ?></h3>
                         </div>
-                        
-                    <div class="columns">
-
+                    <div>
                 </div>
+
+                        <div class="col-12 slider multiple-items">
+
+                                <div>
+                                    <?php 
+                                        $icon_formats_1 = get_field('icon_formats_1');
+                                        if( !empty( $icon_formats_1 ) ): ?>
+                                    <img src="<?php echo esc_url($icon_formats_1['url']); ?>" alt="<?php echo esc_attr($icon_formats_1['alt']); ?>" />
+                                    <p><?php echo esc_attr($icon_formats_1['alt']); ?></p>
+                                    <?php endif; ?>
+                                </div>
+
+                                <div>
+                                    <?php 
+                                        $icon_formats_2 = get_field('icon_formats_2');
+                                        if( !empty( $icon_formats_2 ) ): ?>
+                                    <img src="<?php echo esc_url($icon_formats_2['url']); ?>" alt="<?php echo esc_attr($icon_formats_2['alt']); ?>" />
+                                    <p><?php echo esc_attr($icon_formats_2['alt']); ?></p>
+                                    <?php endif; ?>
+                                </div>
+
+                                <div>
+                                    <?php 
+                                        $icon_formats_3 = get_field('icon_formats_3');
+                                        if( !empty( $icon_formats_3 ) ): ?>
+                                    <img src="<?php echo esc_url($icon_formats_3['url']); ?>" alt="<?php echo esc_attr($icon_formats_3['alt']); ?>" />
+                                    <p><?php echo esc_attr($icon_formats_3['alt']); ?></p>
+                                    <?php endif; ?>
+                                </div>
+
+                                <div>
+                                    <?php 
+                                        $icon_formats_4 = get_field('icon_formats_4');
+                                        if( !empty( $icon_formats_4 ) ): ?>
+                                    <img src="<?php echo esc_url($icon_formats_4['url']); ?>" alt="<?php echo esc_attr($icon_formats_4['alt']); ?>" />
+                                    <p><?php echo esc_attr($icon_formats_4['alt']); ?></p>
+                                    <?php endif; ?>
+                                </div>
+
+                                <div>
+                                    <?php 
+                                        $icon_formats_5 = get_field('icon_formats_5');
+                                        if( !empty( $icon_formats_5 ) ): ?>
+                                    <img src="<?php echo esc_url($icon_formats_5['url']); ?>" alt="<?php echo esc_attr($icon_formats_5['alt']); ?>" />
+                                    <p><?php echo esc_attr($icon_formats_5['alt']); ?></p>
+                                    <?php endif; ?>
+                                </div>
+
+                                <div>
+                                    <?php 
+                                        $icon_formats_6 = get_field('icon_formats_6');
+                                        if( !empty( $icon_formats_6 ) ): ?>
+                                    <img src="<?php echo esc_url($icon_formats_6['url']); ?>" alt="<?php echo esc_attr($icon_formats_6['alt']); ?>" />
+                                    <p><?php echo esc_attr($icon_formats_6['alt']); ?></p>
+                                    <?php endif; ?>
+                                </div>
+
+                                <div>
+                                    <?php 
+                                        $icon_formats_7 = get_field('icon_formats_7');
+                                        if( !empty( $icon_formats_7 ) ): ?>
+                                    <img src="<?php echo esc_url($icon_formats_7['url']); ?>" alt="<?php echo esc_attr($icon_formats_7['alt']); ?>" />
+                                    <p><?php echo esc_attr($icon_formats_7['alt']); ?></p>
+                                    <?php endif; ?>
+                                </div>
+
+                                <div>
+                                    <?php 
+                                        $icon_formats_8 = get_field('icon_formats_8');
+                                        if( !empty( $icon_formats_8 ) ): ?>
+                                    <img src="<?php echo esc_url($icon_formats_8['url']); ?>" alt="<?php echo esc_attr($icon_formats_8['alt']); ?>" />
+                                    <p><?php echo esc_attr($icon_formats_8['alt']); ?></p>
+                                    <?php endif; ?>
+                                </div>
+                   
+                            </div>
+           
             </section>
             <!-----------------------------------
             -------------------------------------
@@ -516,10 +596,19 @@
             <!-----------------------------------
             -------------------------------------
             ------------------------------------->
-
     </div>
 
+    <script>
+        $('.multiple-items').slick({
+            infinite: false,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            dots: true
+        });
+    </script>
+
 </body>
+
 
     <footer id="footer">
         <div class="content column col-9 centered">

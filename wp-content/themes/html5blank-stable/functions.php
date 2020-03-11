@@ -350,9 +350,26 @@ add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline 
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
 // ajouter librairie
 add_action('wp_enqueue_scripts', 'enqueue_styles');
+
 function enqueue_styles() {
     wp_register_style('spectre', get_template_directory_uri() . '/spectre.min.css', array(), '1.0', 'all');
     wp_enqueue_style('spectre'); // Enqueue it!
+
+    wp_register_style('slick-theme', get_template_directory_uri() . '/css/slick-theme.css', array(), '1.0', 'all');
+    wp_enqueue_style('slick-theme'); // Enqueue it!
+
+    wp_register_style('slick', get_template_directory_uri() . '/css/slick.css', array(), '1.0', 'all');
+    wp_enqueue_style('slick'); // Enqueue it!
+}
+
+function enqueue_script() {
+
+    wp_register_script('jquery', '/js/jquery-3.4.1.min.js', array(), '3.4.1');
+    wp_enqueue_script('jquery'); // Enqueue it!
+
+    wp_register_script('slick', '/js/slick.min.js', array(), '1.0');
+    wp_enqueue_script('slick'); // Enqueue it!
+
 }
 
 // Remove Actions
