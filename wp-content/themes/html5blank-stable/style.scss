@@ -1,7 +1,7 @@
 @import 'include-media.scss';
 
 /*******BREAKPOINTS********/
-$breakpoints: (small: 0px, xsmall: 345px, mobile: 435px, tablet: 768px, large: 1024px, xlarge: 1280px, xxlarge: 1440px, footerbkp: 1707px, laptop: 1780px);
+$breakpoints: (small: 0px, xsmall: 345px, mobile: 435px, tablet: 768px, large: 1024px, xlarge: 1280px, xxlarge: 1440px, footerbkp: 1680px, laptop: 1780px);
 
 /*******VARIABLES*********/
 $color-blue: #0000ff;
@@ -66,6 +66,12 @@ html {
     box-sizing: border-box;
 }
 
+body, a,p, span, li {
+    font-family: 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: auto;
+}
+
 ul,
 li {
     text-decoration: none;
@@ -88,7 +94,6 @@ a:focus,
 a:hover {
     text-decoration: none !important;
 }
-
 
 .header.clear {
     display: none;
@@ -158,26 +163,27 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     border: none;
 }
 
+
+
 /** SECTIONS **/
 
 header,
 footer {
     height: 78px;
-
     @include media('<=footerbkp') {
         height: auto;
         text-align: center;
     }
-
     #menuNav,
     #footerNav {
-        padding: 8px;
+        padding: 8px 0px;
         position: relative;
-
+        @include media('<=tablet') {
+            padding: 16px 0px;
+        }
         a:visited {
             color: $color-black !important;
         }
-
         a:focus,
         a:hover,
         a:active {
@@ -271,8 +277,7 @@ footer {
         font-family: 'Helvetica Neue', sans-serif;
         display: inline-block;
         vertical-align: top;
-        padding: 16px;
-        margin: 0px 24px;
+        padding: 16px 0px 0px 28px;
     }
 }
 
@@ -311,7 +316,7 @@ footer {
         }
 
         @include media('<=mobile') {
-            padding: 10vh 0vh;
+            padding: 18vh 0vh;
         }
     }
 
@@ -325,7 +330,10 @@ footer {
             font-size: 46px;
             line-height: 46px;
         }
-
+        @include media('<=mobile') {
+            font-size: 36px;
+            line-height: 36px;
+        }
         strong {
             color: $color-blue;
         }
@@ -549,9 +557,9 @@ footer {
             margin-bottom: 52px;
             position: relative;
             padding-left: 52px;
-
             @include media('<=mobile') {
                 padding-left: 0px;
+                text-align: center;
             }
         }
 
@@ -585,6 +593,7 @@ footer {
     .content {
         padding: 64px 0px;
 
+
         .title-container {
             h3 {
                 color: $color-black;
@@ -607,7 +616,8 @@ footer {
     }
 
     .slider {
-        padding: 68px 0px;
+        //padding: 68px 0px;
+        padding-bottom: 132px;
 
         @include media('<=mobile') {
             padding: 32px 0px;
@@ -629,69 +639,81 @@ footer {
             outline: none;
             cursor: pointer;
         }
+        .slick-dots {
+            @include media('>=large') {
+                bottom: 72px;
+            }
+        }
     }
 }
 
 #Exemples {
     background-color: #f0f0f0;
-    min-height: 1005px;
-
+    //min-height: 1005px;
+    .content{
+        transform: translateY(-118px);
+        margin-bottom: - 118px;
+        @include media('<=large') {
+            transform: translateY(0px);
+            margin-bottom: 0px;
+        }
+    }
     @include media('<=large') {
         text-align: center;
     }
-
-    h3,
-    p,
-    li {
+    h3,p,li {
         font-family: 'Helvetica Neue', sans-serif;
         font-weight: 600;
     }
-
-    p,
-    h4,
-    li {
+    p,h4,li {
         font-size: 16px;
     }
-
     ul {
         @include media('<=large') {
             margin: 0px;
         }
     }
-
     h3 {
         font-size: 46px;
-
+        @include media('<=mobile') {
+            font-size: 36px;
+        }
         span {
             font-family: 'Helvetica Neue Bold', sans-serif;
         }
     }
-
     h4 {
         font-family: 'Helvetica Neue Bold', sans-serif;
         color: $color-blue;
         font-weight: 600;
     }
-
     p {
         font-weight: 600;
     }
-
     li {
         margin-top: .1rem;
     }
 
     .title-container {
         padding-top: 64px;
+        @include media('<=mobile') {
+            padding-top: 32px;
+        }
     }
 
     .row.last {
         padding-bottom: 64px;
+        @include media('<=mobile') {
+            padding-top: 32px;
+        }
     }
 
     .image-container {
         @include media('<=large') {
             padding-top: 64px;
+            @include media('<=mobile') {
+                padding-top: 32px;
+            }
         }
     }
 
@@ -715,9 +737,9 @@ footer {
             text-align: center;
             padding-top: 32px;
             padding-bottom: 32px;
-
             @include media('<=mobile') {
                 display: block;
+                padding-top: 0px;
             }
 
             span {
@@ -726,8 +748,12 @@ footer {
             }
 
             .stat-number {
+                font-family: 'Helvetica Neue Bold', sans-serif;
                 font-size: 62px;
                 margin-bottom: -26px;
+                @include media('<=large') {
+                    font-size: 48px;
+                }
             }
 
             .stat-text {
@@ -798,12 +824,14 @@ footer {
             margin-left: -2px;
             margin-right: -2px;
             vertical-align: top;
-
-            @include media('<=large') {
+            @include media('<=tablet') {
+                margin: 32px 0px;
+            }
+            @include media('<=mobile') {
                 width: 100%;
                 height: auto;
+                margin: 0px;
             }
-
             .card-image {
                 img {
                     width: 100%;
@@ -829,7 +857,6 @@ footer {
 
         .card-offset {
             margin-top: 64px;
-
             @include media('<=large') {
                 margin-top: 0px;
             }
@@ -838,11 +865,12 @@ footer {
 
     .content {
         padding: 120px 0px;
-
         @include media('<=large') {
+            padding: 60px 0px;
+        }
+        @include media('<=mobile') {
             padding: 60px 0px 0px 0px;
         }
-
         h3 {
             font-family: 'Helvetica Neue Bold', sans-serif;
 
@@ -927,6 +955,9 @@ footer {
 
     .wpcf7 {
         margin: 0 auto;
+        @include media('<=tablet') {
+            text-align: center;
+        }
     }
 
     form {
