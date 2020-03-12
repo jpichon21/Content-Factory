@@ -99,6 +99,9 @@ a:hover {
   .col-1 {
     display: none !important; } }
 
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+  border: none; }
+
 /** SECTIONS **/
 header,
 footer {
