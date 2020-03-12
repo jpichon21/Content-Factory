@@ -36,14 +36,18 @@ html {
 * {
   box-sizing: border-box; }
 
-ul, li {
+ul,
+li {
   text-decoration: none;
   list-style-type: none; }
 
 a {
   text-decoration: none; }
 
-a.active, a:active, a:focus, a:hover {
+a.active,
+a:active,
+a:focus,
+a:hover {
   text-decoration: none !important; }
 
 .header.clear {
@@ -74,38 +78,53 @@ a.active, a:active, a:focus, a:hover {
   .button:focus, .button:active, .button:visited, .button:hover {
     color: #fff !important; }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .col-9 {
     width: 90% !important; } }
 
-@media (max-width: 435px) {
-  .col-9 {
-    width: 98% !important; } }
-
-@media (max-width: 768px) {
-  .col-6, .col-7, .col-8, .col-5, .col-4, .col-2 {
+@media (max-width: 1024px) {
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-5,
+  .col-4,
+  .col-2 {
     width: 100% !important; } }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .col-1 {
     display: none !important; } }
 
 /** SECTIONS **/
 header {
   height: 78px; }
+  @media (max-width: 1024px) {
+    header {
+      height: auto;
+      text-align: center; } }
   header #menuNav {
     padding: 8px;
     position: relative; }
     header #menuNav a:visited {
       color: #131313 !important; }
-    header #menuNav a:focus, header #menuNav a:hover, header #menuNav a:active {
+    header #menuNav a:focus,
+    header #menuNav a:hover,
+    header #menuNav a:active {
       color: #0000ff !important;
       font-weight: 800;
       transition: 0.5s ease; }
+  @media (max-width: 1024px) {
+    header #menuLogo {
+      text-align: center; } }
   header nav ul {
     position: absolute;
     right: 0px;
     top: 7px; }
+    @media (max-width: 1024px) {
+      header nav ul {
+        position: relative;
+        right: 0px;
+        top: 0px; } }
     header nav ul li {
       display: inline-block;
       margin: 0px 0.8vw; }
@@ -121,17 +140,39 @@ header {
 
 #headerHero {
   position: relative;
-  min-height: 92vh;
   background-image: url("img/content/hero-img.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
+  #headerHero .col-8 {
+    width: 66.66666667% !important; }
+    @media (max-width: 435px) {
+      #headerHero .col-8 {
+        width: 100% !important; } }
+  #headerHero .col-6 {
+    width: 50% !important; }
+    @media (max-width: 435px) {
+      #headerHero .col-6 {
+        width: 100% !important; } }
+  @media (max-width: 1024px) {
+    #headerHero {
+      background-position: bottom; } }
   #headerHero .content {
-    padding: 18vh 0px; }
+    padding: 27vh 0vh 31vh 0vh; }
+    @media (min-width: 1780px) {
+      #headerHero .content {
+        padding: 26vh 0vh; } }
+    @media (max-width: 435px) {
+      #headerHero .content {
+        padding: 10vh 0vh; } }
   #headerHero h2 {
     font-family: 'Helvetica Neue Bold', sans-serif;
     color: #131313;
     font-size: 72px;
     line-height: 72px; }
+    @media (max-width: 1024px) {
+      #headerHero h2 {
+        font-size: 46px;
+        line-height: 46px; } }
     #headerHero h2 strong {
       color: #0000ff; }
   #headerHero #headerHeroBtn {
@@ -143,10 +184,21 @@ header {
     text-align: center;
     font-size: 25px;
     font-family: 'Helvetica Neue Bold', sans-serif; }
+    @media (max-width: 1024px) {
+      #headerHero #headerHeroBtn {
+        font-size: 16px; } }
   #headerHero #bottomHeaderBanner {
     background: linear-gradient(355deg, #4b4bf6 0%, rgba(145, 145, 240, 0.278051) 100%);
     position: absolute;
     bottom: 0px; }
+    @media (max-width: 435px) {
+      #headerHero #bottomHeaderBanner {
+        position: relative; } }
+    #headerHero #bottomHeaderBanner .col-4 {
+      width: 33.33333333% !important; }
+      @media (max-width: 435px) {
+        #headerHero #bottomHeaderBanner .col-4 {
+          width: 100% !important; } }
     #headerHero #bottomHeaderBanner .content {
       padding: 32px 0px; }
       #headerHero #bottomHeaderBanner .content p {
@@ -161,6 +213,10 @@ header {
         line-height: 26px;
         padding-left: 26px;
         padding-right: 26px; }
+        @media (max-width: 1024px) {
+          #headerHero #bottomHeaderBanner .content p {
+            font-size: 18px;
+            margin: 6px 18px; } }
       #headerHero #bottomHeaderBanner .content p:before {
         background: #fff;
         content: '';
@@ -170,15 +226,31 @@ header {
         left: 0px;
         width: 8px;
         height: 100%; }
+        @media (max-width: 435px) {
+          #headerHero #bottomHeaderBanner .content p:before {
+            width: 4px; } }
 
 #blackBanner {
   background: linear-gradient(97deg, #383838 0%, #131313 100%);
   color: #fff; }
+  #blackBanner .col-1 {
+    width: 8.33333333% !important; }
+    @media (max-width: 435px) {
+      #blackBanner .col-1 {
+        width: 100% !important; } }
+  #blackBanner .col-2 {
+    width: 16.66666667% !important; }
+    @media (max-width: 435px) {
+      #blackBanner .col-2 {
+        width: 100% !important; } }
   #blackBanner .content {
     padding: 46px 0px;
     text-align: center; }
     #blackBanner .content img {
       max-width: 220px; }
+      @media (max-width: 1024px) {
+        #blackBanner .content img {
+          max-width: 144px; } }
     #blackBanner .content p {
       font-family: 'Helvetica Neue';
       text-align: center;
@@ -187,12 +259,20 @@ header {
 #firstBanner .content {
   padding: 64px 0px; }
 
-#firstBanner h3, #firstBanner p {
+#firstBanner h3,
+#firstBanner p {
   color: #0000ff; }
 
 #firstBanner h3 {
   font-family: 'Helvetica Neue Bold', sans-serif;
   font-size: 36px; }
+  @media (max-width: 1024px) {
+    #firstBanner h3 {
+      text-align: center; } }
+  @media (max-width: 435px) {
+    #firstBanner h3 {
+      font-size: 26px;
+      text-align: left; } }
 
 #firstBanner p {
   font-size: 19px; }
@@ -200,6 +280,9 @@ header {
 #firstBanner .description {
   position: relative;
   padding-left: 52px; }
+  @media (max-width: 435px) {
+    #firstBanner .description {
+      padding-left: 0px; } }
 
 #firstBanner .description:before {
   background: #0000c8;
@@ -210,31 +293,50 @@ header {
   left: 26px;
   width: 8px;
   height: 100%; }
+  @media (max-width: 435px) {
+    #firstBanner .description:before {
+      display: none; } }
 
 #CCM {
   background-color: #0000ff;
   color: #fff; }
   #CCM .image-container {
     text-align: center; }
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     #CCM #smartPhone {
-      max-width: 320px; } }
+      max-width: 260px; } }
   #CCM .content {
     padding: 87px 0px; }
+    @media (max-width: 435px) {
+      #CCM .content {
+        padding: 32px 0px; } }
   #CCM .rightContent {
     padding-bottom: 64px; }
     #CCM .rightContent h3 {
       font-family: 'Helvetica Neue', sans-serif;
       font-size: 53px;
       padding-bottom: 64px; }
+      @media (max-width: 1024px) {
+        #CCM .rightContent h3 {
+          text-align: center; } }
+      @media (max-width: 435px) {
+        #CCM .rightContent h3 {
+          padding-bottom: 32px;
+          font-size: 46px; } }
     #CCM .rightContent h4 {
       font-family: 'Helvetica Neue Bold', sans-serif;
       margin-bottom: 36px; }
+      @media (max-width: 1024px) {
+        #CCM .rightContent h4 {
+          text-align: center; } }
     #CCM .rightContent p {
       font-family: 'Helvetica Neue', sans-serif;
       margin-bottom: 52px;
       position: relative;
       padding-left: 52px; }
+      @media (max-width: 435px) {
+        #CCM .rightContent p {
+          padding-left: 0px; } }
     #CCM .rightContent p:before {
       background: #0000c8;
       content: '';
@@ -244,7 +346,11 @@ header {
       left: 26px;
       width: 8px;
       height: 100%; }
-    #CCM .rightContent p, #CCM .rightContent h4 {
+      @media (max-width: 435px) {
+        #CCM .rightContent p:before {
+          display: none; } }
+    #CCM .rightContent p,
+    #CCM .rightContent h4 {
       font-size: 19px; }
 
 #Formats {
@@ -257,12 +363,18 @@ header {
       font-size: 46px;
       font-weight: 400;
       text-align: center; }
+      @media (max-width: 1024px) {
+        #Formats .content .title-container h3 {
+          font-size: 36px; } }
       #Formats .content .title-container h3 span {
         color: #0000ff;
         font-family: 'Helvetia Neue Bold', sans-serif;
         font-style: italic; }
   #Formats .slider {
     padding: 68px 0px; }
+    @media (max-width: 435px) {
+      #Formats .slider {
+        padding: 32px 0px; } }
     #Formats .slider img {
       max-width: 220px;
       margin: 0 auto; }
@@ -278,11 +390,21 @@ header {
 #Exemples {
   background-color: #f0f0f0;
   min-height: 1005px; }
-  #Exemples h3, #Exemples p, #Exemples li {
+  @media (max-width: 1024px) {
+    #Exemples {
+      text-align: center; } }
+  #Exemples h3,
+  #Exemples p,
+  #Exemples li {
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: 600; }
-  #Exemples p, #Exemples h4, #Exemples li {
+  #Exemples p,
+  #Exemples h4,
+  #Exemples li {
     font-size: 16px; }
+  @media (max-width: 1024px) {
+    #Exemples ul {
+      margin: 0px; } }
   #Exemples h3 {
     font-size: 46px; }
     #Exemples h3 span {
@@ -299,6 +421,9 @@ header {
     padding-top: 64px; }
   #Exemples .row.last {
     padding-bottom: 64px; }
+  @media (max-width: 1024px) {
+    #Exemples .image-container {
+      padding-top: 64px; } }
   #Exemples img {
     max-width: 100%; }
 
@@ -315,7 +440,7 @@ header {
       text-align: center;
       padding-top: 32px;
       padding-bottom: 32px; }
-      @media (max-width: 768px) {
+      @media (max-width: 435px) {
         #Stats .content .stat {
           display: block; } }
       #Stats .content .stat span {
@@ -335,10 +460,14 @@ header {
   color: #fff; }
   #whiteBook .content {
     padding: 98px 0px; }
-    #whiteBook .content h3, #whiteBook .content p {
+    #whiteBook .content h3,
+    #whiteBook .content p {
       font-family: 'Helvetica Neue', sans-serif; }
     #whiteBook .content h3 {
       font-size: 46px; }
+      @media (max-width: 435px) {
+        #whiteBook .content h3 {
+          font-size: 36px; } }
       #whiteBook .content h3 span {
         font-family: 'Helvetica Bold', sans-serif; }
     #whiteBook .content p {
@@ -349,16 +478,26 @@ header {
 #expertsTeam {
   background-color: #f0f0f0; }
   #expertsTeam #cardsContainer {
-    padding-top: 76px; }
+    padding-top: 76px;
+    text-align: center; }
+    @media (max-width: 1024px) {
+      #expertsTeam #cardsContainer {
+        padding-top: 36px; } }
     #expertsTeam #cardsContainer .card {
+      display: inline-block;
       background-color: #fff;
       border-radius: 0px;
       border: none;
-      width: 33.3%;
-      overflow: hidden; }
-      @media (max-width: 768px) {
+      overflow: hidden;
+      height: 589px;
+      width: 428px;
+      margin-left: -2px;
+      margin-right: -2px;
+      vertical-align: top; }
+      @media (max-width: 1024px) {
         #expertsTeam #cardsContainer .card {
-          width: 100% !important; } }
+          width: 100%;
+          height: auto; } }
       #expertsTeam #cardsContainer .card .card-image img {
         width: 100%; }
       #expertsTeam #cardsContainer .card .card-content {
@@ -372,27 +511,39 @@ header {
           font-size: 16px; }
     #expertsTeam #cardsContainer .card-offset {
       margin-top: 64px; }
-      @media (max-width: 768px) {
+      @media (max-width: 1024px) {
         #expertsTeam #cardsContainer .card-offset {
           margin-top: 0px; } }
   #expertsTeam .content {
     padding: 120px 0px; }
+    @media (max-width: 1024px) {
+      #expertsTeam .content {
+        padding: 60px 0px 0px 0px; } }
     #expertsTeam .content h3 {
       font-family: 'Helvetica Neue Bold', sans-serif; }
       #expertsTeam .content h3 span {
         font-family: 'Helvetica Neue', sans-serif; }
-    #expertsTeam .content h3, #expertsTeam .content span {
+    #expertsTeam .content h3,
+    #expertsTeam .content span {
       font-size: 42px; }
+      @media (max-width: 435px) {
+        #expertsTeam .content h3,
+        #expertsTeam .content span {
+          font-size: 26px; } }
 
 #Credits {
   background-color: #0000ff;
   color: #fff; }
   #Credits .content {
     padding: 76px 0px; }
-    #Credits .content h3, #Credits .content h4 {
+    #Credits .content h3,
+    #Credits .content h4 {
       font-family: 'Helvetica Neue', sans-serif; }
     #Credits .content h3 {
       font-size: 46px; }
+      @media (max-width: 435px) {
+        #Credits .content h3 {
+          font-size: 36px; } }
       #Credits .content h3 span {
         font-family: 'Helvetica Neue Bold', sans-serif; }
     #Credits .content h4 {
@@ -413,6 +564,9 @@ header {
       font-family: 'Helvetica Neue', sans-serif;
       font-weight: 600;
       margin-bottom: 0px; }
+      @media (max-width: 435px) {
+        #Contact .content h3 {
+          font-size: 36px; } }
       #Contact .content h3 strong {
         color: #0000ff;
         font-family: 'Helvetica Neue Bold', sans-serif; }
@@ -420,17 +574,21 @@ header {
     margin: 0 auto; }
   #Contact form {
     padding-top: 46px; }
-    @media (max-width: 768px) {
-      #Contact form .col-6, #Contact form .col-12 {
+    @media (max-width: 1024px) {
+      #Contact form .col-6,
+      #Contact form .col-12 {
         margin-bottom: 18px; } }
     #Contact form .row {
       margin-bottom: 36px; }
-      @media (max-width: 768px) {
+      @media (max-width: 1024px) {
         #Contact form .row {
           margin-bottom: 0px; } }
-    #Contact form textarea, #Contact form input[type=submit] {
+    #Contact form textarea,
+    #Contact form input[type=submit] {
       width: 100%; }
-    #Contact form textarea, #Contact form input[type=submit], #Contact form input {
+    #Contact form textarea,
+    #Contact form input[type=submit],
+    #Contact form input {
       border: none;
       padding: 10px 20px;
       outline: none;

@@ -434,7 +434,7 @@
             ------------------------------------->
             <section id="expertsTeam">
 
-                <div class="content column col-9 centered">
+                <div class="content column col-12 centered">
 
                     <div class="row columns">
                         <div class="column col-12 center-text">
@@ -454,91 +454,88 @@
 
                     </div>
 
-                    <div class="row columns" id="cardsContainer">
+                        <div id="cardsContainer">
+                
 
-         
+                                    <!--carte 1-->
+                                    <div class="card card-offset">
+                                        <div class="card-image">
+                                            <?php 
+                                                $cardimage1 = get_field('image_carte_1');
+                                                if( !empty( $cardimage1 ) ): ?>
+                                                <img src="<?php echo esc_url($cardimage1['url']); ?>" alt="<?php echo esc_attr($cardimage1['alt']); ?>" />
+                                            <?php endif; ?>
+                                        </div>
 
-                                <!--carte 1-->
-                                <div class="card card-offset">
-                                    <div class="card-image">
-                                        <?php 
-                                            $cardimage1 = get_field('image_carte_1');
-                                            if( !empty( $cardimage1 ) ): ?>
-                                            <img src="<?php echo esc_url($cardimage1['url']); ?>" alt="<?php echo esc_attr($cardimage1['alt']); ?>" />
-                                        <?php endif; ?>
+                            
+                                        <div class="card-content center-text">
+                                            <?php
+                                                $contenu_carte_1 = get_field('contenu_carte_1');
+                                                if( $contenu_carte_1 ): ?>
+                                                        <h4><?php echo $contenu_carte_1['titre_carte']; ?></h4>
+                                                        <p><?php echo $contenu_carte_1['paragraphe_1']; ?></p>
+                                                        <p><?php echo $contenu_carte_1['paragraphe_2']; ?></p>
+                                                        <p><?php echo $contenu_carte_1['paragraphe_3']; ?></p>    
+                                            <?php endif; ?>
+                                        </div>
                                     </div>
 
-                        
-                                    <div class="card-content center-text">
+                                    
+                                    <!--carte 2-->
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <?php 
+                                                $cardimage2 = get_field('image_carte_2');
+                                                if( !empty( $cardimage2 ) ): ?>
+                                                <img src="<?php echo esc_url($cardimage2['url']); ?>" alt="<?php echo esc_attr($cardimage2['alt']); ?>" />
+                                            <?php endif; ?>
+                                        </div>
+
+                                        <div class="card-content center-text">
+                                            <?php
+                                                $contenu_carte_2 = get_field('contenu_carte_2');
+                                                if( $contenu_carte_2 ): ?>
+                                                        <h4><?php echo $contenu_carte_2['titre_carte']; ?></h4>
+                                                        <p><?php echo $contenu_carte_2['paragraphe_1']; ?></p>
+                                                        <p><?php echo $contenu_carte_2['paragraphe_2']; ?></p>
+                                                        <p><?php echo $contenu_carte_2['paragraphe_3']; ?></p>    
+                                            <?php endif; ?>
+                                        </div>
+                                    </div>
+
+                                    
+                                    <!--carte 3-->
+                                    <div class="card card-offset">
+                                        <div class="card-image">
+                                            <?php 
+                                                $cardimage3 = get_field('image_carte_3');
+                                                if( !empty( $cardimage3 ) ): ?>
+                                                <img src="<?php echo esc_url($cardimage3['url']); ?>" alt="<?php echo esc_attr($cardimage3['alt']); ?>" />
+                                            <?php endif; ?>
+                                        </div>
+
+                                        <div class="card-content center-text">
                                         <?php
-                                            $contenu_carte_1 = get_field('contenu_carte_1');
-                                            if( $contenu_carte_1 ): ?>
-                                                    <h4><?php echo $contenu_carte_1['titre_carte']; ?></h4>
-                                                    <p><?php echo $contenu_carte_1['paragraphe_1']; ?></p>
-                                                    <p><?php echo $contenu_carte_1['paragraphe_2']; ?></p>
-                                                    <p><?php echo $contenu_carte_1['paragraphe_3']; ?></p>    
-                                        <?php endif; ?>
+                                                $contenu_carte_3 = get_field('contenu_carte_3');
+                                                if( $contenu_carte_3 ): ?>
+                                                        <h4><?php echo $contenu_carte_3['titre_carte']; ?></h4>
+                                                        <p><?php echo $contenu_carte_3['paragraphe_1']; ?></p>
+                                                        <p>
+                                                            <?php echo $contenu_carte_3['objet_1']; ?>
+                                                            <br>
+                                                            <?php echo $contenu_carte_3['objet_2']; ?>
+                                                            <br>
+                                                            <?php echo $contenu_carte_3['objet_3']; ?>
+                                                            <br>
+                                                            <?php echo $contenu_carte_3['objet_4']; ?>
+                                                        </p>
+                                            
+                                            <?php endif; ?>
+                                        </div>
+            
                                     </div>
-                                </div>
-
-                                
-                                <!--carte 2-->
-                                <div class="card">
-                                    <div class="card-image">
-                                        <?php 
-                                            $cardimage2 = get_field('image_carte_2');
-                                            if( !empty( $cardimage2 ) ): ?>
-                                            <img src="<?php echo esc_url($cardimage2['url']); ?>" alt="<?php echo esc_attr($cardimage2['alt']); ?>" />
-                                        <?php endif; ?>
-                                    </div>
-
-                                    <div class="card-content center-text">
-                                        <?php
-                                            $contenu_carte_2 = get_field('contenu_carte_2');
-                                            if( $contenu_carte_2 ): ?>
-                                                    <h4><?php echo $contenu_carte_2['titre_carte']; ?></h4>
-                                                    <p><?php echo $contenu_carte_2['paragraphe_1']; ?></p>
-                                                    <p><?php echo $contenu_carte_2['paragraphe_2']; ?></p>
-                                                    <p><?php echo $contenu_carte_2['paragraphe_3']; ?></p>    
-                                        <?php endif; ?>
-                                    </div>
-                                </div>
-
-                                
-                                <!--carte 3-->
-                                <div class="card card-offset">
-                                    <div class="card-image">
-                                        <?php 
-                                            $cardimage3 = get_field('image_carte_3');
-                                            if( !empty( $cardimage3 ) ): ?>
-                                            <img src="<?php echo esc_url($cardimage3['url']); ?>" alt="<?php echo esc_attr($cardimage3['alt']); ?>" />
-                                        <?php endif; ?>
-                                    </div>
-
-                                    <div class="card-content center-text">
-                                    <?php
-                                            $contenu_carte_3 = get_field('contenu_carte_3');
-                                            if( $contenu_carte_3 ): ?>
-                                                    <h4><?php echo $contenu_carte_3['titre_carte']; ?></h4>
-                                                    <p><?php echo $contenu_carte_3['paragraphe_1']; ?></p>
-                                                    <p>
-                                                        <?php echo $contenu_carte_3['objet_1']; ?>
-                                                        <br>
-                                                        <?php echo $contenu_carte_3['objet_2']; ?>
-                                                        <br>
-                                                        <?php echo $contenu_carte_3['objet_3']; ?>
-                                                        <br>
-                                                        <?php echo $contenu_carte_3['objet_4']; ?>
-                                                    </p>
-                                           
-                                        <?php endif; ?>
-                                    </div>
-        
-                                </div>
-                                
-              
-
-                    </div>
+                                        
+                        </div>
         
                 </div>
             </section>
@@ -603,13 +600,40 @@
 
     <script>
         $('.multiple-items').slick({
-            infinite: true,
+            dots: true,
+            infinite: false,
+            speed: 300,
             slidesToShow: 4,
             slidesToScroll: 4,
-            dots: true,
-            autoplay: true,
-            autoplaySpeed: 6000
-        });
+            responsive: [
+                {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+                },
+                {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+            });
     </script>
 
 </body>
