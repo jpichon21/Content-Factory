@@ -41,9 +41,6 @@ body, a, p, span, li {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto; }
 
-.hidden {
-  display: none !important; }
-
 ul,
 li {
   text-decoration: none;

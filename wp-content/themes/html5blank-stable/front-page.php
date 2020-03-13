@@ -405,9 +405,9 @@
             <!----------------------------------->
 
             <!----------------------------------->
-            <?php if( get_field('hide_whitebook') ): ?>
+            <?php if( get_field('show_whitebook') ): ?>
                
-                <section  <?php echo 'class="hidden"'; ?> id="whiteBook">
+                <section id="whiteBook">
                     <div class="content columns col-9 centered">
                         <h3 class="col-12"><span><?php echo the_field('titre_livre_blanc'); ?></h3>
                         <p class="col-4"><?php echo the_field('description_livre_blanc'); ?></p>
