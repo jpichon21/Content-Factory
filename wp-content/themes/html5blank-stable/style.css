@@ -107,7 +107,7 @@ a:hover {
   .col-1 {
     display: none !important; } }
 
-div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing, div.wpcf7-mail-sent-ok {
   border: none; }
 
 /** SECTIONS **/
