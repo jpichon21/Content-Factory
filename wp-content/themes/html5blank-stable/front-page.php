@@ -13,7 +13,7 @@
 
     <title>Creative Factory</title>
 
-    <meta name="description" content="Site interne de la Content Factory">
+    <meta name="description" content="Creative Factory">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://use.typekit.net/zuv7hqs.css">
