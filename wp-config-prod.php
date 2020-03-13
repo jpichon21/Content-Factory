@@ -22,13 +22,13 @@
 define( 'DB_NAME', 'content_factory' );
 
 /** Utilisateur de la base de données MySQL. */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'fact_dev_bdd' );
 
 /** Mot de passe de la base de données MySQL. */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', 'tN859wb#' );
 
 /** Adresse de l’hébergement MySQL. */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'localhost:3306' );
 
 /** Jeu de caractères à utiliser par la base de données lors de la création des tables. */
 define( 'DB_CHARSET', 'utf8mb4' );

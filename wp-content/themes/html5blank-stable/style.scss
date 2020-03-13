@@ -1,7 +1,7 @@
 @import 'include-media.scss';
 
 /*******BREAKPOINTS********/
-$breakpoints: (small: 0px, xsmall: 345px, mobile: 435px, tablet: 768px, large: 1024px, xlarge: 1280px, xxlarge: 1440px, footerbkp: 1680px, laptop: 1780px);
+$breakpoints: (small: 0px, xsmall: 345px, mobile: 435px, tablet: 768px, large: 1024px, xlarge: 1280px, cardbkp: 1298px, xxlarge: 1440px, footerbkp: 1680px, laptop: 1780px);
 
 /*******VARIABLES*********/
 $color-blue: #0000ff;
@@ -70,6 +70,10 @@ body, a,p, span, li {
     font-family: 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: auto;
+}
+
+.hidden{
+    display: none!important;
 }
 
 ul,
@@ -824,8 +828,9 @@ footer {
             margin-left: -2px;
             margin-right: -2px;
             vertical-align: top;
-            @include media('<=tablet') {
-                margin: 32px 0px;
+            @include media('<=cardbkp') {
+                display: block;
+                margin: 32px auto;
             }
             @include media('<=mobile') {
                 width: 100%;
@@ -857,7 +862,7 @@ footer {
 
         .card-offset {
             margin-top: 64px;
-            @include media('<=large') {
+            @include media('<=cardbkp') {
                 margin-top: 0px;
             }
         }

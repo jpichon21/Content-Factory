@@ -41,6 +41,9 @@ body, a, p, span, li {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto; }
 
+.hidden {
+  display: none !important; }
+
 ul,
 li {
   text-decoration: none;
@@ -606,9 +609,10 @@ footer {
       margin-left: -2px;
       margin-right: -2px;
       vertical-align: top; }
-      @media (max-width: 768px) {
+      @media (max-width: 1298px) {
         #expertsTeam #cardsContainer .card {
-          margin: 32px 0px; } }
+          display: block;
+          margin: 32px auto; } }
       @media (max-width: 435px) {
         #expertsTeam #cardsContainer .card {
           width: 100%;
@@ -627,7 +631,7 @@ footer {
           font-size: 16px; }
     #expertsTeam #cardsContainer .card-offset {
       margin-top: 64px; }
-      @media (max-width: 1024px) {
+      @media (max-width: 1298px) {
         #expertsTeam #cardsContainer .card-offset {
           margin-top: 0px; } }
   #expertsTeam .content {

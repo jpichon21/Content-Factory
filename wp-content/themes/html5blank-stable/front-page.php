@@ -11,7 +11,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Content Factory</title>
+    <title>Creative Factory</title>
 
     <meta name="description" content="Site interne de la Content Factory">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -405,18 +405,22 @@
             <!----------------------------------->
 
             <!----------------------------------->
-            <section id="whiteBook">
-                <div class="content columns col-9 centered">
-                    <h3 class="col-12"><span><?php echo the_field('titre_livre_blanc'); ?></h3>
-                    <p class="col-4"><?php echo the_field('description_livre_blanc'); ?></p>
+            <?php if( get_field('hide_whitebook') ): ?>
+               
+                <section  <?php echo 'class="hidden"'; ?> id="whiteBook">
+                    <div class="content columns col-9 centered">
+                        <h3 class="col-12"><span><?php echo the_field('titre_livre_blanc'); ?></h3>
+                        <p class="col-4"><?php echo the_field('description_livre_blanc'); ?></p>
 
-                    <div class="col-12 buttonContainer">
-                        <a href="<?php echo the_field('lien_livre_blanc'); ?>"
-                            class="button col-4"><?php echo the_field('texte_bouton_livre_blanc'); ?></a>
+                        <div class="col-12 buttonContainer">
+                            <a href="<?php echo the_field('lien_livre_blanc'); ?>"
+                                class="button col-4"><?php echo the_field('texte_bouton_livre_blanc'); ?></a>
+                        </div>
+
                     </div>
-
-                </div>
-            </section>
+                </section>
+        
+	        <?php endif; ?>
             <!----------------------------------->
 
             <!----------------------------------->
