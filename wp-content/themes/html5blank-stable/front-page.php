@@ -60,28 +60,29 @@
             <section id="headerHero" class="container">
                 <div class="content column col-9 centered">
                     <div class="row columns">
-                        <h2 class="column col-6"> <?php echo the_field('headerhero'); ?> </h2>
+                        <h2 class="column col-6"> <?php echo get_field('headerhero'); ?> </h2>
                     </div>
                     <div class="row columns">
                         <a id="headerHeroBtn" 
-                            href="<?php echo the_field('header_hero_lien'); ?>"><?php echo the_field('header_hero_btn'); ?>
+                            href="<?php echo get_field('header_hero_lien'); ?>"><?php echo get_field('header_hero_btn'); ?>
                         </a>
                     </div>
                 </div>
 
 
                 <div id="bottomHeaderBanner" class="container">
+           
                     <div class="content column col-9 centered">
                         <div class="columns">
                             <div class="col-4">
-                                <p><?php echo the_field('header_hero_garantie1'); ?>
+                                <p><?php echo get_field('header_hero_garantie1'); ?>
                             </div>
                             <div class="col-4">
-                                <p><?php echo the_field('header_hero_garantie2'); ?>
+                                <p><?php echo get_field('header_hero_garantie2'); ?>
                             </div>
 
                             <div class="col-4">
-                                <p><?php echo the_field('header_hero_garantie3'); ?>
+                                <p><?php echo get_field('header_hero_garantie3'); ?>
                             </div>
                         </div>
                     </div>
@@ -96,7 +97,7 @@
 
                     <div class="row columns">
                         <div class="column col-12 ">
-                            <p><?php echo the_field('tagline_references'); ?></p>
+                            <p><?php echo get_field('tagline_references'); ?></p>
                         </div>
                     </div>
 
@@ -153,14 +154,14 @@
 
                     <div class="columns">
                         <div class="column col-5">
-                            <h3><?php echo the_field('titre_banner_1'); ?></h3>
+                            <h3><?php echo get_field('titre_banner_1'); ?></h3>
                         </div>
 
                         <div class="column col-1"></div>
 
                         <div class="column col-6">
 
-                            <p class="description"><?php echo the_field('description_banner_1'); ?></p>
+                            <p class="description"><?php echo get_field('description_banner_1'); ?></p>
                         </div>
                     </div>
 
@@ -189,16 +190,16 @@
                         <div class="column col-6 rightContent">
                             <h3> Comment <strong>cela marche ?</strong></h3>
                             <div>
-                                <h4><?php echo the_field('titre_ccm_1'); ?></h4>
-                                <p><?php echo the_field('texte_ccm_1'); ?></p>
+                                <h4><?php echo get_field('titre_ccm_1'); ?></h4>
+                                <p><?php echo get_field('texte_ccm_1'); ?></p>
                             </div>
                             <div>
-                                <h4><?php echo the_field('titre_ccm_2'); ?></h4>
-                                <p><?php echo the_field('texte_ccm_2'); ?></p>
+                                <h4><?php echo get_field('titre_ccm_2'); ?></h4>
+                                <p><?php echo get_field('texte_ccm_2'); ?></p>
                             </div>
                             <div>
-                                <h4><?php echo the_field('titre_ccm_3'); ?></h4>
-                                <p><?php echo the_field('texte_ccm_3'); ?></p>
+                                <h4><?php echo get_field('titre_ccm_3'); ?></h4>
+                                <p><?php echo get_field('texte_ccm_3'); ?></p>
                             </div>
                         </div>
 
@@ -217,7 +218,7 @@
                 <div class="content column col-9 centered">
                     <div class="row columns">
                         <div class="title-container col-7 centered">
-                            <h3><?php echo the_field('titre_formats'); ?></h3>
+                            <h3><?php echo get_field('titre_formats'); ?></h3>
                         </div>
                         <div>
                         </div>
@@ -385,17 +386,17 @@
                 <div class="content column col-9 centered">
 
                     <div class="stat">
-                        <span class="stat-number"><?php echo the_field('nb_clients'); ?></span>
+                        <span class="stat-number"><?php echo get_field('nb_clients'); ?></span>
                         <span class="stat-text">clients</span>
                     </div>
 
                     <div class="stat">
-                        <span class="stat-number"><?php echo the_field('nb_contenus'); ?></span>
+                        <span class="stat-number"><?php echo get_field('nb_contenus'); ?></span>
                         <span class="stat-text">contenus/an</span>
                     </div>
 
                     <div class="stat">
-                        <span class="stat-number"><?php echo the_field('nb_experts'); ?></span>
+                        <span class="stat-number"><?php echo get_field('nb_experts'); ?></span>
                         <span class="stat-text">experts</span>
                     </div>
 
@@ -409,12 +410,12 @@
                
                 <section id="whiteBook">
                     <div class="content columns col-9 centered">
-                        <h3 class="col-12"><span><?php echo the_field('titre_livre_blanc'); ?></h3>
-                        <p class="col-4"><?php echo the_field('description_livre_blanc'); ?></p>
+                        <h3 class="col-12"><span><?php echo get_field('titre_livre_blanc'); ?></h3>
+                        <p class="col-4"><?php echo get_field('description_livre_blanc'); ?></p>
 
                         <div class="col-12 buttonContainer">
-                            <a href="<?php echo the_field('lien_livre_blanc'); ?>"
-                                class="button col-4"><?php echo the_field('texte_bouton_livre_blanc'); ?></a>
+                            <a href="<?php echo get_field('lien_livre_blanc'); ?>"
+                                class="button col-4"><?php echo get_field('texte_bouton_livre_blanc'); ?></a>
                         </div>
 
                     </div>
@@ -442,7 +443,7 @@
 
                     <div class="row columns">
                         <div class="column col-12 center-text">
-                            <h3><?php echo the_field('team_title'); ?><br><span><?php echo the_field('team_subtitle'); ?></span>
+                            <h3><?php echo get_field('team_title'); ?><br><span><?php echo get_field('team_subtitle'); ?></span>
                                 <h3>
                         </div>
 
@@ -544,21 +545,21 @@
                 <div class="content column col-9 centered">
                     <div class="row column">
                         <div class="col-12 text-center">
-                            <h3><?php echo the_field('titre_credits'); ?></h3>
+                            <h3><?php echo get_field('titre_credits'); ?></h3>
                         </div>
                     </div>
 
                     <div class="row columns">
                         <div class="col-12 text-center">
-                            <h4><?php echo the_field('titre_pack_credits'); ?><h4>
-                                    <p><?php echo the_field('description_pack_credits'); ?></p>
+                            <h4><?php echo get_field('titre_pack_credits'); ?><h4>
+                                    <p><?php echo get_field('description_pack_credits'); ?></p>
                         </div>
                     </div>
 
                     <div class="row columns">
                         <div class="col-12 buttonContainer">
-                            <a href="<?php echo the_field('lien_pack_credits'); ?>"
-                                class="button col-4 centered"><?php echo the_field('bouton_pack_credits'); ?></a>
+                            <a href="<?php echo get_field('lien_pack_credits'); ?>"
+                                class="button col-4 centered"><?php echo get_field('bouton_pack_credits'); ?></a>
                         </div>
                     </div>
                 </div>
@@ -571,13 +572,13 @@
 
                     <div class="row columns">
                         <div class="col-6 centered text-center">
-                            <h3><?php echo the_field('titre_contact'); ?><h3>
+                            <h3><?php echo get_field('titre_contact'); ?><h3>
                         </div>
                     </div>
 
                     <div class="columns">
 
-                        <?php echo the_field('formulaire_de_contact'); ?>
+                        <?php echo get_field('formulaire_de_contact'); ?>
 
                     </div>
                 </div>

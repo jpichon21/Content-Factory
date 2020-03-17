@@ -167,6 +167,16 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing, div.wpcf7-mail-sent-o
     border: none;
 }
 
+.bar{
+    background-color: #fff!important;
+    border: 1px solid black;
+    margin-bottom: 6px;
+}
+
+.bar .bar-item {
+    background: $color-blue!important;;
+}
+
 
 
 /** SECTIONS **/
@@ -239,6 +249,40 @@ footer {
 
 }
 
+#catalogueHeader{
+    text-align: center;
+    height: auto;
+    h2 {
+        color: $color-black;
+        font-family: 'Helvetica Neue', sans-serif;
+        font-size: 36px;
+        font-weight: 400;
+        text-align: center;
+        padding-bottom: 12px;
+        span {
+            color: $color-blue;
+            font-family: 'Helvetia Neue Bold', sans-serif;
+            font-style: italic;
+        }
+    }
+}
+
+#catalogueBlueNav{
+    background-color: $color-blue;
+    color: #fff;
+    text-align: center;
+    padding: 32px 0px;
+    font-size: 18px;
+    a, a:active, a:focus, a:visited, a:hover{
+        color: #fff;
+    }
+    ul{
+        li{
+            display: inline-block;
+            margin: 0px 12px;
+        }
+    }
+}
 footer {
     background: linear-gradient(97deg, rgba(56, 56, 56, 1) 0%, rgba(19, 19, 19, 1) 100%);
     min-height: 120px;
@@ -302,18 +346,15 @@ footer {
             width: 100% !important;
         }
     }
-
     .col-6 {
         width: 50% !important;
         @include media('<=mobile') {
             width: 100% !important;
         }
     }
-
     @include media('<=large') {
         background-position: bottom;
     }
-
     .content {
         padding: 21vh 0vh;
         @include media('<=xxlarge') {
@@ -323,7 +364,6 @@ footer {
             padding: 18vh 0vh;
         }
     }
-
     h2 {
         font-family: 'Helvetica Neue Bold', sans-serif;
         color: $color-black;
@@ -372,7 +412,6 @@ footer {
         background: linear-gradient(355deg, rgba(75, 75, 246, 1) 0%, rgba(145, 145, 240, 0.2780509691559867) 100%);
         position: absolute;
         bottom: 0px;
-
         @include media('<=mobile') {
             position: relative;
         }
@@ -387,7 +426,6 @@ footer {
 
         .content {
             padding: 32px 0px;
-
             p {
                 color: #fff;
                 font-family: 'Helvetica Neue', sans-serif;
@@ -435,10 +473,8 @@ footer {
 #blackBanner {
     background: linear-gradient(97deg, rgba(56, 56, 56, 1) 0%, rgba(19, 19, 19, 1) 100%);
     color: #fff;
-
     .col-1 {
         width: 8.33333333% !important;
-
         @include media('<=mobile') {
             width: 100% !important;
         }
@@ -446,7 +482,6 @@ footer {
 
     .col-2 {
         width: 16.66666667% !important;
-
         @include media('<=mobile') {
             width: 100% !important;
         }
@@ -455,7 +490,6 @@ footer {
     .content {
         padding: 46px 0px;
         text-align: center;
-
         img {
             max-width: 220px;
 
@@ -472,16 +506,14 @@ footer {
     }
 }
 
-#firstBanner {
+#firstBanner, #catalogueBlackBanner {
     .content {
         padding: 64px 0px;
     }
-
     h3,
     p {
         color: $color-blue;
     }
-
     h3 {
         font-family: 'Helvetica Neue Bold', sans-serif;
         font-size: 36px;
@@ -497,11 +529,9 @@ footer {
             text-align: left;
         }
     }
-
     p {
         font-size: 19px;
     }
-
     .description {
         position: relative;
         padding-left: 52px;
@@ -510,7 +540,6 @@ footer {
             padding-left: 0px;
         }
     }
-
     .description:before {
         background: $color-darkblue;
         content: '';
@@ -524,6 +553,20 @@ footer {
         @include media('<=mobile') {
             display: none;
         }
+    }
+}
+
+#catalogueBlackBanner {
+    background: linear-gradient(97deg, rgba(56, 56, 56, 1) 0%, rgba(19, 19, 19, 1) 100%);
+    h3,
+    p {
+        color: #fff;
+    }
+    h3 {
+        font-family: 'Helvetica Neue', sans-serif;
+    }
+    .description:before {
+        background-color: #fff; 
     }
 }
 
@@ -669,17 +712,7 @@ footer {
     }
 }
 
-#Exemples {
-    background-color: #f0f0f0;
-    //min-height: 1005px;
-    .content{
-        transform: translateY(-118px);
-        margin-bottom: - 118px;
-        @include media('<=large') {
-            transform: translateY(0px);
-            margin-bottom: 0px;
-        }
-    }
+#Exemples, #Teaser, #Remake, #Interview, #Animation {
     @include media('<=large') {
         text-align: center;
     }
@@ -691,6 +724,7 @@ footer {
         font-size: 16px;
     }
     ul {
+        margin-left: 0px;
         @include media('<=large') {
             margin: 0px;
         }
@@ -708,26 +742,17 @@ footer {
         font-family: 'Helvetica Neue Bold', sans-serif;
         color: $color-blue;
         font-weight: 600;
+        margin-bottom: 16px;
     }
     p {
         font-weight: 600;
     }
     li {
-        margin-top: .1rem;
+        margin-top: 0px;
     }
 
     .title-container {
-        padding-top: 64px;
-        @include media('<=mobile') {
-            padding-top: 32px;
-        }
-    }
-
-    .row.last {
-        padding-bottom: 64px;
-        @include media('<=mobile') {
-            padding-top: 32px;
-        }
+        padding-top: 0px;
     }
 
     .image-container {
@@ -738,9 +763,67 @@ footer {
             }
         }
     }
+    .image-left{
+        text-align: left!important;
+    }
+    .image-right{
+        text-align: right!important;
+    }
 
     img {
         max-width: 100%;
+    }
+}
+
+#Exemples{
+    background-color: #f0f0f0;
+    h3,p,li {
+        font-family: 'Helvetica Neue', sans-serif;
+        font-weight: 600;
+    }
+    .content{
+        transform: translateY(-118px);
+        margin-bottom: - 118px;
+        @include media('<=large') {
+            transform: translateY(0px);
+            margin-bottom: 0px;
+        }
+    }
+    .title-container {
+        padding-top: 64px;
+        @include media('<=mobile') {
+            padding-top: 32px;
+        }
+    }
+    .row.last {
+        padding-bottom: 64px;
+        @include media('<=mobile') {
+            padding-top: 32px;
+        }
+    }
+}
+
+#Teaser, #Remake{
+    background-color: #fff;
+}
+
+#Interview, #Animation{
+    background-color: #f0f0f0;
+}
+
+#Teaser, #Remake, #Interview, #Animation{
+    h3, h4, strong{
+        font-family: 'Helvetica Neue Bold', sans-serif;
+    }
+    .content{
+        padding: 60px 0px;
+    }
+    ul li{
+        list-style-type: disc;
+    }
+    i{
+        font-weight: 400!important;
+        float: right;
     }
 }
 
