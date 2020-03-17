@@ -1,7 +1,7 @@
 @import 'include-media.scss';
 
 /*******BREAKPOINTS********/
-$breakpoints: (small: 0px, xsmall: 345px, mobile: 435px, tablet: 768px, large: 1024px, xlarge: 1280px, cardbkp: 1298px, xxlarge: 1440px, footerbkp: 1680px, laptop: 1780px);
+$breakpoints: (small: 0px, xsmall: 345px, mobile: 435px, tablet: 768px, large: 1024px, xlarge: 1280px, cardbkp: 1298px, xxlarge: 1440px, footerbkp: 1680px, hirez: 1780px);
 
 /*******VARIABLES*********/
 $color-blue: #0000ff;
@@ -70,6 +70,10 @@ body, a,p, span, li {
     font-family: 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: auto;
+}
+
+.hidden{
+    display: none!important;
 }
 
 ul,
@@ -207,9 +211,11 @@ footer {
             float: right;
             @include media('<=footerbkp') {
                 position: relative;
-                float: none;
                 right: 0px;
                 top: 0px;
+            }
+            @include media('<=tablet') {
+                float: none;
             }
             li {
                 display: inline-block;
@@ -257,6 +263,9 @@ footer {
                 float: none;
                 display: inline-block;
             }
+            @include media('<=footerbkp') {
+               float: none;
+            }
             li {
                 a {
                     color: #fff;
@@ -283,14 +292,12 @@ footer {
 
 #headerHero {
     position: relative;
-    min-height: 93vh;
+    min-height: calc(100vh - 84px);
     background-image: url('img/content/hero-img.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-
     .col-8 {
         width: 66.66666667% !important;
-
         @include media('<=mobile') {
             width: 100% !important;
         }
@@ -298,7 +305,6 @@ footer {
 
     .col-6 {
         width: 50% !important;
-
         @include media('<=mobile') {
             width: 100% !important;
         }
@@ -309,12 +315,10 @@ footer {
     }
 
     .content {
-        padding: 27vh 0vh 31vh 0vh;
-
-        @include media('>=laptop') {
-            padding: 26vh 0vh;
+        padding: 21vh 0vh;
+        @include media('<=xxlarge') {
+            padding: 20vh 0vh;
         }
-
         @include media('<=mobile') {
             padding: 18vh 0vh;
         }
@@ -325,7 +329,14 @@ footer {
         color: $color-black;
         font-size: 72px;
         line-height: 72px;
-
+        @include media('<=hirez') {
+            font-size: 52px;
+            line-height: 52px;
+        }
+        @include media('<=xxlarge') {
+            font-size: 52px;
+            line-height: 52px;
+        }
         @include media('<=large') {
             font-size: 46px;
             line-height: 46px;
@@ -348,7 +359,10 @@ footer {
         text-align: center;
         font-size: 25px;
         font-family: 'Helvetica Neue Bold', sans-serif;
-
+        z-index: 10;
+        @include media('<=hirez') {
+            font-size: 18px;
+        }
         @include media('<=large') {
             font-size: 16px;
         }
@@ -386,6 +400,12 @@ footer {
                 line-height: 26px;
                 padding-left: 26px;
                 padding-right: 26px;
+                @include media('<=hirez') {
+                    font-size: 24px;
+                    line-height: 24px;
+                    padding-left: 24px;
+                    padding-right: 24px;
+                }
 
                 @include media('<=large') {
                     font-size: 18px;
@@ -465,7 +485,9 @@ footer {
     h3 {
         font-family: 'Helvetica Neue Bold', sans-serif;
         font-size: 36px;
-
+        @include media('<=hirez') {
+            font-size: 32px;
+        }
         @include media('<=large') {
             text-align: center;
         }
@@ -865,7 +887,7 @@ footer {
     }
 
     .content {
-        padding: 120px 0px;
+        padding: 96px 0px;
         @include media('<=large') {
             padding: 60px 0px;
         }
@@ -883,7 +905,9 @@ footer {
         h3,
         span {
             font-size: 42px;
-
+            @include media('<=hirez') {
+                font-size: 33px;
+            }
             @include media('<=mobile') {
                 font-size: 26px;
             }

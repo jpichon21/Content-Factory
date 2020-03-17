@@ -60,10 +60,10 @@
             <section id="headerHero" class="container">
                 <div class="content column col-9 centered">
                     <div class="row columns">
-                        <h2 class="column col-8"> <?php echo the_field('headerhero'); ?> </h2>
+                        <h2 class="column col-6"> <?php echo the_field('headerhero'); ?> </h2>
                     </div>
                     <div class="row columns">
-                        <a id="headerHeroBtn" class="column col-6"
+                        <a id="headerHeroBtn" 
                             href="<?php echo the_field('header_hero_lien'); ?>"><?php echo the_field('header_hero_btn'); ?>
                         </a>
                     </div>

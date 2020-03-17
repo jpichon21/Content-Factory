@@ -41,6 +41,9 @@ body, a, p, span, li {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto; }
 
+.hidden {
+  display: none !important; }
+
 ul,
 li {
   text-decoration: none;
@@ -166,9 +169,12 @@ footer {
       header nav ul,
       footer nav ul {
         position: relative;
-        float: none;
         right: 0px;
         top: 0px; } }
+    @media (max-width: 768px) {
+      header nav ul,
+      footer nav ul {
+        float: none; } }
     header nav ul li,
     footer nav ul li {
       display: inline-block;
@@ -207,6 +213,9 @@ footer {
       footer #footerNav ul {
         float: none;
         display: inline-block; } }
+    @media (max-width: 1680px) {
+      footer #footerNav ul {
+        float: none; } }
     footer #footerNav ul li a {
       color: #fff; }
     footer #footerNav ul li.separator {
@@ -224,7 +233,7 @@ footer {
 
 #headerHero {
   position: relative;
-  min-height: 93vh;
+  min-height: calc(100vh - 84px);
   background-image: url("img/content/hero-img.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
@@ -242,10 +251,10 @@ footer {
     #headerHero {
       background-position: bottom; } }
   #headerHero .content {
-    padding: 27vh 0vh 31vh 0vh; }
-    @media (min-width: 1780px) {
+    padding: 21vh 0vh; }
+    @media (max-width: 1440px) {
       #headerHero .content {
-        padding: 26vh 0vh; } }
+        padding: 20vh 0vh; } }
     @media (max-width: 435px) {
       #headerHero .content {
         padding: 18vh 0vh; } }
@@ -254,6 +263,14 @@ footer {
     color: #131313;
     font-size: 72px;
     line-height: 72px; }
+    @media (max-width: 1780px) {
+      #headerHero h2 {
+        font-size: 52px;
+        line-height: 52px; } }
+    @media (max-width: 1440px) {
+      #headerHero h2 {
+        font-size: 52px;
+        line-height: 52px; } }
     @media (max-width: 1024px) {
       #headerHero h2 {
         font-size: 46px;
@@ -272,7 +289,11 @@ footer {
     display: block;
     text-align: center;
     font-size: 25px;
-    font-family: 'Helvetica Neue Bold', sans-serif; }
+    font-family: 'Helvetica Neue Bold', sans-serif;
+    z-index: 10; }
+    @media (max-width: 1780px) {
+      #headerHero #headerHeroBtn {
+        font-size: 18px; } }
     @media (max-width: 1024px) {
       #headerHero #headerHeroBtn {
         font-size: 16px; } }
@@ -302,6 +323,12 @@ footer {
         line-height: 26px;
         padding-left: 26px;
         padding-right: 26px; }
+        @media (max-width: 1780px) {
+          #headerHero #bottomHeaderBanner .content p {
+            font-size: 24px;
+            line-height: 24px;
+            padding-left: 24px;
+            padding-right: 24px; } }
         @media (max-width: 1024px) {
           #headerHero #bottomHeaderBanner .content p {
             font-size: 18px;
@@ -355,6 +382,9 @@ footer {
 #firstBanner h3 {
   font-family: 'Helvetica Neue Bold', sans-serif;
   font-size: 36px; }
+  @media (max-width: 1780px) {
+    #firstBanner h3 {
+      font-size: 32px; } }
   @media (max-width: 1024px) {
     #firstBanner h3 {
       text-align: center; } }
@@ -632,7 +662,7 @@ footer {
         #expertsTeam #cardsContainer .card-offset {
           margin-top: 0px; } }
   #expertsTeam .content {
-    padding: 120px 0px; }
+    padding: 96px 0px; }
     @media (max-width: 1024px) {
       #expertsTeam .content {
         padding: 60px 0px; } }
@@ -646,6 +676,10 @@ footer {
     #expertsTeam .content h3,
     #expertsTeam .content span {
       font-size: 42px; }
+      @media (max-width: 1780px) {
+        #expertsTeam .content h3,
+        #expertsTeam .content span {
+          font-size: 33px; } }
       @media (max-width: 435px) {
         #expertsTeam .content h3,
         #expertsTeam .content span {

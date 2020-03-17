@@ -18,6 +18,13 @@
  */
 
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
+/** https **/
+define ('FORCE_SSL_ADMIN' , true);
+
+/** Définir l'URL par défaut */
+define('WP_HOME', 'https://creative-factory.io');
+define('WP_SITEURL', 'https://creative-factory.io');
+
 /** Nom de la base de données de WordPress. */
 define( 'DB_NAME', 'crea_fact' );
 
