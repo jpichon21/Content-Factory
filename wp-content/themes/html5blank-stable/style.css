@@ -227,7 +227,7 @@ footer {
   #catalogueBlueNav a, #catalogueBlueNav a:active, #catalogueBlueNav a:focus, #catalogueBlueNav a:visited, #catalogueBlueNav a:hover {
     color: #fff; }
   #catalogueBlueNav a:hover, #catalogueBlueNav .active {
-    font-weight: 600; }
+    font-weight: bolder; }
   #catalogueBlueNav ul li {
     display: inline-block;
     margin: 0px 12px; }
