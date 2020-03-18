@@ -261,8 +261,11 @@ footer {
     img{
         width: 232px!important;
         max-width: auto;
-        padding-top: 16px;
+        padding-top: 32px;
         padding-bottom: 12px;
+        @include media('<=hirez') {
+            padding-top: 16px;
+        }
     }
     h2 {
         color: $color-black;
@@ -270,7 +273,10 @@ footer {
         font-size: 36px;
         font-weight: 400;
         text-align: center;
-        padding-bottom: 16px;
+        padding-bottom: 32px;
+        @include media('<=hirez') {
+            padding-bottom: 16px;
+        }
         span {
             color: $color-blue;
             font-family: 'Helvetia Neue Bold', sans-serif;
@@ -283,8 +289,11 @@ footer {
     background-color: $color-blue;
     color: #fff;
     text-align: center;
-    padding: 8px 0px;
+    padding: 16px 0px;
     font-size: 18px;
+    @include media('<=hirez') {
+        padding: 8px 0px;
+    }
     a, a:active, a:focus, a:visited, a:hover{
         color: #fff;
     }

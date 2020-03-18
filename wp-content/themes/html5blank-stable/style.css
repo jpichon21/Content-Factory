@@ -209,15 +209,21 @@ footer {
   #catalogueHeader img {
     width: 232px !important;
     max-width: auto;
-    padding-top: 16px;
+    padding-top: 32px;
     padding-bottom: 12px; }
+    @media (max-width: 1780px) {
+      #catalogueHeader img {
+        padding-top: 16px; } }
   #catalogueHeader h2 {
     color: #131313;
     font-family: 'Helvetica Neue', sans-serif;
     font-size: 36px;
     font-weight: 400;
     text-align: center;
-    padding-bottom: 16px; }
+    padding-bottom: 32px; }
+    @media (max-width: 1780px) {
+      #catalogueHeader h2 {
+        padding-bottom: 16px; } }
     #catalogueHeader h2 span {
       color: #0000ff;
       font-family: 'Helvetia Neue Bold', sans-serif;
@@ -227,8 +233,11 @@ footer {
   background-color: #0000ff;
   color: #fff;
   text-align: center;
-  padding: 8px 0px;
+  padding: 16px 0px;
   font-size: 18px; }
+  @media (max-width: 1780px) {
+    #catalogueBlueNav {
+      padding: 8px 0px; } }
   #catalogueBlueNav a, #catalogueBlueNav a:active, #catalogueBlueNav a:focus, #catalogueBlueNav a:visited, #catalogueBlueNav a:hover {
     color: #fff; }
   #catalogueBlueNav a:hover, #catalogueBlueNav .active {
