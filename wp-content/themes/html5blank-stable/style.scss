@@ -252,6 +252,10 @@ footer {
 #catalogueHeader{
     text-align: center;
     height: auto;
+    img{
+        width: 246px!important;
+        max-width: auto;
+    }
     h2 {
         color: $color-black;
         font-family: 'Helvetica Neue', sans-serif;
@@ -271,10 +275,13 @@ footer {
     background-color: $color-blue;
     color: #fff;
     text-align: center;
-    padding: 32px 0px;
+    padding: 16px 0px;
     font-size: 18px;
     a, a:active, a:focus, a:visited, a:hover{
         color: #fff;
+    }
+    a:hover, .active{
+        font-weight: 600;
     }
     ul{
         li{
@@ -518,7 +525,7 @@ footer {
         font-family: 'Helvetica Neue Bold', sans-serif;
         font-size: 36px;
         @include media('<=hirez') {
-            font-size: 32px;
+            font-size: 28px;
         }
         @include media('<=large') {
             text-align: center;
@@ -530,7 +537,7 @@ footer {
         }
     }
     p {
-        font-size: 19px;
+        font-size: 18px;
     }
     .description {
         position: relative;
@@ -597,11 +604,12 @@ footer {
             font-family: 'Helvetica Neue', sans-serif;
             font-size: 53px;
             padding-bottom: 64px;
-
+            @include media('<=hirez') {
+                font-size: 46px;
+            }
             @include media('<=large') {
                 text-align: center;
             }
-
             @include media('<=mobile') {
                 padding-bottom: 32px;
                 font-size: 46px;
@@ -667,7 +675,7 @@ footer {
                 font-weight: 400;
                 text-align: center;
 
-                @include media('<=large') {
+                @include media('<=hirez') {
                     font-size: 36px;
                 }
 
@@ -712,7 +720,7 @@ footer {
     }
 }
 
-#Exemples, #Teaser, #Remake, #Interview, #Animation {
+#Exemples, #Section1, #Section3, #Section2, #Section4 {
     @include media('<=large') {
         text-align: center;
     }
@@ -803,15 +811,15 @@ footer {
     }
 }
 
-#Teaser, #Remake{
+#Section1, #Section3{
     background-color: #fff;
 }
 
-#Interview, #Animation{
+#Section2, #Section4{
     background-color: #f0f0f0;
 }
 
-#Teaser, #Remake, #Interview, #Animation{
+#Section1, #Section3, #Section2, #Section4{
     h3, h4, strong{
         font-family: 'Helvetica Neue Bold', sans-serif;
     }

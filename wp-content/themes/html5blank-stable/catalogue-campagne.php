@@ -1,4 +1,4 @@
-<?php /* Template Name: Catalogue Base Template */ get_header(); ?>
+<?php /* Template Name: Catalogue Campagne  */ get_header(); ?>
 
 <head>
     <meta charset="utf-8">
@@ -37,19 +37,12 @@
                 <h2>Notre catalogue <span>de formats</span></h2>
             </header>
 
+
             <!----------------------------------->
             <section id="catalogueBlueNav">
                 <div class="content column col-9 centered">
-                <?php
-                    $photos_url = get_page_link(get_page_by_title('Catalogue Photos'));
-                    $photos_url = get_page_link(get_page_by_title('Catalogue Vidéos'));
-                    $photos_url = get_page_link(get_page_by_title('Catalogue Photos'));
-                    $photos_url = get_page_link(get_page_by_title('Catalogue Photos'));
-
-                
-                ?>
                    <ul>
-                       <li><a class="active" href="#">Photos</a></li>
+                       <li><a href="#">Photos</a></li>
                        <li><a href="#">|</a></li>
                        <li><a href="#">Videos</a></li>
                        <li><a href="#">|</a></li>
@@ -59,7 +52,7 @@
                        <li><a href="#">|</a></li>
                        <li><a href="#">Edito</a></li>
                        <li><a href="#">|</a></li>
-                       <li><a href="#">Campagne</a></li>
+                       <li><a class="active" href="#">Campagne</a></li>
                     </ul>
                 </div>
             </section>
@@ -71,20 +64,20 @@
 
                     <div class="columns">
                         <div class="column col-5">
-                            <h3><?php echo get_field('titre_consigne', 'options'); ?></h3>
+                            <h3><?php echo get_field('titre_consigne'); ?></h3>
                         </div>
 
                         <div class="column col-1"></div>
 
-         
-                            <p class="description col-6">
-                                <span><?php echo get_field('objet_consigne_1', 'options'); ?></span><br>
-                                <?php echo get_field('objet_consigne_2', 'options'); ?><br>
-                                <?php echo get_field('objet_consigne_3', 'options'); ?><br>
-                                <?php echo get_field('objet_consigne_4', 'options'); ?><br>
-                                <?php echo get_field('objet_consigne_5', 'options'); ?><br>
+                        <div class="column col-6">
+                            <p class="description">
+                            <?php echo get_field('objet_consigne_1'); ?><br>
+                            <?php echo get_field('objet_consigne_2'); ?><br>
+                            <?php echo get_field('objet_consigne_3'); ?><br>
+                            <?php echo get_field('objet_consigne_4'); ?><br>
+                            <?php echo get_field('objet_consigne_5'); ?><br>
                             </p>
-                   
+                        </div>
                     </div>
 
 

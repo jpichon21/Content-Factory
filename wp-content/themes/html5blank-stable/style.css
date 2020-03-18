@@ -203,6 +203,9 @@ footer {
 #catalogueHeader {
   text-align: center;
   height: auto; }
+  #catalogueHeader img {
+    width: 246px !important;
+    max-width: auto; }
   #catalogueHeader h2 {
     color: #131313;
     font-family: 'Helvetica Neue', sans-serif;
@@ -219,10 +222,12 @@ footer {
   background-color: #0000ff;
   color: #fff;
   text-align: center;
-  padding: 32px 0px;
+  padding: 16px 0px;
   font-size: 18px; }
   #catalogueBlueNav a, #catalogueBlueNav a:active, #catalogueBlueNav a:focus, #catalogueBlueNav a:visited, #catalogueBlueNav a:hover {
     color: #fff; }
+  #catalogueBlueNav a:hover, #catalogueBlueNav .active {
+    font-weight: 600; }
   #catalogueBlueNav ul li {
     display: inline-block;
     margin: 0px 12px; }
@@ -420,7 +425,7 @@ footer {
   font-size: 36px; }
   @media (max-width: 1780px) {
     #firstBanner h3, #catalogueBlackBanner h3 {
-      font-size: 32px; } }
+      font-size: 28px; } }
   @media (max-width: 1024px) {
     #firstBanner h3, #catalogueBlackBanner h3 {
       text-align: center; } }
@@ -430,7 +435,7 @@ footer {
       text-align: left; } }
 
 #firstBanner p, #catalogueBlackBanner p {
-  font-size: 19px; }
+  font-size: 18px; }
 
 #firstBanner .description, #catalogueBlackBanner .description {
   position: relative;
@@ -481,6 +486,9 @@ footer {
       font-family: 'Helvetica Neue', sans-serif;
       font-size: 53px;
       padding-bottom: 64px; }
+      @media (max-width: 1780px) {
+        #CCM .rightContent h3 {
+          font-size: 46px; } }
       @media (max-width: 1024px) {
         #CCM .rightContent h3 {
           text-align: center; } }
@@ -529,7 +537,7 @@ footer {
       font-size: 46px;
       font-weight: 400;
       text-align: center; }
-      @media (max-width: 1024px) {
+      @media (max-width: 1780px) {
         #Formats .content .title-container h3 {
           font-size: 36px; } }
       #Formats .content .title-container h3 span {
@@ -557,59 +565,59 @@ footer {
         bottom: 72px; } }
 
 @media (max-width: 1024px) {
-  #Exemples, #Teaser, #Remake, #Interview, #Animation {
+  #Exemples, #Section1, #Section3, #Section2, #Section4 {
     text-align: center; } }
 
-#Exemples h3, #Exemples p, #Exemples li, #Teaser h3, #Teaser p, #Teaser li, #Remake h3, #Remake p, #Remake li, #Interview h3, #Interview p, #Interview li, #Animation h3, #Animation p, #Animation li {
+#Exemples h3, #Exemples p, #Exemples li, #Section1 h3, #Section1 p, #Section1 li, #Section3 h3, #Section3 p, #Section3 li, #Section2 h3, #Section2 p, #Section2 li, #Section4 h3, #Section4 p, #Section4 li {
   font-family: 'Helvetica Neue', sans-serif;
   font-weight: 600; }
 
-#Exemples p, #Exemples h4, #Exemples li, #Teaser p, #Teaser h4, #Teaser li, #Remake p, #Remake h4, #Remake li, #Interview p, #Interview h4, #Interview li, #Animation p, #Animation h4, #Animation li {
+#Exemples p, #Exemples h4, #Exemples li, #Section1 p, #Section1 h4, #Section1 li, #Section3 p, #Section3 h4, #Section3 li, #Section2 p, #Section2 h4, #Section2 li, #Section4 p, #Section4 h4, #Section4 li {
   font-size: 16px; }
 
-#Exemples ul, #Teaser ul, #Remake ul, #Interview ul, #Animation ul {
+#Exemples ul, #Section1 ul, #Section3 ul, #Section2 ul, #Section4 ul {
   margin-left: 0px; }
   @media (max-width: 1024px) {
-    #Exemples ul, #Teaser ul, #Remake ul, #Interview ul, #Animation ul {
+    #Exemples ul, #Section1 ul, #Section3 ul, #Section2 ul, #Section4 ul {
       margin: 0px; } }
 
-#Exemples h3, #Teaser h3, #Remake h3, #Interview h3, #Animation h3 {
+#Exemples h3, #Section1 h3, #Section3 h3, #Section2 h3, #Section4 h3 {
   font-size: 46px; }
   @media (max-width: 435px) {
-    #Exemples h3, #Teaser h3, #Remake h3, #Interview h3, #Animation h3 {
+    #Exemples h3, #Section1 h3, #Section3 h3, #Section2 h3, #Section4 h3 {
       font-size: 36px; } }
-  #Exemples h3 span, #Teaser h3 span, #Remake h3 span, #Interview h3 span, #Animation h3 span {
+  #Exemples h3 span, #Section1 h3 span, #Section3 h3 span, #Section2 h3 span, #Section4 h3 span {
     font-family: 'Helvetica Neue Bold', sans-serif; }
 
-#Exemples h4, #Teaser h4, #Remake h4, #Interview h4, #Animation h4 {
+#Exemples h4, #Section1 h4, #Section3 h4, #Section2 h4, #Section4 h4 {
   font-family: 'Helvetica Neue Bold', sans-serif;
   color: #0000ff;
   font-weight: 600;
   margin-bottom: 16px; }
 
-#Exemples p, #Teaser p, #Remake p, #Interview p, #Animation p {
+#Exemples p, #Section1 p, #Section3 p, #Section2 p, #Section4 p {
   font-weight: 600; }
 
-#Exemples li, #Teaser li, #Remake li, #Interview li, #Animation li {
+#Exemples li, #Section1 li, #Section3 li, #Section2 li, #Section4 li {
   margin-top: 0px; }
 
-#Exemples .title-container, #Teaser .title-container, #Remake .title-container, #Interview .title-container, #Animation .title-container {
+#Exemples .title-container, #Section1 .title-container, #Section3 .title-container, #Section2 .title-container, #Section4 .title-container {
   padding-top: 0px; }
 
 @media (max-width: 1024px) {
-  #Exemples .image-container, #Teaser .image-container, #Remake .image-container, #Interview .image-container, #Animation .image-container {
+  #Exemples .image-container, #Section1 .image-container, #Section3 .image-container, #Section2 .image-container, #Section4 .image-container {
     padding-top: 64px; } }
   @media (max-width: 1024px) and (max-width: 435px) {
-    #Exemples .image-container, #Teaser .image-container, #Remake .image-container, #Interview .image-container, #Animation .image-container {
+    #Exemples .image-container, #Section1 .image-container, #Section3 .image-container, #Section2 .image-container, #Section4 .image-container {
       padding-top: 32px; } }
 
-#Exemples .image-left, #Teaser .image-left, #Remake .image-left, #Interview .image-left, #Animation .image-left {
+#Exemples .image-left, #Section1 .image-left, #Section3 .image-left, #Section2 .image-left, #Section4 .image-left {
   text-align: left !important; }
 
-#Exemples .image-right, #Teaser .image-right, #Remake .image-right, #Interview .image-right, #Animation .image-right {
+#Exemples .image-right, #Section1 .image-right, #Section3 .image-right, #Section2 .image-right, #Section4 .image-right {
   text-align: right !important; }
 
-#Exemples img, #Teaser img, #Remake img, #Interview img, #Animation img {
+#Exemples img, #Section1 img, #Section3 img, #Section2 img, #Section4 img {
   max-width: 100%; }
 
 #Exemples {
@@ -635,22 +643,22 @@ footer {
       #Exemples .row.last {
         padding-top: 32px; } }
 
-#Teaser, #Remake {
+#Section1, #Section3 {
   background-color: #fff; }
 
-#Interview, #Animation {
+#Section2, #Section4 {
   background-color: #f0f0f0; }
 
-#Teaser h3, #Teaser h4, #Teaser strong, #Remake h3, #Remake h4, #Remake strong, #Interview h3, #Interview h4, #Interview strong, #Animation h3, #Animation h4, #Animation strong {
+#Section1 h3, #Section1 h4, #Section1 strong, #Section3 h3, #Section3 h4, #Section3 strong, #Section2 h3, #Section2 h4, #Section2 strong, #Section4 h3, #Section4 h4, #Section4 strong {
   font-family: 'Helvetica Neue Bold', sans-serif; }
 
-#Teaser .content, #Remake .content, #Interview .content, #Animation .content {
+#Section1 .content, #Section3 .content, #Section2 .content, #Section4 .content {
   padding: 60px 0px; }
 
-#Teaser ul li, #Remake ul li, #Interview ul li, #Animation ul li {
+#Section1 ul li, #Section3 ul li, #Section2 ul li, #Section4 ul li {
   list-style-type: disc; }
 
-#Teaser i, #Remake i, #Interview i, #Animation i {
+#Section1 i, #Section3 i, #Section2 i, #Section4 i {
   font-weight: 400 !important;
   float: right; }
 

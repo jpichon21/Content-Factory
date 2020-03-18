@@ -1,4 +1,4 @@
-<?php /* Template Name: Catalogue Base Template */ get_header(); ?>
+<?php /* Template Name: Catalogue Creations Graphiques */ get_header(); ?>
 
 <head>
     <meta charset="utf-8">
@@ -37,23 +37,16 @@
                 <h2>Notre catalogue <span>de formats</span></h2>
             </header>
 
+
             <!----------------------------------->
             <section id="catalogueBlueNav">
                 <div class="content column col-9 centered">
-                <?php
-                    $photos_url = get_page_link(get_page_by_title('Catalogue Photos'));
-                    $photos_url = get_page_link(get_page_by_title('Catalogue Vidéos'));
-                    $photos_url = get_page_link(get_page_by_title('Catalogue Photos'));
-                    $photos_url = get_page_link(get_page_by_title('Catalogue Photos'));
-
-                
-                ?>
                    <ul>
-                       <li><a class="active" href="#">Photos</a></li>
+                       <li><a href="#">Photos</a></li>
                        <li><a href="#">|</a></li>
                        <li><a href="#">Videos</a></li>
                        <li><a href="#">|</a></li>
-                       <li><a href="#">Creations graphiques</a></li>
+                       <li><a class="active"href="#">Creations graphiques</a></li>
                        <li><a href="#">|</a></li>
                        <li><a href="#">Podcast</a></li>
                        <li><a href="#">|</a></li>
@@ -76,15 +69,15 @@
 
                         <div class="column col-1"></div>
 
-         
-                            <p class="description col-6">
-                                <span><?php echo get_field('objet_consigne_1', 'options'); ?></span><br>
+                        <div class="column col-6">
+                            <p class="description">
+                                <?php echo get_field('objet_consigne_1', 'options'); ?><br>
                                 <?php echo get_field('objet_consigne_2', 'options'); ?><br>
                                 <?php echo get_field('objet_consigne_3', 'options'); ?><br>
                                 <?php echo get_field('objet_consigne_4', 'options'); ?><br>
                                 <?php echo get_field('objet_consigne_5', 'options'); ?><br>
                             </p>
-                   
+                        </div>
                     </div>
 
 
@@ -289,8 +282,6 @@
                 </div>
             </section>
             <!----------------------------------->
-
-            
 
 
             <!----------------------------------->
