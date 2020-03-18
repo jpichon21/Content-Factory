@@ -118,6 +118,10 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing, div.wpcf7-mail-sent-o
 .bar .bar-item {
   background: #0000ff !important; }
 
+@media (max-width: 768px) {
+  .bar-infos {
+    width: 100% !important; } }
+
 .bar-infos strong {
   float: left; }
 
@@ -244,7 +248,20 @@ footer {
     font-weight: bolder; }
   #catalogueBlueNav ul li {
     display: inline-block;
-    margin: 0px 12px; }
+    margin: 0px 12px;
+    /*@include media('<=mobile') {
+                display: block;
+                border-bottom: 1px solid #fff;
+            }
+            &.separator{
+                @include media('<=mobile') {
+                    display: none;
+                }
+            }*/ }
+    @media (max-width: 768px) {
+      #catalogueBlueNav ul li {
+        margin: 0px 6px;
+        padding: 12px 0px; } }
 
 footer {
   background: linear-gradient(97deg, #383838 0%, #131313 100%);
@@ -598,10 +615,6 @@ footer {
       #Formats .slider .slick-dots {
         bottom: 72px; } }
 
-@media (max-width: 1024px) {
-  #Exemples, #Section1, #Section3, #Section2, #Section4 {
-    text-align: center; } }
-
 #Exemples h3, #Exemples p, #Exemples li, #Section1 h3, #Section1 p, #Section1 li, #Section3 h3, #Section3 p, #Section3 li, #Section2 h3, #Section2 p, #Section2 li, #Section4 h3, #Section4 p, #Section4 li {
   font-family: 'Helvetica Neue', sans-serif;
   font-weight: 600; }
@@ -635,15 +648,31 @@ footer {
 #Exemples li, #Section1 li, #Section3 li, #Section2 li, #Section4 li {
   margin-top: 0px; }
 
+@media (max-width: 768px) {
+  #Exemples .content, #Section1 .content, #Section3 .content, #Section2 .content, #Section4 .content {
+    text-align: center; } }
+
+@media (max-width: 435px) {
+  #Exemples .content, #Section1 .content, #Section3 .content, #Section2 .content, #Section4 .content {
+    text-align: left; } }
+
 #Exemples .title-container, #Section1 .title-container, #Section3 .title-container, #Section2 .title-container, #Section4 .title-container {
   padding-top: 0px; }
 
 @media (max-width: 1024px) {
   #Exemples .image-container, #Section1 .image-container, #Section3 .image-container, #Section2 .image-container, #Section4 .image-container {
     padding-top: 64px; } }
+  @media (max-width: 1024px) and (max-width: 768px) {
+    #Exemples .image-container, #Section1 .image-container, #Section3 .image-container, #Section2 .image-container, #Section4 .image-container {
+      text-align: center;
+      padding-top: 32px; } }
   @media (max-width: 1024px) and (max-width: 435px) {
     #Exemples .image-container, #Section1 .image-container, #Section3 .image-container, #Section2 .image-container, #Section4 .image-container {
-      padding-top: 32px; } }
+      text-align: center; } }
+
+@media (max-width: 768px) {
+  #Exemples .title-container, #Section1 .title-container, #Section3 .title-container, #Section2 .title-container, #Section4 .title-container {
+    padding-top: 32px; } }
 
 #Exemples .image-left, #Section1 .image-left, #Section3 .image-left, #Section2 .image-left, #Section4 .image-left {
   text-align: left !important; }
@@ -688,6 +717,9 @@ footer {
 
 #Section1 .content, #Section3 .content, #Section2 .content, #Section4 .content {
   padding: 60px 0px; }
+  @media (max-width: 768px) {
+    #Section1 .content, #Section3 .content, #Section2 .content, #Section4 .content {
+      padding: 32px 0px; } }
 
 #Section1 ul li, #Section3 ul li, #Section2 ul li, #Section4 ul li {
   list-style-type: disc; }

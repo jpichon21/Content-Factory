@@ -12,15 +12,15 @@
                 ?>
         <ul>
             <li><a class="photos-link" href="<?php echo $photos ?>">Photos</a></li>
-            <li><a href="#">|</a></li>
+            <li class="separator"><a href="#">|</a></li>
             <li><a class="videos-link" href="<?php echo $videos ?>">Videos</a></li>
-            <li><a href="#">|</a></li>
+            <li class="separator"><a href="#">|</a></li>
             <li><a class="creations-link" href="<?php echo $creations ?>">Creations graphiques</a></li>
-            <li><a href="#">|</a></li>
+            <li class="separator"><a href="#">|</a></li>
             <li><a class="podcast-link" href="<?php echo $podcast ?>">Podcast</a></li>
-            <li><a href="#">|</a></li>
+            <li class="separator"><a href="#">|</a></li>
             <li><a class="edito-link" href="<?php echo $edito ?>">Edito</a></li>
-            <li><a href="#">|</a></li>
+            <li class="separator"><a href="#">|</a></li>
             <li><a class="campagne-link" href="<?php echo $campagne ?>">Campagne</a></li>
         </ul>
     </div>

@@ -178,6 +178,9 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing, div.wpcf7-mail-sent-o
 }
 
 .bar-infos{
+    @include media('<=tablet') {
+        width: 100%!important;
+    }
     strong{
         float: left;
     }
@@ -304,7 +307,21 @@ footer {
         li{
             display: inline-block;
             margin: 0px 12px;
+            @include media('<=tablet') {
+                margin: 0px 6px;
+                padding: 12px 0px;
+            }
+            /*@include media('<=mobile') {
+                display: block;
+                border-bottom: 1px solid #fff;
+            }
+            &.separator{
+                @include media('<=mobile') {
+                    display: none;
+                }
+            }*/
         }
+     
     }
 }
 footer {
@@ -588,7 +605,6 @@ footer {
         left: 26px;
         width: 8px;
         height: 100%;
-
         @include media('<=mobile') {
             display: none;
         }
@@ -761,9 +777,6 @@ footer {
 }
 
 #Exemples, #Section1, #Section3, #Section2, #Section4 {
-    @include media('<=large') {
-        text-align: center;
-    }
     h3,p,li {
         font-family: 'Helvetica Neue', sans-serif;
         font-weight: 600;
@@ -798,17 +811,32 @@ footer {
     li {
         margin-top: 0px;
     }
-
+    .content{
+        @include media('<=tablet') {
+            text-align: center;
+        }
+        @include media('<=mobile') {
+            text-align: left;
+        }
+    }
     .title-container {
         padding-top: 0px;
     }
-
     .image-container {
         @include media('<=large') {
             padding-top: 64px;
-            @include media('<=mobile') {
+            @include media('<=tablet') {
+                text-align: center;
                 padding-top: 32px;
+             }
+            @include media('<=mobile') {
+                text-align: center;
             }
+        }
+    }
+    .title-container{
+        @include media('<=tablet') {
+            padding-top: 32px;
         }
     }
     .image-left{
@@ -820,6 +848,7 @@ footer {
 
     img {
         max-width: 100%;
+   
     }
 }
 
@@ -865,6 +894,9 @@ footer {
     }
     .content{
         padding: 60px 0px;
+        @include media('<=tablet') {
+            padding: 32px 0px;
+         }
     }
     ul li{
         list-style-type: disc;

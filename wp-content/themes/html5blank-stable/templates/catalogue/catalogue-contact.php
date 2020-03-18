@@ -4,7 +4,7 @@
 
         <div class="row columns">
             <div class="col-6 centered text-center">
-                <h3><?php echo get_field('titre_contact'); ?><h3>
+                <h3><?php echo get_field('titre_contact', 'options'); ?></h3>
             </div>
         </div>
 
