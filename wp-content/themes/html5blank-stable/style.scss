@@ -224,7 +224,7 @@ footer {
                 right: 0px;
                 top: 0px;
             }
-            @include media('<=tablet') {
+            @include media('<=xlarge') {
                 float: none;
             }
             li {
@@ -404,7 +404,10 @@ footer {
         margin-top: 40px;
         background-color: $color-blue;
         color: #fff;
-        padding: 26px;
+        padding: 22px;
+        @include media('<=mobile') {
+            padding: 18px;
+        }
         display: block;
         text-align: center;
         font-size: 25px;
@@ -415,6 +418,9 @@ footer {
         }
         @include media('<=large') {
             font-size: 16px;
+        }
+        @include media('<=mobile') {
+            font-size: 15px;
         }
     }
 

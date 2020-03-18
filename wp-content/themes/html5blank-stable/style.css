@@ -179,7 +179,7 @@ footer {
         position: relative;
         right: 0px;
         top: 0px; } }
-    @media (max-width: 768px) {
+    @media (max-width: 1280px) {
       header nav ul,
       footer nav ul {
         float: none; } }
@@ -328,18 +328,24 @@ footer {
     margin-top: 40px;
     background-color: #0000ff;
     color: #fff;
-    padding: 26px;
+    padding: 22px;
     display: block;
     text-align: center;
     font-size: 25px;
     font-family: 'Helvetica Neue Bold', sans-serif;
     z-index: 10; }
+    @media (max-width: 435px) {
+      #headerHero #headerHeroBtn {
+        padding: 18px; } }
     @media (max-width: 1780px) {
       #headerHero #headerHeroBtn {
         font-size: 18px; } }
     @media (max-width: 1024px) {
       #headerHero #headerHeroBtn {
         font-size: 16px; } }
+    @media (max-width: 435px) {
+      #headerHero #headerHeroBtn {
+        font-size: 15px; } }
   #headerHero #bottomHeaderBanner {
     background: linear-gradient(355deg, #4b4bf6 0%, rgba(145, 145, 240, 0.278051) 100%);
     position: absolute;
