@@ -177,6 +177,12 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing, div.wpcf7-mail-sent-o
     background: $color-blue!important;;
 }
 
+.bar-infos{
+    strong{
+        float: left;
+    }
+}
+
 
 
 /** SECTIONS **/
@@ -253,8 +259,10 @@ footer {
     text-align: center;
     height: auto;
     img{
-        width: 246px!important;
+        width: 232px!important;
         max-width: auto;
+        padding-top: 16px;
+        padding-bottom: 12px;
     }
     h2 {
         color: $color-black;
@@ -262,7 +270,7 @@ footer {
         font-size: 36px;
         font-weight: 400;
         text-align: center;
-        padding-bottom: 12px;
+        padding-bottom: 16px;
         span {
             color: $color-blue;
             font-family: 'Helvetia Neue Bold', sans-serif;
@@ -275,7 +283,7 @@ footer {
     background-color: $color-blue;
     color: #fff;
     text-align: center;
-    padding: 16px 0px;
+    padding: 8px 0px;
     font-size: 18px;
     a, a:active, a:focus, a:visited, a:hover{
         color: #fff;
@@ -525,6 +533,9 @@ footer {
 #firstBanner, #catalogueBlackBanner {
     .content {
         padding: 64px 0px;
+        @include media('<=hirez') {
+     
+        }
     }
     h3,
     p {
@@ -548,7 +559,7 @@ footer {
     p {
         font-size: 20px;
         @include media('<=hirez') {
-            font-size: 18px;
+            font-size: 17px;
         }
     }
     .description {
@@ -583,6 +594,14 @@ footer {
     }
     h3 {
         font-family: 'Helvetica Neue', sans-serif;
+        font-size: 36px;
+        @include media('<=hirez') {
+            font-size: 36px;
+        }
+        @include media('<=mobile') {
+            font-size: 26px;
+            text-align: left;
+        }
     }
     .description:before {
         background-color: #fff; 
@@ -842,7 +861,6 @@ footer {
         list-style-type: disc;
     }
     i{
-        font-weight: 400!important;
         float: right;
     }
 }

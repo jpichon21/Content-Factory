@@ -13,8 +13,11 @@
 
                         <div class="column col-6">
                             <p class="description">
-                                <?php echo get_field('objet_consigne_1', 'options'); ?>
-                            
+                                <?php echo get_field('objet_consigne_1', 'options'); ?><br>
+                                <?php echo get_field('objet_consigne_2', 'options'); ?><br>
+                                <?php echo get_field('objet_consigne_3', 'options'); ?><br>
+                                <?php echo get_field('objet_consigne_4', 'options'); ?><br>
+                                <?php echo get_field('objet_consigne_5', 'options'); ?><br>
                             </p>
                         </div>
                    
