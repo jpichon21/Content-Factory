@@ -9,17 +9,18 @@
         <?php endif; ?>
         <p>© Braaxe - Tous droits réservés</p>
         <ul class>
-            <li><a href="#CCM">Comment ça marche ?</a></li>
+        <?php $home = get_page_link(get_page_by_path('home')); ?>
+            <li><a href="<?php echo $home ?>#CCM">Comment ça marche ?</a></li>
             <li class="separator"> | </li>
-            <li><a href="#Formats">Les formats</a></li>
+            <li><a href="<?php echo $home ?>#Formats">Les formats</a></li>
             <li class="separator"> | </li>
-            <li><a href="#Exemples">Exemples</a></li>
+            <li><a href="<?php echo $home ?>#Exemples">Exemples</a></li>
             <li class="separator"> | </li>
-            <li><a href="#Stats">Chiffres</a></li>
+            <li><a href="<?php echo $home ?>#Stats">Chiffres</a></li>
             <li class="separator"> | </li>
-            <li><a href="#Credits">Prix</a></li>
+            <li><a href="<?php echo $home ?>#Credits">Prix</a></li>
             <li class="separator"> | </li>
-            <li><a href="#Contact">Contact</a></li>
+            <li><a href="<?php echo $home ?>#Contact">Contact</a></li>
         </ul>
     </nav>
 </footer>
