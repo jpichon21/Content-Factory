@@ -284,6 +284,9 @@ footer {
         width: 100% !important; } }
   #headerHero .col-6 {
     width: 50% !important; }
+    @media (max-width: 768px) {
+      #headerHero .col-6 {
+        width: 83.33333333% !important; } }
     @media (max-width: 435px) {
       #headerHero .col-6 {
         width: 100% !important; } }
@@ -365,10 +368,10 @@ footer {
         padding-right: 26px; }
         @media (max-width: 1780px) {
           #headerHero #bottomHeaderBanner .content p {
-            font-size: 24px;
-            line-height: 24px;
-            padding-left: 24px;
-            padding-right: 24px; } }
+            font-size: 22px;
+            line-height: 22px;
+            padding-left: 22px;
+            padding-right: 22px; } }
         @media (max-width: 1024px) {
           #headerHero #bottomHeaderBanner .content p {
             font-size: 18px;
@@ -435,7 +438,10 @@ footer {
       text-align: left; } }
 
 #firstBanner p, #catalogueBlackBanner p {
-  font-size: 18px; }
+  font-size: 20px; }
+  @media (max-width: 1780px) {
+    #firstBanner p, #catalogueBlackBanner p {
+      font-size: 18px; } }
 
 #firstBanner .description, #catalogueBlackBanner .description {
   position: relative;

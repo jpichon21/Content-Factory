@@ -355,6 +355,9 @@ footer {
     }
     .col-6 {
         width: 50% !important;
+        @include media('<=tablet') {
+            width: 83.33333333% !important;
+        }
         @include media('<=mobile') {
             width: 100% !important;
         }
@@ -446,10 +449,10 @@ footer {
                 padding-left: 26px;
                 padding-right: 26px;
                 @include media('<=hirez') {
-                    font-size: 24px;
-                    line-height: 24px;
-                    padding-left: 24px;
-                    padding-right: 24px;
+                    font-size: 22px;
+                    line-height: 22px;
+                    padding-left: 22px;
+                    padding-right: 22px;
                 }
 
                 @include media('<=large') {
@@ -537,7 +540,10 @@ footer {
         }
     }
     p {
-        font-size: 18px;
+        font-size: 20px;
+        @include media('<=hirez') {
+            font-size: 18px;
+        }
     }
     .description {
         position: relative;
