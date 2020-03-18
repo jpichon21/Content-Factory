@@ -25,4 +25,7 @@
         <?php get_template_part('templates/catalogue/catalogue-footer') ?>     
         <!----------------------------------->
 
+<script>
+    $('.photos-link').addClass('active');
+</script>
 </body>

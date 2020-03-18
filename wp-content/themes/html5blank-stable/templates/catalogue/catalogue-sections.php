@@ -34,9 +34,9 @@
                                             <div class="bar">
                                                 <?php 
                                                      $valuesec1 = $contenusec1['nb_credits'];
-                                                     $valuebarsec1 = ($valuesec1/16)*100;
+                                                     $valuebarsec1 = ($valuesec1/15)*100;
                                                 ?>
-                                                <div class="bar-item" role="progressbar" style="width:<?php echo $valuebarsec1 ?>%;" aria-valuenow="<?php echo $contenusec1['nb_credits']; ?>0" aria-valuemin="0" aria-valuemax="160"></div>
+                                                <div class="bar-item" role="progressbar" style="width:<?php echo $valuebarsec1 ?>%;" aria-valuenow="<?php echo $contenusec1['nb_credits']; ?>0" aria-valuemin="0" aria-valuemax="150"></div>
                                             </div>
                                         <p><strong><?php echo $contenusec1['nb_credits']; ?> Crédits </strong> <i>*1 crédit = 1 heure de travail</i></p>
                                     </div>
@@ -73,9 +73,9 @@
                                         <div class="bar">
                                                 <?php 
                                                      $valuesec2 = $contenusec2['nb_credits'];
-                                                     $valuebarsec2 = ($valuesec2/16)*100;
+                                                     $valuebarsec2 = ($valuesec2/15)*100;
                                                 ?>
-                                            <div class="bar-item" role="progressbar" style="width:<?php echo $valuebarsec2 ?>0%;" aria-valuenow="<?php echo $contenusec2['nb_credits']; ?>0" aria-valuemin="0" aria-valuemax="160"></div>
+                                            <div class="bar-item" role="progressbar" style="width:<?php echo $valuebarsec2 ?>%;" aria-valuenow="<?php echo $contenusec2['nb_credits']; ?>0" aria-valuemin="0" aria-valuemax="150"></div>
                                         </div>
                                     <p><strong><?php echo $contenusec2['nb_credits']; ?> Crédits </strong> <i>*1 crédit = 1 heure de travail</i></p>
                                     </div>
@@ -132,9 +132,9 @@
                                             <div class="bar">
                                                 <?php 
                                                      $valuesec3 = $contenusec3['nb_credits'];
-                                                     $valuebarsec3 = ($valuesec3/16)*100;
+                                                     $valuebarsec3 = ($valuesec3/15)*100;
                                                 ?>
-                                                <div class="bar-item" role="progressbar" style="width:<?php echo $valuebarsec3 ?>%;" aria-valuenow="<?php echo $contenusec3['nb_credits']; ?>0" aria-valuemin="0" aria-valuemax="160"></div>
+                                                <div class="bar-item" role="progressbar" style="width:<?php echo $valuebarsec3 ?>%;" aria-valuenow="<?php echo $contenusec3['nb_credits']; ?>0" aria-valuemin="0" aria-valuemax="150"></div>
                                             </div>
                                         <p><strong><?php echo $contenusec3['nb_credits']; ?> Crédits </strong> <i>*1 crédit = 1 heure de travail</i></p>
                                     </div>
@@ -171,9 +171,9 @@
                                         <div class="bar">
                                                 <?php 
                                                      $valuesec4 = $contenusec4['nb_credits'];
-                                                     $valuebarsec4 = ($valuesec4/16)*100;
+                                                     $valuebarsec4 = ($valuesec4/15)*100;
                                                 ?>
-                                            <div class="bar-item" role="progressbar" style="width:<?php echo $valuebarsec2 ?>0%;" aria-valuenow="<?php echo $contenusec4['nb_credits']; ?>0" aria-valuemin="0" aria-valuemax="160"></div>
+                                            <div class="bar-item" role="progressbar" style="width:<?php echo $valuebarsec2 ?>%;" aria-valuenow="<?php echo $contenusec4['nb_credits']; ?>0" aria-valuemin="0" aria-valuemax="150"></div>
                                         </div>
                                     <p><strong><?php echo $contenusec4['nb_credits']; ?> Crédits </strong> <i>*1 crédit = 1 heure de travail</i></p>
                                     </div>

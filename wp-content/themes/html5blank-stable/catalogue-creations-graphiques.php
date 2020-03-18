@@ -24,4 +24,7 @@
         <?php get_template_part('templates/catalogue/catalogue-footer') ?>     
         <!----------------------------------->
 
+<script>
+    $('.creations-link').addClass('active');
+</script>
 </body>

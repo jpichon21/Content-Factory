@@ -24,5 +24,8 @@
         <!----------------------------------->
         <?php get_template_part('templates/catalogue/catalogue-footer') ?>     
         <!----------------------------------->
-
+        
+<script>
+    $('.videos-link').addClass('active');
+</script>
 </body>

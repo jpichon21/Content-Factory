@@ -24,4 +24,7 @@
         <?php get_template_part('templates/catalogue/catalogue-footer') ?>     
         <!----------------------------------->
 
+<script>
+    $('.edito-link').addClass('active');
+</script>
 </body>
