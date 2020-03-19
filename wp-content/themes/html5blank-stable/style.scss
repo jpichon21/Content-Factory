@@ -129,6 +129,14 @@ a:hover {
     border: 4px solid #fff;
     padding: 13px;
     text-align: center;
+    &.button-black,
+    &.button-black:hover,
+    &.button-black:active,
+    &.button-black:visited,
+    &.button-black:focus{
+        color:  $color-bcgradient-clear!important;
+        border: 4px solid $color-bcgradient-clear;
+    }
 
     &:focus,
     &:active,

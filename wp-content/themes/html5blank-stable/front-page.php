@@ -211,6 +211,12 @@
                             </div>
                         </div>
 
+                        <div class="col-12 buttonContainer">
+                            <a href="<?php echo $catalogue ?>"
+                                class="button col-4 centered"><?php echo get_field('bouton_ccm'); ?></a>
+                        </div>
+         
+
                     </div>
 
                 </div>
@@ -381,6 +387,11 @@
 
 
                     </div>
+
+                    <div class="col-12 buttonContainer ">
+                            <a href="<?php echo $catalogue ?>"
+                                class="button button-black col-4 centered"><?php echo get_field('bouton_exemples'); ?></a>
+                        </div>
 
 
                 </div>

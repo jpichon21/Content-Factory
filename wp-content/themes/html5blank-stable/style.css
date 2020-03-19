@@ -87,6 +87,9 @@ a:hover {
   border: 4px solid #fff;
   padding: 13px;
   text-align: center; }
+  .button.button-black, .button.button-black:hover, .button.button-black:active, .button.button-black:visited, .button.button-black:focus {
+    color: #383838 !important;
+    border: 4px solid #383838; }
   .button:focus, .button:active, .button:visited, .button:hover {
     color: #fff !important; }
 
