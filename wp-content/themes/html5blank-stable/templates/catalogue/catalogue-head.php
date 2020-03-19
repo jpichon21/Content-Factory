@@ -1,4 +1,10 @@
 <?php /* Template Name: catalogue head */  ?>
+<!---------------------------------------->
+<!---------------------------------------->
+<!--- DEVELOPPEMENT PAR NCP MULTIMEDIA --->
+<!------https://ncpmultimedia.com/-------->
+<!---------------------------------------->
+<!---------------------------------------->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
