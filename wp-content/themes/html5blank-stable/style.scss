@@ -199,8 +199,12 @@ footer {
     }
     #menuNav,
     #footerNav {
+        text-align: left;
         padding: 8px 0px;
         position: relative;
+        @include media('<=xlarge') {
+            text-align: center;
+        }
         @include media('<=tablet') {
             padding: 16px 0px;
         }
@@ -238,7 +242,7 @@ footer {
             }
             li {
                 display: inline-block;
-                margin: 0px 0.8vw;
+                margin: 0px 0.4vw;
                 a {
                     font-size: 16px;
                     font-family: 'Helvetica Neue', sans-serif;
@@ -259,8 +263,11 @@ footer {
 }
 
 #catalogueHeader{
-    text-align: center;
+    text-align: center!important;
     height: auto;
+    #menuNav{
+        text-align: center!important;
+    }
     img{
         width: 232px!important;
         max-width: auto;
@@ -345,10 +352,9 @@ footer {
         }
         ul {
             @include media('<=xxlarge') {
-                float: none;
                 display: inline-block;
             }
-            @include media('<=footerbkp') {
+            @include media('<=tablet') {
                float: none;
             }
             li {
@@ -362,16 +368,17 @@ footer {
         }
     }
     #footerlogo {
-        max-width: 148px;
+        max-width: 126px;
         margin-bottom: 18px;
     }
     p{
         color: #fff;
-        font-size: 16px;
+        font-size: 12px;
         font-family: 'Helvetica Neue', sans-serif;
         display: inline-block;
         vertical-align: top;
-        padding: 16px 0px 0px 28px;
+        padding: 20px 0px;
+        margin-left: 12px;
     }
 }
 
@@ -988,6 +995,9 @@ footer {
 
 #expertsTeam {
     background-color: $color-grey;
+    #teamLogo{
+        max-width: 232px;
+    }
 
     #cardsContainer {
         padding-top: 76px;
@@ -1049,7 +1059,7 @@ footer {
     }
 
     .content {
-        padding: 96px 0px;
+        padding: 64px 0px;
         @include media('<=large') {
             padding: 60px 0px;
         }

@@ -41,7 +41,10 @@
                         alt="<?php echo esc_attr($image['alt']); ?>" />
                     <?php endif; ?>
                     <ul class>
+                    <?php $catalogue = get_page_link(get_page_by_path('catalogue-photos')); ?>
                         <li><a href="#CCM">Comment ça marche ?</a></li>
+                        <li class="separator"> | </li>
+                        <li><a href="<?php echo $catalogue ?>">Catalogue</a></li>
                         <li class="separator"> | </li>
                         <li><a href="#Formats">Les formats</a></li>
                         <li class="separator"> | </li>
@@ -434,7 +437,7 @@
                             <?php 
                                     $teamlogo = get_field('team_logo');
                                     if( !empty( $teamlogo ) ): ?>
-                            <img src="<?php echo esc_url($teamlogo['url']); ?>"
+                            <img id="teamLogo" src="<?php echo esc_url($teamlogo['url']); ?>"
                                 alt="<?php echo esc_attr($teamlogo['alt']); ?>" />
                             <?php endif; ?>
                         </div>
@@ -597,7 +600,10 @@
                 <?php endif; ?>
                 <p>© Braaxe - Tous droits réservés</p>
                 <ul class>
+                <?php $catalogue = get_page_link(get_page_by_path('catalogue-photos')); ?>
                     <li><a href="#CCM">Comment ça marche ?</a></li>
+                    <li class="separator"> | </li>
+                    <li><a href="<?php echo $catalogue ?>">Catalogue</a></li>
                     <li class="separator"> | </li>
                     <li><a href="#Formats">Les formats</a></li>
                     <li class="separator"> | </li>

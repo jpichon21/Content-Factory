@@ -1,6 +1,6 @@
 <?php /* Template Name: catalogue sections */  ?>
             <!----------------------------------->
-            <?php if( get_field('contenu_section_1')) { ?>
+            <?php if (get_field('contenu_section_1_titre')) { ?>
                 <section id="Section1">
                     <div class="content column col-9 centered">
                         <div class="row columns">
@@ -59,7 +59,7 @@
             <!----------------------------------->
 
             <!----------------------------------->
-            <?php if( get_field('contenu_section_2')) { ?>
+            <?php if (get_field('contenu_section_2_titre')) { ?>
                 <section id="Section2">
                     <div class="content column col-9 centered">
                         <div class="row columns">
@@ -118,7 +118,7 @@
             <!----------------------------------->
 
             <!----------------------------------->
-            <?php if( get_field('contenu_section_3')) { ?>
+            <?php if (get_field('contenu_section_3_titre')) { ?>
                 <section id="Section3">
                     <div class="content column col-9 centered">
                         <div class="row columns">
@@ -177,7 +177,7 @@
             <!----------------------------------->
 
             <!----------------------------------->
-            <?php if( get_field('contenu_section_4')) { ?>
+            <?php if (get_field('contenu_section_4_titre')) { ?>
             <section id="Section4">
                 <div class="content column col-9 centered">
                     <div class="row columns">

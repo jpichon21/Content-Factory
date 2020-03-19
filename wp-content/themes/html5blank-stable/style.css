@@ -138,8 +138,15 @@ footer {
   header #footerNav,
   footer #menuNav,
   footer #footerNav {
+    text-align: left;
     padding: 8px 0px;
     position: relative; }
+    @media (max-width: 1280px) {
+      header #menuNav,
+      header #footerNav,
+      footer #menuNav,
+      footer #footerNav {
+        text-align: center; } }
     @media (max-width: 768px) {
       header #menuNav,
       header #footerNav,
@@ -193,7 +200,7 @@ footer {
     header nav ul li,
     footer nav ul li {
       display: inline-block;
-      margin: 0px 0.8vw; }
+      margin: 0px 0.4vw; }
       header nav ul li a,
       footer nav ul li a {
         font-size: 16px;
@@ -208,8 +215,10 @@ footer {
         color: #cccccc; }
 
 #catalogueHeader {
-  text-align: center;
+  text-align: center !important;
   height: auto; }
+  #catalogueHeader #menuNav {
+    text-align: center !important; }
   #catalogueHeader img {
     width: 232px !important;
     max-width: auto;
@@ -282,9 +291,8 @@ footer {
       transition: 0.5s ease; }
     @media (max-width: 1440px) {
       footer #footerNav ul {
-        float: none;
         display: inline-block; } }
-    @media (max-width: 1680px) {
+    @media (max-width: 768px) {
       footer #footerNav ul {
         float: none; } }
     footer #footerNav ul li a {
@@ -292,15 +300,16 @@ footer {
     footer #footerNav ul li.separator {
       color: #585858; }
   footer #footerlogo {
-    max-width: 148px;
+    max-width: 126px;
     margin-bottom: 18px; }
   footer p {
     color: #fff;
-    font-size: 16px;
+    font-size: 12px;
     font-family: 'Helvetica Neue', sans-serif;
     display: inline-block;
     vertical-align: top;
-    padding: 16px 0px 0px 28px; }
+    padding: 20px 0px;
+    margin-left: 12px; }
 
 #headerHero {
   position: relative;
@@ -782,6 +791,8 @@ footer {
 
 #expertsTeam {
   background-color: #f0f0f0; }
+  #expertsTeam #teamLogo {
+    max-width: 232px; }
   #expertsTeam #cardsContainer {
     padding-top: 76px;
     text-align: center; }
@@ -825,7 +836,7 @@ footer {
         #expertsTeam #cardsContainer .card-offset {
           margin-top: 0px; } }
   #expertsTeam .content {
-    padding: 96px 0px; }
+    padding: 64px 0px; }
     @media (max-width: 1024px) {
       #expertsTeam .content {
         padding: 60px 0px; } }
