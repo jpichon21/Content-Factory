@@ -82,16 +82,21 @@ a:hover {
   font-family: 'Helvetica Neue Bold', sans-serif;
   font-size: 18px;
   display: block;
-  color: #fff;
+  color: #fff !important;
   cursor: pointer;
   border: 4px solid #fff;
   padding: 13px;
-  text-align: center; }
-  .button.button-black, .button.button-black:hover, .button.button-black:active, .button.button-black:visited, .button.button-black:focus {
+  text-align: center;
+  transition: 0.5s ease; }
+  .button.button-black, .button.button-black:visited {
     color: #383838 !important;
     border: 4px solid #383838; }
-  .button:focus, .button:active, .button:visited, .button:hover {
-    color: #fff !important; }
+  .button.button-black:hover, .button.button-black:active, .button.button-black:focus {
+    color: #fff !important;
+    background-color: #383838 !important; }
+  .button:focus, .button:active, .button:hover {
+    color: #0000ff !important;
+    background-color: #fff; }
 
 @media (max-width: 1024px) {
   .col-9 {
@@ -340,10 +345,10 @@ footer {
     padding: 21vh 0vh; }
     @media (max-width: 1440px) {
       #headerHero .content {
-        padding: 20vh 0vh; } }
+        padding: 16vh 0vh; } }
     @media (max-width: 435px) {
       #headerHero .content {
-        padding: 18vh 0vh; } }
+        padding: 16vh 0vh; } }
   #headerHero h2 {
     font-family: 'Helvetica Neue Bold', sans-serif;
     color: #131313;
@@ -368,15 +373,20 @@ footer {
     #headerHero h2 strong {
       color: #0000ff; }
   #headerHero #headerHeroBtn {
-    margin-top: 40px;
+    margin-top: 26px;
     background-color: #0000ff;
     color: #fff;
     padding: 22px;
+    transition: 0.5s ease;
     display: block;
     text-align: center;
     font-size: 25px;
     font-family: 'Helvetica Neue Bold', sans-serif;
     z-index: 10; }
+    #headerHero #headerHeroBtn:active, #headerHero #headerHeroBtn:focus, #headerHero #headerHeroBtn:hover {
+      background-color: #fff !important;
+      color: #0000ff !important;
+      transition: 0.5s ease; }
     @media (max-width: 435px) {
       #headerHero #headerHeroBtn {
         padding: 18px; } }
@@ -790,7 +800,11 @@ footer {
     #whiteBook .content p {
       font-size: 16px; }
     #whiteBook .content .button {
-      background-color: #ffffff40; }
+      background-color: #ffffff40;
+      transition: 0.5s ease; }
+      #whiteBook .content .button:hover, #whiteBook .content .button:active, #whiteBook .content .button:focus {
+        background-color: #fff;
+        transition: 0.5s ease; }
 
 #expertsTeam {
   background-color: #f0f0f0; }
@@ -931,7 +945,15 @@ footer {
     #Contact form input[type=submit] {
       background-color: #0000ff;
       color: #fff;
+      transition: 0.5s ease;
       font-weight: 600;
       font-family: 'Helvetica Neue Bold', sans-serif;
       font-size: 18px;
-      padding: 16px; }
+      padding: 16px;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      transition: 0.5s ease; }
+      #Contact form input[type=submit]:hover, #Contact form input[type=submit]:active, #Contact form input[type=submit]:focus {
+        /* transform: scale(1.01);
+                transition: 0.5s ease;*/ }

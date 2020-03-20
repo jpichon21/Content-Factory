@@ -124,25 +124,28 @@ a:hover {
     font-family: 'Helvetica Neue Bold', sans-serif;
     font-size: 18px;
     display: block;
-    color: #fff;
+    color: #fff!important;
     cursor: pointer;
     border: 4px solid #fff;
     padding: 13px;
     text-align: center;
+    transition: 0.5s ease;
     &.button-black,
-    &.button-black:hover,
-    &.button-black:active,
-    &.button-black:visited,
-    &.button-black:focus{
+    &.button-black:visited{
         color:  $color-bcgradient-clear!important;
         border: 4px solid $color-bcgradient-clear;
     }
-
+    &.button-black:hover,
+    &.button-black:active,
+    &.button-black:focus{
+        color:  #fff!important;
+        background-color:  $color-bcgradient-clear!important;
+    }
     &:focus,
     &:active,
-    &:visited,
     &:hover {
-        color: #fff !important;
+        color: $color-blue !important;
+        background-color: #fff;
     }
 }
 
@@ -417,10 +420,10 @@ footer {
     .content {
         padding: 21vh 0vh;
         @include media('<=xxlarge') {
-            padding: 20vh 0vh;
+            padding: 16vh 0vh;
         }
         @include media('<=mobile') {
-            padding: 18vh 0vh;
+            padding: 16vh 0vh;
         }
     }
     h2 {
@@ -450,10 +453,18 @@ footer {
     }
 
     #headerHeroBtn {
-        margin-top: 40px;
+        margin-top: 26px;
         background-color: $color-blue;
         color: #fff;
         padding: 22px;
+        transition: 0.5s ease;
+        &:active,
+        &:focus,
+        &:hover{
+                background-color: #fff !important;
+                color: $color-blue !important;
+                transition: 0.5s ease;
+        }
         @include media('<=mobile') {
             padding: 18px;
         }
@@ -996,6 +1007,13 @@ footer {
 
         .button {
             background-color: #ffffff40;
+            transition: 0.5s ease;
+            &:hover,
+            &:active,
+            &:focus{
+                background-color: #fff;
+                transition: 0.5s ease;
+            }
         }
     }
 
@@ -1202,10 +1220,21 @@ footer {
         input[type=submit] {
             background-color: $color-blue;
             color: #fff;
+            transition: 0.5s ease;
             font-weight: 600;
             font-family: 'Helvetica Neue Bold', sans-serif;
             font-size: 18px;
             padding: 16px;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            transition: 0.5s ease;
+            &:hover,
+            &:active,
+            &:focus{
+               /* transform: scale(1.01);
+                transition: 0.5s ease;*/
+            }
         }
     }
 }
