@@ -638,7 +638,8 @@
         <script>
             $('.multiple-items').slick({
                 dots: true,
-                infinite: false,
+                infinite: true,
+                autoplay: true,
                 speed: 300,
                 slidesToShow: 4,
                 slidesToScroll: 4,
