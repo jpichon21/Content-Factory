@@ -707,6 +707,12 @@ footer {
 
 #Exemples {
   background-color: #f0f0f0; }
+  #Exemples #Section1, #Exemples #Section2 {
+    background-color: #f0f0f0 !important; }
+    #Exemples #Section1 .content, #Exemples #Section2 .content {
+      padding: 0px; }
+  #Exemples .buttonContainer {
+    margin-top: 64px; }
   #Exemples h3, #Exemples p, #Exemples li {
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: 600; }

@@ -224,102 +224,99 @@
             </section>
             <!----------------------------------->
 
-
-
             <!----------------------------------->
             <section id="Formats">
+            <div class="content column col-9 centered">
+                <div class="row columns">
+                    <div class="title-container col-7 centered">
+                        <h3><?php echo get_field('titre_formats'); ?></h3>
+                    </div>
+                    <div>
+                    </div>
 
-                <div class="content column col-9 centered">
-                    <div class="row columns">
-                        <div class="title-container col-7 centered">
-                            <h3><?php echo get_field('titre_formats'); ?></h3>
-                        </div>
+                    <div class="col-12 slider multiple-items">
+
                         <div>
+                            <?php 
+                                        $icon_formats_1 = get_field('icon_formats_1');
+                                        if( !empty( $icon_formats_1 ) ): ?>
+                            <img src="<?php echo esc_url($icon_formats_1['url']); ?>"
+                                alt="<?php echo esc_attr($icon_formats_1['alt']); ?>" />
+                            <p><?php echo esc_attr($icon_formats_1['alt']); ?></p>
+                            <?php endif; ?>
                         </div>
 
-                        <div class="col-12 slider multiple-items">
-
-                            <div>
-                                <?php 
-                                            $icon_formats_1 = get_field('icon_formats_1');
-                                            if( !empty( $icon_formats_1 ) ): ?>
-                                <img src="<?php echo esc_url($icon_formats_1['url']); ?>"
-                                    alt="<?php echo esc_attr($icon_formats_1['alt']); ?>" />
-                                <p><?php echo esc_attr($icon_formats_1['alt']); ?></p>
-                                <?php endif; ?>
-                            </div>
-
-                            <div>
-                                <?php 
-                                            $icon_formats_2 = get_field('icon_formats_2');
-                                            if( !empty( $icon_formats_2 ) ): ?>
-                                <img src="<?php echo esc_url($icon_formats_2['url']); ?>"
-                                    alt="<?php echo esc_attr($icon_formats_2['alt']); ?>" />
-                                <p><?php echo esc_attr($icon_formats_2['alt']); ?></p>
-                                <?php endif; ?>
-                            </div>
-
-                            <div>
-                                <?php 
-                                            $icon_formats_3 = get_field('icon_formats_3');
-                                            if( !empty( $icon_formats_3 ) ): ?>
-                                <img src="<?php echo esc_url($icon_formats_3['url']); ?>"
-                                    alt="<?php echo esc_attr($icon_formats_3['alt']); ?>" />
-                                <p><?php echo esc_attr($icon_formats_3['alt']); ?></p>
-                                <?php endif; ?>
-                            </div>
-
-                            <div>
-                                <?php 
-                                            $icon_formats_4 = get_field('icon_formats_4');
-                                            if( !empty( $icon_formats_4 ) ): ?>
-                                <img src="<?php echo esc_url($icon_formats_4['url']); ?>"
-                                    alt="<?php echo esc_attr($icon_formats_4['alt']); ?>" />
-                                <p><?php echo esc_attr($icon_formats_4['alt']); ?></p>
-                                <?php endif; ?>
-                            </div>
-
-                            <div>
-                                <?php 
-                                            $icon_formats_5 = get_field('icon_formats_5');
-                                            if( !empty( $icon_formats_5 ) ): ?>
-                                <img src="<?php echo esc_url($icon_formats_5['url']); ?>"
-                                    alt="<?php echo esc_attr($icon_formats_5['alt']); ?>" />
-                                <p><?php echo esc_attr($icon_formats_5['alt']); ?></p>
-                                <?php endif; ?>
-                            </div>
-
-                            <div>
-                                <?php 
-                                            $icon_formats_6 = get_field('icon_formats_6');
-                                            if( !empty( $icon_formats_6 ) ): ?>
-                                <img src="<?php echo esc_url($icon_formats_6['url']); ?>"
-                                    alt="<?php echo esc_attr($icon_formats_6['alt']); ?>" />
-                                <p><?php echo esc_attr($icon_formats_6['alt']); ?></p>
-                                <?php endif; ?>
-                            </div>
-
-                            <div>
-                                <?php 
-                                            $icon_formats_7 = get_field('icon_formats_7');
-                                            if( !empty( $icon_formats_7 ) ): ?>
-                                <img src="<?php echo esc_url($icon_formats_7['url']); ?>"
-                                    alt="<?php echo esc_attr($icon_formats_7['alt']); ?>" />
-                                <p><?php echo esc_attr($icon_formats_7['alt']); ?></p>
-                                <?php endif; ?>
-                            </div>
-
-                            <div>
-                                <?php 
-                                            $icon_formats_8 = get_field('icon_formats_8');
-                                            if( !empty( $icon_formats_8 ) ): ?>
-                                <img src="<?php echo esc_url($icon_formats_8['url']); ?>"
-                                    alt="<?php echo esc_attr($icon_formats_8['alt']); ?>" />
-                                <p><?php echo esc_attr($icon_formats_8['alt']); ?></p>
-                                <?php endif; ?>
-                            </div>
-
+                        <div>
+                            <?php 
+                                        $icon_formats_2 = get_field('icon_formats_2');
+                                        if( !empty( $icon_formats_2 ) ): ?>
+                            <img src="<?php echo esc_url($icon_formats_2['url']); ?>"
+                                alt="<?php echo esc_attr($icon_formats_2['alt']); ?>" />
+                            <p><?php echo esc_attr($icon_formats_2['alt']); ?></p>
+                            <?php endif; ?>
                         </div>
+
+                        <div>
+                            <?php 
+                                        $icon_formats_3 = get_field('icon_formats_3');
+                                        if( !empty( $icon_formats_3 ) ): ?>
+                            <img src="<?php echo esc_url($icon_formats_3['url']); ?>"
+                                alt="<?php echo esc_attr($icon_formats_3['alt']); ?>" />
+                            <p><?php echo esc_attr($icon_formats_3['alt']); ?></p>
+                            <?php endif; ?>
+                        </div>
+
+                        <div>
+                            <?php 
+                                        $icon_formats_4 = get_field('icon_formats_4');
+                                        if( !empty( $icon_formats_4 ) ): ?>
+                            <img src="<?php echo esc_url($icon_formats_4['url']); ?>"
+                                alt="<?php echo esc_attr($icon_formats_4['alt']); ?>" />
+                            <p><?php echo esc_attr($icon_formats_4['alt']); ?></p>
+                            <?php endif; ?>
+                        </div>
+
+                        <div>
+                            <?php 
+                                        $icon_formats_5 = get_field('icon_formats_5');
+                                        if( !empty( $icon_formats_5 ) ): ?>
+                            <img src="<?php echo esc_url($icon_formats_5['url']); ?>"
+                                alt="<?php echo esc_attr($icon_formats_5['alt']); ?>" />
+                            <p><?php echo esc_attr($icon_formats_5['alt']); ?></p>
+                            <?php endif; ?>
+                        </div>
+
+                        <div>
+                            <?php 
+                                        $icon_formats_6 = get_field('icon_formats_6');
+                                        if( !empty( $icon_formats_6 ) ): ?>
+                            <img src="<?php echo esc_url($icon_formats_6['url']); ?>"
+                                alt="<?php echo esc_attr($icon_formats_6['alt']); ?>" />
+                            <p><?php echo esc_attr($icon_formats_6['alt']); ?></p>
+                            <?php endif; ?>
+                        </div>
+
+                        <div>
+                            <?php 
+                                        $icon_formats_7 = get_field('icon_formats_7');
+                                        if( !empty( $icon_formats_7 ) ): ?>
+                            <img src="<?php echo esc_url($icon_formats_7['url']); ?>"
+                                alt="<?php echo esc_attr($icon_formats_7['alt']); ?>" />
+                            <p><?php echo esc_attr($icon_formats_7['alt']); ?></p>
+                            <?php endif; ?>
+                        </div>
+
+                        <div>
+                            <?php 
+                                        $icon_formats_8 = get_field('icon_formats_8');
+                                        if( !empty( $icon_formats_8 ) ): ?>
+                            <img src="<?php echo esc_url($icon_formats_8['url']); ?>"
+                                alt="<?php echo esc_attr($icon_formats_8['alt']); ?>" />
+                            <p><?php echo esc_attr($icon_formats_8['alt']); ?></p>
+                            <?php endif; ?>
+                        </div>
+
+                    </div>
 
             </section>
             <!----------------------------------->
@@ -328,76 +325,136 @@
             <!----------------------------------->
             <section id="Exemples">
 
-                <div class="content column col-9 centered">
+            <?php if (get_field('contenu_section_1_titre')) { ?>
+                <section id="Section1">
+                    <div class="content column col-9 centered">
+                        <div class="row columns">
 
-                    <div class="row columns">
-                        <div class="image-container col-6 ">
-                            <?php 
-                                    $imgsocial1 = get_field('image_social_media_1');
-                                    if( !empty( $imgsocial1 ) ): ?>
-                            <img src="<?php echo esc_url($imgsocial1['url']); ?>"
-                                alt="<?php echo esc_attr($imgsocial1['alt']); ?>" />
-                            <?php endif; ?>
-                        </div>
-
-
-                        <div class="title-container col-6 ">
-                            <?php
-                                        $contenu_social_media_1 = get_field('contenu_social_media_1');
-                                        if( $contenu_social_media_1 ): ?>
-                            <h3><?php echo $contenu_social_media_1['titre']; ?>
-                                <br><span><?php echo $contenu_social_media_1['sous_titre']; ?></span></h3>
-                            <p><?php echo $contenu_social_media_1['description']; ?></p>
-                            <h4><?php echo $contenu_social_media_1['titre_liste']; ?></h4>
-                            <ul>
-                                <li><?php echo $contenu_social_media_1['objet_1']; ?></li>
-                                <li><?php echo $contenu_social_media_1['objet_2']; ?></li>
-                            </ul>
-                            <?php endif; ?>
+                            <div class="image-container  col-6 ">
+                                <?php $imgsec1 = get_field('image_section_1');
+                                        if( !empty( $imgsec1 ) ): ?>
+                                <img src="<?php echo esc_url($imgsec1['url']); ?>"
+                                    alt="<?php echo esc_attr($imgsec1['alt']); ?>" />
+                                <?php endif; ?>
+                            </div>
+                            
+                            <div class="column col-1"></div>
+                            
+                            <div class="title-container col-5">
+                                <?php $contenusec1 = get_field('contenu_section_1');
+                                    if( $contenusec1 ): ?>
+                                        <h3><?php echo $contenusec1['titre']; ?></h3>
+                                        <h4>Cas d'usage</h4>
+                                            <p><?php echo $contenusec1['description']; ?><br>
+                                            <strong>Durée : <?php echo $contenusec1['duree']; ?></strong>
+                                            </p>
+                                        <h4>Eléments à fournir pour la production</h4>
+                                            <ul>
+                                                <?php if( $contenusec1['element_1']) { ?>
+                                                    <li><?php echo $contenusec1['element_1']; ?></li>
+                                                <?php } ?>
+                                                <?php if( $contenusec1['element_2']) { ?>
+                                                    <li><?php echo $contenusec1['element_2']; ?></li>
+                                                <?php } ?>
+                                                <?php if( $contenusec1['element_3']) { ?>
+                                                    <li><?php echo $contenusec1['element_3']; ?></li>
+                                                <?php } ?>
+                                                <?php if( $contenusec1['element_4']) { ?>
+                                                    <li><?php echo $contenusec1['element_4']; ?></li>
+                                                <?php } ?>
+                                            </ul>
+                                        <h4>Estimation en crédits*</h4>
+                                        <div class="bar-infos col-9">
+                                                <div class="bar">
+                                                    <?php 
+                                                        $valuesec1 = $contenusec1['nb_credits'];
+                                                        $valuebarsec1 = ($valuesec1/15)*100;
+                                                    ?>
+                                                    <div class="bar-item" role="progressbar" style="width:<?php echo $valuebarsec1 ?>%;" aria-valuenow="<?php echo $contenusec1['nb_credits']; ?>0" aria-valuemin="0" aria-valuemax="150"></div>
+                                                </div>
+                                            <p><strong><?php echo $contenusec1['nb_credits']; ?> Crédits </strong> <i>*1 crédit = 1 heure de travail</i></p>
+                                        </div>
+                                <?php endif; ?>
+                            </div>
+                            
                         </div>
                     </div>
-
-                    <div class="row columns last">
-
-                        <div class="title-container col-5 ">
-                            <?php
-                                            $contenu_social_media_2 = get_field('contenu_social_media_2');
-                                            if( $contenu_social_media_2 ): ?>
-                            <h3><?php echo $contenu_social_media_2['titre']; ?>
-                                <br><span><?php echo $contenu_social_media_2['sous_titre']; ?></span></h3>
-                            <p><?php echo $contenu_social_media_2['description']; ?></p>
-                            <h4><?php echo $contenu_social_media_2['titre_liste']; ?></h4>
-                            <ul>
-                                <li><?php echo $contenu_social_media_2['objet_1']; ?></li>
-                                <li><?php echo $contenu_social_media_2['objet_2']; ?></li>
-                            </ul>
-                            <?php endif; ?>
-                        </div>
-
-                        <div class="gutter col-1"></div>
-
-                        <div class="image-container col-6 ">
-                            <?php 
-                                    $imgsocial2 = get_field('image_social_media_2');
-                                    if( !empty( $imgsocial2 ) ): ?>
-                            <img src="<?php echo esc_url($imgsocial2['url']); ?>"
-                                alt="<?php echo esc_attr($imgsocial2['alt']); ?>" />
-                            <?php endif; ?>
-                        </div>
-
-
-                    </div>
-
-                    <div class="col-12 buttonContainer ">
-                            <a href="<?php echo $catalogue ?>"
-                                class="button button-black col-4 centered"><?php echo get_field('bouton_exemples'); ?></a>
-                        </div>
-
-
-                </div>
-            </section>
+                    
+                </section>
+            <?php } ?>
             <!----------------------------------->
 
+            <!----------------------------------->
+            <?php if (get_field('contenu_section_2_titre')) { ?>
+                <section id="Section2">
+                    <div class="content column col-9 centered">
+                        <div class="row columns">
+
+                            <div class="title-container col-6">
+                                <?php $contenusec2 = get_field('contenu_section_2');
+                                    if( $contenusec2 ): ?>
+                                        <h3><?php echo $contenusec2['titre']; ?></h3>
+                                        <h4>Cas d'usage</h4>
+                                            <p><?php echo $contenusec2['description']; ?><br>
+                                            <strong>Durée : <?php echo $contenusec2['duree']; ?></strong>
+                                            </p>
+                                        <h4>Eléments à fournir pour la production</h4>
+                                            <ul>
+                                                <?php if( $contenusec2['element_1']) { ?>
+                                                    <li><?php echo $contenusec2['element_1']; ?></li>
+                                                <?php } ?>
+                                                <?php if( $contenusec2['element_2']) { ?>
+                                                    <li><?php echo $contenusec2['element_2']; ?></li>
+                                                <?php } ?>
+                                                <?php if( $contenusec2['element_3']) { ?>
+                                                    <li><?php echo $contenusec2['element_3']; ?></li>
+                                                <?php } ?>
+                                                <?php if( $contenusec2['element_4']) { ?>
+                                                    <li><?php echo $contenusec2['element_4']; ?></li>
+                                                <?php } ?>
+                                            </ul>
+                                        <h4>Estimation en crédits*</h4>
+                                        <div class="bar-infos col-8">
+                                            <div class="bar">
+                                                    <?php 
+                                                        $valuesec2 = $contenusec2['nb_credits'];
+                                                        $valuebarsec2 = ($valuesec2/15)*100;
+                                                    ?>
+                                                <div class="bar-item" role="progressbar" style="width:<?php echo $valuebarsec2 ?>%;" aria-valuenow="<?php echo $contenusec2['nb_credits']; ?>0" aria-valuemin="0" aria-valuemax="150"></div>
+                                            </div>
+                                        <p><strong><?php echo $contenusec2['nb_credits']; ?> Crédits </strong> <i>*1 crédit = 1 heure de travail</i></p>
+                                        </div>
+                                <?php endif; ?>
+                            </div>
+
+                            <div class="column col-1"></div>
+
+                            <div class="image-container  col-5 ">
+                                <?php $imgsec2 = get_field('image_section_2');
+                                        if( !empty( $imgsec2 ) ): ?>
+                                <img src="<?php echo esc_url($imgsec2['url']); ?>"
+                                    alt="<?php echo esc_attr($imgsec2['alt']); ?>" />
+                                <?php endif; ?>
+                            </div>
+                            
+                            </div>
+
+                            <div class="row columns">
+                                <div class="col-12 buttonContainer ">
+                                    <a href="<?php echo $catalogue ?>" class="button button-black col-4 centered"><?php echo get_field('bouton_exemples'); ?></a>
+                                </div>
+                            </div>              
+                  
+                        </div>
+
+                 
+                            
+                </section>
+            <?php } ?>
+       
+
+            </section>
+            <!----------------------------------->
 
             <!----------------------------------->
             <section id="Stats">

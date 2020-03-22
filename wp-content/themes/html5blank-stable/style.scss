@@ -880,6 +880,15 @@ footer {
 
 #Exemples{
     background-color: #f0f0f0;
+    #Section1, #Section2{
+       background-color: #f0f0f0!important;
+       .content{
+            padding: 0px;
+        }
+    }
+    .buttonContainer{
+        margin-top: 64px;
+    }
     h3,p,li {
         font-family: 'Helvetica Neue', sans-serif;
         font-weight: 600;
