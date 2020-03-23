@@ -3,7 +3,8 @@
 <section id="catalogueBlueNav">
     <div class="content column col-9 centered">
         <?php
-                    $photos = get_page_link(get_page_by_path('catalogue-photos'));
+                    $cap_photo = get_page_link(get_page_by_path('catalogue-photos'));
+                    $cap_video = get_page_link(get_page_by_path('catalogue-captation-video'));
                     $videos = get_page_link(get_page_by_path('catalogue-videos'));
                     $creations = get_page_link(get_page_by_path('catalogue-creations-graphiques'));
                     $podcast = get_page_link(get_page_by_path('catalogue-podcast'));;
@@ -11,7 +12,9 @@
                     $campagne = get_page_link(get_page_by_path('catalogue-campagne'));
                 ?>
         <ul>
-            <li><a class="photos-link" href="<?php echo $photos ?>">Photos</a></li>
+            <li><a class="cap_photo-link" href="<?php echo $cap_photo ?>">Captation Photo</a></li>
+            <li class="separator"><a href="#">|</a></li>
+            <li><a class="cap_video-link" href="<?php echo $cap_video ?>">Captation Video</a></li>
             <li class="separator"><a href="#">|</a></li>
             <li><a class="videos-link" href="<?php echo $videos ?>">Videos</a></li>
             <li class="separator"><a href="#">|</a></li>

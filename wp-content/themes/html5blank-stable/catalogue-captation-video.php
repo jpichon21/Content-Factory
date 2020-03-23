@@ -1,7 +1,7 @@
-<?php /* Template Name: Catalogue Base Template */ get_header(); ?>
-
+<?php /* Template Name: Catalogue Captation Video */ get_header(); ?>
 
 <?php get_template_part('templates/catalogue/catalogue-head') ?>
+
 <body>
 
         <!----------------------------------->
@@ -24,8 +24,8 @@
         <!----------------------------------->
         <?php get_template_part('templates/catalogue/catalogue-footer') ?>     
         <!----------------------------------->
-
+        
 <script>
-    $('.cap_photo-link').addClass('active');
+    $('.cap_video-link').addClass('active');
 </script>
 </body>
