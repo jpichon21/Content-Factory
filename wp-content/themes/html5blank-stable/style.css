@@ -218,9 +218,6 @@ footer {
         font-family: 'Helvetica Neue', sans-serif;
         color: #131313;
         font-weight: 600; }
-        header nav ul li a.active,
-        footer nav ul li a.active {
-          font-family: 'Helvetica Bold', sans-serif; }
       header nav ul li.separator,
       footer nav ul li.separator {
         color: #cccccc; }

@@ -1,11 +1,13 @@
+<html <?php language_attributes(); ?> class="no-js">
 <!---------------------------------------->
 <!---------------------------------------->
 <!--- DEVELOPPEMENT PAR NCP MULTIMEDIA --->
 <!------https://ncpmultimedia.com/-------->
+<!------mail: ncpmedia21@gmail.com-------->
 <!---------------------------------------->
 <!---------------------------------------->
-<html <?php language_attributes(); ?> class="no-js">
 	<head>
+
 		<!-- Google Tag Manager -->
 		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -13,15 +15,17 @@
 		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 		})(window,document,'script','dataLayer','GTM-MZWDQGN');</script>
 		<!-- End Google Tag Manager -->
+
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162004483-1"></script>
 		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-162004483-1');
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-162004483-1');
 		</script>
+		<!-- End -->
+
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
 
@@ -63,8 +67,21 @@
         });
         </script>
 
+	<script>
+		lightbox.option({
+		'fitImagesInViewport': true
+		});
+	</script>
+
 	</head>
 	<body <?php body_class(); ?>>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZWDQGN"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+
+
 
 		<!-- wrapper -->
 		<div class="wrapper">
