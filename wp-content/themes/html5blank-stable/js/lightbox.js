@@ -305,8 +305,8 @@
 
       $image.width(preloader.width);
       $image.height(preloader.height);
-      windowWidth = $(window).width();
-      windowHeight = $(window).height();
+      windowWidth = window.innerWidth; 
+      windowHeight = window.innerHeight;
 
       // Calculate the max image dimensions for the current viewport.
       // Take into account the border around the image and an additional 10px gutter on each side.
