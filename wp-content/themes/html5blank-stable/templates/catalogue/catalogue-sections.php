@@ -125,7 +125,9 @@
 
                     <?php if( $image) { ?>
                         <div class="image-container  col-6 ">
-                            <img data-lightbox="image" src="<?php echo $image['url']; ?>" />
+                            <a data-lightbox="image" href="<?php echo $image['url']; ?>" >
+                                <img data-lightbox="image" src="<?php echo $image['url']; ?>" />
+                            </a>
                         </div>
                     <?php } ?>
 
