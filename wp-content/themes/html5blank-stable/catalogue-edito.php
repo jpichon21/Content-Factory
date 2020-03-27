@@ -1,6 +1,4 @@
 <?php /* Template Name: Catalogue Edito  */ get_header(); ?>
-
-<?php get_template_part('templates/catalogue/catalogue-head') ?>
 <body>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZWDQGN"
