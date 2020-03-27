@@ -360,6 +360,9 @@ function enqueue_styles() {
 
     wp_register_style('slick', get_template_directory_uri() . '/css/slick.css', array(), '1.0', 'all');
     wp_enqueue_style('slick'); // Enqueue it!
+
+    wp_register_style('lightbox', get_template_directory_uri() . '/css/lightbox.css', array(), '1.0', 'all');
+    wp_enqueue_style('lightbox'); // Enqueue it!
 }
 
 function enqueue_script() {
@@ -370,6 +373,8 @@ function enqueue_script() {
     wp_register_script('slick', '/js/slick.min.js', array(), '1.0');
     wp_enqueue_script('slick'); // Enqueue it!
 
+    wp_register_script('lightbox', '/js/lightbox.js', array(), '1.0');
+    wp_enqueue_script('lightbox'); // Enqueue it!
 }
 
 // Remove Actions

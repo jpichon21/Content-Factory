@@ -133,6 +133,9 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing, div.wpcf7-mail-sent-o
 .bar-infos strong {
   float: left; }
 
+.lb-close {
+  display: none !important; }
+
 /** SECTIONS **/
 header,
 footer {
@@ -264,8 +267,10 @@ footer {
   #catalogueBlueNav a:hover, #catalogueBlueNav .active {
     font-weight: bolder; }
   #catalogueBlueNav ul li {
+    font-family: 'Helvetia Neue Bold', sans-serif;
+    font-weight: bolder;
     display: inline-block;
-    margin: 0px 12px;
+    margin: 0px 3px;
     /*@include media('<=mobile') {
                 display: block;
                 border-bottom: 1px solid #fff;
@@ -277,7 +282,6 @@ footer {
             }*/ }
     @media (max-width: 768px) {
       #catalogueBlueNav ul li {
-        margin: 0px 6px;
         padding: 12px 0px; } }
 
 footer {
@@ -637,79 +641,87 @@ footer {
       #Formats .slider .slick-dots {
         bottom: 72px; } }
 
-#Exemples h3, #Exemples p, #Exemples li, #Section1 h3, #Section1 p, #Section1 li, #Section3 h3, #Section3 p, #Section3 li, #Section2 h3, #Section2 p, #Section2 li, #Section4 h3, #Section4 p, #Section4 li {
+#Exemples h3, #Exemples p, #Exemples li, .Section1 h3, .Section1 p, .Section1 li, .Section3 h3, .Section3 p, .Section3 li, .Section2 h3, .Section2 p, .Section2 li, .Section4 h3, .Section4 p, .Section4 li {
   font-family: 'Helvetica Neue', sans-serif;
   font-weight: 600; }
 
-#Exemples p, #Exemples h4, #Exemples li, #Section1 p, #Section1 h4, #Section1 li, #Section3 p, #Section3 h4, #Section3 li, #Section2 p, #Section2 h4, #Section2 li, #Section4 p, #Section4 h4, #Section4 li {
+#Exemples p, #Exemples h4, #Exemples li, .Section1 p, .Section1 h4, .Section1 li, .Section3 p, .Section3 h4, .Section3 li, .Section2 p, .Section2 h4, .Section2 li, .Section4 p, .Section4 h4, .Section4 li {
   font-size: 16px; }
 
-#Exemples ul, #Section1 ul, #Section3 ul, #Section2 ul, #Section4 ul {
+#Exemples ul, .Section1 ul, .Section3 ul, .Section2 ul, .Section4 ul {
   margin-left: 0px; }
   @media (max-width: 1024px) {
-    #Exemples ul, #Section1 ul, #Section3 ul, #Section2 ul, #Section4 ul {
+    #Exemples ul, .Section1 ul, .Section3 ul, .Section2 ul, .Section4 ul {
       margin: 0px; } }
 
-#Exemples h3, #Section1 h3, #Section3 h3, #Section2 h3, #Section4 h3 {
+#Exemples h3, .Section1 h3, .Section3 h3, .Section2 h3, .Section4 h3 {
   font-size: 46px; }
   @media (max-width: 435px) {
-    #Exemples h3, #Section1 h3, #Section3 h3, #Section2 h3, #Section4 h3 {
+    #Exemples h3, .Section1 h3, .Section3 h3, .Section2 h3, .Section4 h3 {
       font-size: 36px; } }
-  #Exemples h3 span, #Section1 h3 span, #Section3 h3 span, #Section2 h3 span, #Section4 h3 span {
+  #Exemples h3 span, .Section1 h3 span, .Section3 h3 span, .Section2 h3 span, .Section4 h3 span {
     font-family: 'Helvetica Neue Bold', sans-serif; }
 
-#Exemples h4, #Section1 h4, #Section3 h4, #Section2 h4, #Section4 h4 {
+#Exemples h4, .Section1 h4, .Section3 h4, .Section2 h4, .Section4 h4 {
   font-family: 'Helvetica Neue Bold', sans-serif;
   color: #0000ff;
   font-weight: 600;
   margin-bottom: 16px; }
 
-#Exemples p, #Section1 p, #Section3 p, #Section2 p, #Section4 p {
+#Exemples p, .Section1 p, .Section3 p, .Section2 p, .Section4 p {
   font-weight: 600; }
 
-#Exemples li, #Section1 li, #Section3 li, #Section2 li, #Section4 li {
+#Exemples li, .Section1 li, .Section3 li, .Section2 li, .Section4 li {
   margin-top: 0px; }
 
 @media (max-width: 768px) {
-  #Exemples .content, #Section1 .content, #Section3 .content, #Section2 .content, #Section4 .content {
+  #Exemples .content, .Section1 .content, .Section3 .content, .Section2 .content, .Section4 .content {
     text-align: center; } }
 
 @media (max-width: 435px) {
-  #Exemples .content, #Section1 .content, #Section3 .content, #Section2 .content, #Section4 .content {
+  #Exemples .content, .Section1 .content, .Section3 .content, .Section2 .content, .Section4 .content {
     text-align: left; } }
 
-#Exemples .title-container, #Section1 .title-container, #Section3 .title-container, #Section2 .title-container, #Section4 .title-container {
+#Exemples .title-container, .Section1 .title-container, .Section3 .title-container, .Section2 .title-container, .Section4 .title-container {
   padding-top: 0px; }
 
-@media (max-width: 1024px) {
-  #Exemples .image-container, #Section1 .image-container, #Section3 .image-container, #Section2 .image-container, #Section4 .image-container {
-    padding-top: 64px; } }
+#Exemples .image-container, #Exemples .video-container, .Section1 .image-container, .Section1 .video-container, .Section3 .image-container, .Section3 .video-container, .Section2 .image-container, .Section2 .video-container, .Section4 .image-container, .Section4 .video-container {
+  overflow: hidden; }
+  #Exemples .image-container video, #Exemples .video-container video, .Section1 .image-container video, .Section1 .video-container video, .Section3 .image-container video, .Section3 .video-container video, .Section2 .image-container video, .Section2 .video-container video, .Section4 .image-container video, .Section4 .video-container video {
+    width: 100% !important;
+    height: auto; }
+  @media (max-width: 1024px) {
+    #Exemples .image-container, #Exemples .video-container, .Section1 .image-container, .Section1 .video-container, .Section3 .image-container, .Section3 .video-container, .Section2 .image-container, .Section2 .video-container, .Section4 .image-container, .Section4 .video-container {
+      padding-top: 64px; } }
   @media (max-width: 1024px) and (max-width: 768px) {
-    #Exemples .image-container, #Section1 .image-container, #Section3 .image-container, #Section2 .image-container, #Section4 .image-container {
+    #Exemples .image-container, #Exemples .video-container, .Section1 .image-container, .Section1 .video-container, .Section3 .image-container, .Section3 .video-container, .Section2 .image-container, .Section2 .video-container, .Section4 .image-container, .Section4 .video-container {
       text-align: center;
       padding-top: 32px; } }
   @media (max-width: 1024px) and (max-width: 435px) {
-    #Exemples .image-container, #Section1 .image-container, #Section3 .image-container, #Section2 .image-container, #Section4 .image-container {
+    #Exemples .image-container, #Exemples .video-container, .Section1 .image-container, .Section1 .video-container, .Section3 .image-container, .Section3 .video-container, .Section2 .image-container, .Section2 .video-container, .Section4 .image-container, .Section4 .video-container {
       text-align: center; } }
 
+#Exemples .image-container, .Section1 .image-container, .Section3 .image-container, .Section2 .image-container, .Section4 .image-container {
+  max-height: 500px; }
+
 @media (max-width: 768px) {
-  #Exemples .title-container, #Section1 .title-container, #Section3 .title-container, #Section2 .title-container, #Section4 .title-container {
+  #Exemples .title-container, .Section1 .title-container, .Section3 .title-container, .Section2 .title-container, .Section4 .title-container {
     padding-top: 32px; } }
 
-#Exemples .image-left, #Section1 .image-left, #Section3 .image-left, #Section2 .image-left, #Section4 .image-left {
+#Exemples .image-left, .Section1 .image-left, .Section3 .image-left, .Section2 .image-left, .Section4 .image-left {
   text-align: left !important; }
 
-#Exemples .image-right, #Section1 .image-right, #Section3 .image-right, #Section2 .image-right, #Section4 .image-right {
+#Exemples .image-right, .Section1 .image-right, .Section3 .image-right, .Section2 .image-right, .Section4 .image-right {
   text-align: right !important; }
 
-#Exemples img, #Section1 img, #Section3 img, #Section2 img, #Section4 img {
+#Exemples img, .Section1 img, .Section3 img, .Section2 img, .Section4 img {
   max-width: 100%; }
 
 #Exemples {
   background-color: #f0f0f0; }
-  #Exemples #Section1, #Exemples #Section2 {
+  #Exemples .Section1, #Exemples .Section2 {
     background-color: #f0f0f0 !important; }
-    #Exemples #Section1 .content, #Exemples #Section2 .content {
+    #Exemples .Section1 .content, #Exemples .Section2 .content {
       padding: 0px; }
   #Exemples .buttonContainer {
     margin-top: 64px; }
@@ -734,25 +746,25 @@ footer {
       #Exemples .row.last {
         padding-top: 32px; } }
 
-#Section1, #Section3 {
+.Section1 {
   background-color: #fff; }
 
-#Section2, #Section4 {
+.Section2 {
   background-color: #f0f0f0; }
 
-#Section1 h3, #Section1 h4, #Section1 strong, #Section3 h3, #Section3 h4, #Section3 strong, #Section2 h3, #Section2 h4, #Section2 strong, #Section4 h3, #Section4 h4, #Section4 strong {
+.Section1 h3, .Section1 h4, .Section1 strong, .Section2 h3, .Section2 h4, .Section2 strong {
   font-family: 'Helvetica Neue Bold', sans-serif; }
 
-#Section1 .content, #Section3 .content, #Section2 .content, #Section4 .content {
+.Section1 .content, .Section2 .content {
   padding: 60px 0px; }
   @media (max-width: 768px) {
-    #Section1 .content, #Section3 .content, #Section2 .content, #Section4 .content {
+    .Section1 .content, .Section2 .content {
       padding: 32px 0px; } }
 
-#Section1 ul li, #Section3 ul li, #Section2 ul li, #Section4 ul li {
+.Section1 ul li, .Section2 ul li {
   list-style-type: disc; }
 
-#Section1 i, #Section3 i, #Section2 i, #Section4 i {
+.Section1 i, .Section2 i {
   float: right; }
 
 #Stats {

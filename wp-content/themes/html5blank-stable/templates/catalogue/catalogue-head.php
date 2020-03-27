@@ -20,7 +20,10 @@
     <link rel="stylesheet" src="<?php echo get_template_directory_uri() . '/spectre.min.css'; ?>">
     <link rel="stylesheet" src="<?php echo get_template_directory_uri() . '/slick.css'; ?>">
     <link rel="stylesheet" src="<?php echo get_template_directory_uri() . '/slick-theme.css'; ?>">
+    <link rel="stylesheet" src="<?php echo get_template_directory_uri() . '/lightbox.css'; ?>">
+
 
     <script src="<?php echo get_template_directory_uri() . '/js/jquery-3.4.1.min.js'; ?>"></script>
     <script src="<?php echo get_template_directory_uri() . '/js/slick.min.js'; ?>"></script>
+    <script src="<?php echo get_template_directory_uri() . '/js/lightbox.js'; ?>"></script>
 </head>

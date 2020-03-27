@@ -197,6 +197,9 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing, div.wpcf7-mail-sent-o
     }
 }
 
+.lb-close{
+    display: none!important;
+}
 
 
 /** SECTIONS **/
@@ -323,10 +326,11 @@ footer {
     }
     ul{
         li{
+            font-family: 'Helvetia Neue Bold', sans-serif;
+            font-weight: bolder;
             display: inline-block;
-            margin: 0px 12px;
+            margin: 0px 3px;
             @include media('<=tablet') {
-                margin: 0px 6px;
                 padding: 12px 0px;
             }
             /*@include media('<=mobile') {
@@ -802,7 +806,7 @@ footer {
     }
 }
 
-#Exemples, #Section1, #Section3, #Section2, #Section4 {
+#Exemples, .Section1, .Section3, .Section2, .Section4 {
     h3,p,li {
         font-family: 'Helvetica Neue', sans-serif;
         font-weight: 600;
@@ -848,7 +852,12 @@ footer {
     .title-container {
         padding-top: 0px;
     }
-    .image-container {
+    .image-container, .video-container {
+        overflow: hidden;
+        video{
+            width: 100%!important;
+            height: auto;
+        }
         @include media('<=large') {
             padding-top: 64px;
             @include media('<=tablet') {
@@ -859,6 +868,9 @@ footer {
                 text-align: center;
             }
         }
+    }
+    .image-container{
+        max-height: 500px;
     }
     .title-container{
         @include media('<=tablet') {
@@ -880,7 +892,7 @@ footer {
 
 #Exemples{
     background-color: #f0f0f0;
-    #Section1, #Section2{
+    .Section1, .Section2{
        background-color: #f0f0f0!important;
        .content{
             padding: 0px;
@@ -915,15 +927,15 @@ footer {
     }
 }
 
-#Section1, #Section3{
+.Section1{
     background-color: #fff;
 }
 
-#Section2, #Section4{
+.Section2{
     background-color: #f0f0f0;
 }
 
-#Section1, #Section3, #Section2, #Section4{
+.Section1, .Section2{
     h3, h4, strong{
         font-family: 'Helvetica Neue Bold', sans-serif;
     }
