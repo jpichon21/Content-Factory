@@ -699,7 +699,10 @@ footer {
       text-align: center; } }
 
 #Exemples .image-container, .Section1 .image-container, .Section3 .image-container, .Section2 .image-container, .Section4 .image-container {
-  max-height: 500px; }
+  height: 700px;
+  text-align: center; }
+  #Exemples .image-container img, .Section1 .image-container img, .Section3 .image-container img, .Section2 .image-container img, .Section4 .image-container img {
+    height: 100%; }
 
 @media (max-width: 768px) {
   #Exemples .title-container, .Section1 .title-container, .Section3 .title-container, .Section2 .title-container, .Section4 .title-container {

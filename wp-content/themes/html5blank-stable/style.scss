@@ -262,10 +262,6 @@ footer {
                     font-family: 'Helvetica Neue', sans-serif;
                     color: $color-black;
                     font-weight: 600;
-
-                    &.active {
-                        //text-decoration: underline;
-                    }
                 }
                 &.separator {
                     color: $color-midgrey;
@@ -870,7 +866,11 @@ footer {
         }
     }
     .image-container{
-        max-height: 500px;
+        height: 700px;
+        text-align: center;
+        img{
+            height: 100%;
+        }
     }
     .title-container{
         @include media('<=tablet') {
