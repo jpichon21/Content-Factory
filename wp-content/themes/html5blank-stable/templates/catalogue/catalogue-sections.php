@@ -11,6 +11,7 @@
         $credits = get_sub_field('nb_credits');
         $layout = get_sub_field('layout');
         $video_mp4 =  get_sub_field('video'); 
+        $embed =  get_sub_field('embed'); 
      ?>
 
     <?php if ($layout == 'Section1') { ?>
@@ -31,6 +32,12 @@
                                 <video controls>
                                     <source src="<?php echo $video_mp4['url']; ?>" />
                                 </video>
+                            </div>
+                     <?php } ?>
+
+                     <?php if( $embed) { ?>
+                            <div class="video-container col-6 ">
+                                 <?php echo $embed ?>
                             </div>
                      <?php } ?>
 
@@ -136,6 +143,12 @@
                                 <video controls>
                                     <source src="<?php echo $video_mp4['url']; ?>" />
                                 </video>
+                            </div>
+                     <?php } ?>
+
+                     <?php if( $embed) { ?>
+                            <div class="video-container col-6 ">
+                                <?php echo $embed; ?>
                             </div>
                      <?php } ?>
 
