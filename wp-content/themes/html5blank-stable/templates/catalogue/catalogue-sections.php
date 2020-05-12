@@ -65,19 +65,51 @@
                             <?php } ?>
                         </ul>
 
+                        <h4>Production comprenant</h4>
+
+                        <ul>
+                            <?php if(get_sub_field('production_1')) { ?>
+                            <li><?php the_sub_field('production_1'); ?></li>
+                            <?php } ?>
+                            <?php if(get_sub_field('production_2')) { ?>
+                            <li><?php the_sub_field('production_2'); ?></li>
+                            <?php } ?>
+                            <?php if(get_sub_field('production_3')) { ?>
+                            <li><?php the_sub_field('production_3'); ?></li>
+                            <?php } ?>
+                            <?php if(get_sub_field('production_4')) { ?>
+                            <li><?php the_sub_field('production_4'); ?></li>
+                            <?php } ?>
+                        </ul>
+                     
                         <h4>Estimation en crédits*</h4>
-                        <div class="bar-infos col-9">
-                            <div class="bar">
-                                <?php 
-                                                                    $valuesec1 = $credits;
-                                                                    $valuebarsec1 = ($valuesec1/15)*100;
-                                                                ?>
-                                <div class="bar-item" role="progressbar" style="width:<?php echo $valuebarsec1 ?>%;"
-                                    aria-valuenow="<?php the_sub_field('nb_credits'); ?>0" aria-valuemin="0"
-                                    aria-valuemax="150"></div>
+                        <!----------------------------------->
+                        <?php if( get_sub_field('hide_credits') ): ?>
+                            <div class="bar-infos col-9">
+                                <p> Crédits à estimer en fonction du besoin </p>
                             </div>
-                            <p><strong><?php echo($credits) ?> Crédits </strong> <i>*1 crédit = 1 heure de travail</i></p>
-                        </div>
+                        <?php endif; ?>
+                        <!----------------------------------->
+
+                        <!----------------------------------->
+                        <?php if(!get_sub_field('hide_credits') ): ?>
+                            <div class="bar-infos col-9">
+                                <div class="bar">
+                                    <?php 
+                                                                        $valuesec1 = $credits;
+                                                                        $valuebarsec1 = ($valuesec1/15)*100;
+                                                                    ?>
+                                    <div class="bar-item" role="progressbar" style="width:<?php echo $valuebarsec1 ?>%;"
+                                        aria-valuenow="<?php the_sub_field('nb_credits'); ?>0" aria-valuemin="0"
+                                        aria-valuemax="150"></div>
+
+                                </div>
+                                <p><strong><?php echo($credits) ?> Crédits </strong> <i>*1 crédit = 1 heure de travail</i></p>
+                            </div>
+                        <?php endif; ?>
+                        <!----------------------------------->
+                                            
+                                                
                     </div>
                 </div>
             </div>
@@ -113,20 +145,53 @@
                             <?php } ?>
                         </ul>
 
+                        <h4>Production comprenant</h4>
+
+                        <ul>
+                            <?php if(get_sub_field('production_1')) { ?>
+                            <li><?php the_sub_field('production_1'); ?></li>
+                            <?php } ?>
+                            <?php if(get_sub_field('production_2')) { ?>
+                            <li><?php the_sub_field('production_2'); ?></li>
+                            <?php } ?>
+                            <?php if(get_sub_field('production_3')) { ?>
+                            <li><?php the_sub_field('production_3'); ?></li>
+                            <?php } ?>
+                            <?php if(get_sub_field('production_4')) { ?>
+                            <li><?php the_sub_field('production_4'); ?></li>
+                            <?php } ?>
+                        </ul>
+
                         <h4>Estimation en crédits*</h4>
-                        <div class="bar-infos col-9">
-                            <div class="bar">
-                                <?php 
-                                                                    $valuesec1 = $credits;
-                                                                    $valuebarsec1 = ($valuesec1/15)*100;
-                                                                ?>
-                                <div class="bar-item" role="progressbar" style="width:<?php echo $valuebarsec1 ?>%;"
-                                    aria-valuenow="<?php the_sub_field('nb_credits'); ?>0" aria-valuemin="0"
-                                    aria-valuemax="150"></div>
+
+                        <!----------------------------------->
+                        <?php if( get_sub_field('hide_credits') ): ?>
+                            <div class="bar-infos col-9">
+                                <p> Crédits à estimer en fonction du besoin </p>
                             </div>
-                            <p><strong><?php echo($credits) ?> Crédits </strong> <i>*1 crédit = 1 heure de travail</i></p>
-                        </div>
+                        <?php endif; ?>
+                         <!----------------------------------->
+
+                        <!----------------------------------->
+                        <?php if(!get_sub_field('hide_credits') ): ?>
+                            <div class="bar-infos col-9">
+                                <div class="bar">
+                                    <?php 
+                                                                        $valuesec1 = $credits;
+                                                                        $valuebarsec1 = ($valuesec1/15)*100;
+                                                                    ?>
+                                    <div class="bar-item" role="progressbar" style="width:<?php echo $valuebarsec1 ?>%;"
+                                        aria-valuenow="<?php the_sub_field('nb_credits'); ?>0" aria-valuemin="0"
+                                        aria-valuemax="150"></div>
+
+                                </div>
+                                <p><strong><?php echo($credits) ?> Crédits </strong> <i>*1 crédit = 1 heure de travail</i></p>
+                            </div>
+                        <?php endif; ?>
+                         <!----------------------------------->
+              
                     </div>
+           
 
                     <div class="column col-1"></div>
 

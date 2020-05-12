@@ -9,9 +9,9 @@
                             <h3><?php echo get_field('titre_consigne', 'options'); ?></h3>
                         </div>
 
-                        <div class="column col-1"></div>
+                        <!--div class="column col-1"></div-->
 
-                        <div class="column col-6">
+                        <div class="column col-7">
                             <p class="description">
                                 <?php echo get_field('objet_consigne_1', 'options'); ?><br>
                                 <?php echo get_field('objet_consigne_2', 'options'); ?><br>

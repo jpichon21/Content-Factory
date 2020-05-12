@@ -683,10 +683,12 @@ footer {
   padding-top: 0px; }
 
 #Exemples .image-container, #Exemples .video-container, .Section1 .image-container, .Section1 .video-container, .Section3 .image-container, .Section3 .video-container, .Section2 .image-container, .Section2 .video-container, .Section4 .image-container, .Section4 .video-container {
-  overflow: hidden; }
-  #Exemples .image-container video, #Exemples .video-container video, .Section1 .image-container video, .Section1 .video-container video, .Section3 .image-container video, .Section3 .video-container video, .Section2 .image-container video, .Section2 .video-container video, .Section4 .image-container video, .Section4 .video-container video {
-    width: 100% !important;
-    height: auto; }
+  overflow: hidden;
+  height: 700px;
+  text-align: center; }
+  #Exemples .image-container img, #Exemples .image-container video, #Exemples .video-container img, #Exemples .video-container video, .Section1 .image-container img, .Section1 .image-container video, .Section1 .video-container img, .Section1 .video-container video, .Section3 .image-container img, .Section3 .image-container video, .Section3 .video-container img, .Section3 .video-container video, .Section2 .image-container img, .Section2 .image-container video, .Section2 .video-container img, .Section2 .video-container video, .Section4 .image-container img, .Section4 .image-container video, .Section4 .video-container img, .Section4 .video-container video {
+    max-height: 100%;
+    width: auto; }
   @media (max-width: 1024px) {
     #Exemples .image-container, #Exemples .video-container, .Section1 .image-container, .Section1 .video-container, .Section3 .image-container, .Section3 .video-container, .Section2 .image-container, .Section2 .video-container, .Section4 .image-container, .Section4 .video-container {
       padding-top: 64px; } }
@@ -697,13 +699,6 @@ footer {
   @media (max-width: 1024px) and (max-width: 435px) {
     #Exemples .image-container, #Exemples .video-container, .Section1 .image-container, .Section1 .video-container, .Section3 .image-container, .Section3 .video-container, .Section2 .image-container, .Section2 .video-container, .Section4 .image-container, .Section4 .video-container {
       text-align: center; } }
-
-#Exemples .image-container, .Section1 .image-container, .Section3 .image-container, .Section2 .image-container, .Section4 .image-container {
-  height: 700px;
-  text-align: center; }
-  #Exemples .image-container img, .Section1 .image-container img, .Section3 .image-container img, .Section2 .image-container img, .Section4 .image-container img {
-    max-height: 100%;
-    width: auto; }
 
 @media (max-width: 768px) {
   #Exemples .title-container, .Section1 .title-container, .Section3 .title-container, .Section2 .title-container, .Section4 .title-container {

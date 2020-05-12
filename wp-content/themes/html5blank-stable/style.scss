@@ -850,9 +850,11 @@ footer {
     }
     .image-container, .video-container {
         overflow: hidden;
-        video{
-            width: 100%!important;
-            height: auto;
+        height: 700px;
+        text-align: center;
+        img, video{
+            max-height: 100%;
+            width: auto;
         }
         @include media('<=large') {
             padding-top: 64px;
@@ -863,14 +865,6 @@ footer {
             @include media('<=mobile') {
                 text-align: center;
             }
-        }
-    }
-    .image-container{
-        height: 700px;
-        text-align: center;
-        img{
-            max-height: 100%;
-            width: auto;
         }
     }
     .title-container{
