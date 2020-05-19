@@ -453,6 +453,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                       
                     <div class="content column col-9 centered">
                         <div class="row columns">
+                        
 
                             <div class="title-container col-5">
                                 <h3><?php echo $titre; ?></h3>
@@ -549,7 +550,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         <?php echo $embed; ?>
                                     </div>
                             <?php } ?>
+                    
+                    
                     </div>
+                         <div class="row columns">
+                                <div class="col-12 buttonContainer ">
+                                    <a href="<?php echo $catalogue ?>" class="button button-black col-4 centered"><?php echo get_field('bouton_exemples'); ?></a>
+                                </div>
+                            </div>              
                 </div>
             </section>
             <?php endif ?>
