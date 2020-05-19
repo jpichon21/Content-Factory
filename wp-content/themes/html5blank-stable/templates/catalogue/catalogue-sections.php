@@ -29,7 +29,7 @@
 
                     <?php if( $video_mp4) { ?>
                             <div class="video-container col-6 ">
-                                <video controls>
+                                <video controls muted loop>
                                     <source src="<?php echo $video_mp4['url']; ?>" />
                                 </video>
                             </div>
@@ -46,22 +46,22 @@
                         <h3><?php the_sub_field('titre'); ?></h3>
                         <h4>Cas d'usage</h4>
                         <p><?php the_sub_field('description'); ?><br>
-                            <strong>Durée : <?php the_sub_field('duree'); ?></strong>
+                            <strong>Volume : <?php the_sub_field('duree'); ?></strong>
                         </p>
                         <h4>Eléments à fournir pour la production</h4>
 
                         <ul>
                             <?php if(get_sub_field('element_1')) { ?>
-                            <li><?php the_sub_field('element_1'); ?></li>
+                            <li><span><?php the_sub_field('element_1'); ?></span></li>
                             <?php } ?>
                             <?php if(get_sub_field('element_2')) { ?>
-                            <li><?php the_sub_field('element_2'); ?></li>
+                            <li><span><?php the_sub_field('element_2'); ?></span></li>
                             <?php } ?>
                             <?php if(get_sub_field('element_3')) { ?>
-                            <li><?php the_sub_field('element_3'); ?></li>
+                            <li><span><?php the_sub_field('element_3'); ?></span></li>
                             <?php } ?>
                             <?php if(get_sub_field('element_4')) { ?>
-                            <li><?php the_sub_field('element_4'); ?></li>
+                            <li><span><?php the_sub_field('element_4'); ?></span></li>
                             <?php } ?>
                         </ul>
 
@@ -69,16 +69,16 @@
 
                         <ul>
                             <?php if(get_sub_field('production_1')) { ?>
-                            <li><?php the_sub_field('production_1'); ?></li>
+                            <li><span><?php the_sub_field('production_1'); ?></span></li>
                             <?php } ?>
                             <?php if(get_sub_field('production_2')) { ?>
-                            <li><?php the_sub_field('production_2'); ?></li>
+                            <li><span><?php the_sub_field('production_2'); ?></span></li>
                             <?php } ?>
                             <?php if(get_sub_field('production_3')) { ?>
-                            <li><?php the_sub_field('production_3'); ?></li>
+                            <li><span><?php the_sub_field('production_3'); ?></span></li>
                             <?php } ?>
                             <?php if(get_sub_field('production_4')) { ?>
-                            <li><?php the_sub_field('production_4'); ?></li>
+                            <li><span><?php the_sub_field('production_4'); ?></span></li>
                             <?php } ?>
                         </ul>
                      
@@ -97,11 +97,11 @@
                                 <div class="bar">
                                     <?php 
                                                                         $valuesec1 = $credits;
-                                                                        $valuebarsec1 = ($valuesec1/15)*100;
+                                                                        $valuebarsec1 = ($valuesec1/40)*100;
                                                                     ?>
                                     <div class="bar-item" role="progressbar" style="width:<?php echo $valuebarsec1 ?>%;"
                                         aria-valuenow="<?php the_sub_field('nb_credits'); ?>0" aria-valuemin="0"
-                                        aria-valuemax="150"></div>
+                                        aria-valuemax="400"></div>
 
                                 </div>
                                 <p><strong><?php echo($credits) ?> Crédits </strong> <i>*1 crédit = 1 heure de travail</i></p>
@@ -126,22 +126,22 @@
                         <h3><?php the_sub_field('titre'); ?></h3>
                         <h4>Cas d'usage</h4>
                         <p><?php the_sub_field('description'); ?><br>
-                            <strong>Durée : <?php the_sub_field('duree'); ?></strong>
+                            <strong>Volume : <?php the_sub_field('duree'); ?></strong>
                         </p>
                         <h4>Eléments à fournir pour la production</h4>
 
                         <ul>
                             <?php if(get_sub_field('element_1')) { ?>
-                            <li><?php the_sub_field('element_1'); ?></li>
+                            <li><span><?php the_sub_field('element_1'); ?></span></li>
                             <?php } ?>
                             <?php if(get_sub_field('element_2')) { ?>
-                            <li><?php the_sub_field('element_2'); ?></li>
+                            <li><span><?php the_sub_field('element_2'); ?></span></li>
                             <?php } ?>
                             <?php if(get_sub_field('element_3')) { ?>
-                            <li><?php the_sub_field('element_3'); ?></li>
+                            <li><span><?php the_sub_field('element_3'); ?></span></li>
                             <?php } ?>
                             <?php if(get_sub_field('element_4')) { ?>
-                            <li><?php the_sub_field('element_4'); ?></li>
+                            <li><span><?php the_sub_field('element_4'); ?></span></li>
                             <?php } ?>
                         </ul>
 
@@ -149,16 +149,16 @@
 
                         <ul>
                             <?php if(get_sub_field('production_1')) { ?>
-                            <li><?php the_sub_field('production_1'); ?></li>
+                            <li><span><?php the_sub_field('production_1'); ?></span></li>
                             <?php } ?>
                             <?php if(get_sub_field('production_2')) { ?>
-                            <li><?php the_sub_field('production_2'); ?></li>
+                            <li><span><?php the_sub_field('production_2'); ?></span></li>
                             <?php } ?>
                             <?php if(get_sub_field('production_3')) { ?>
-                            <li><?php the_sub_field('production_3'); ?></li>
+                            <li><span><?php the_sub_field('production_3'); ?></span></li>
                             <?php } ?>
                             <?php if(get_sub_field('production_4')) { ?>
-                            <li><?php the_sub_field('production_4'); ?></li>
+                            <li><span><?php the_sub_field('production_4'); ?></span></li>
                             <?php } ?>
                         </ul>
 
@@ -178,11 +178,11 @@
                                 <div class="bar">
                                     <?php 
                                                                         $valuesec1 = $credits;
-                                                                        $valuebarsec1 = ($valuesec1/15)*100;
+                                                                        $valuebarsec1 = ($valuesec1/40)*100;
                                                                     ?>
                                     <div class="bar-item" role="progressbar" style="width:<?php echo $valuebarsec1 ?>%;"
                                         aria-valuenow="<?php the_sub_field('nb_credits'); ?>0" aria-valuemin="0"
-                                        aria-valuemax="150"></div>
+                                        aria-valuemax="400"></div>
 
                                 </div>
                                 <p><strong><?php echo($credits) ?> Crédits </strong> <i>*1 crédit = 1 heure de travail</i></p>
@@ -205,7 +205,7 @@
 
                     <?php if( $video_mp4) { ?>
                             <div class="video-container col-6 ">
-                                <video controls>
+                                <video controls muted loop>
                                     <source src="<?php echo $video_mp4['url']; ?>" />
                                 </video>
                             </div>

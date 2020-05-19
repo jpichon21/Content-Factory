@@ -62,6 +62,10 @@ html {
     overflow-x: hidden;
 }
 
+*:focus,*:active,*:hover{
+    box-shadow: none!important;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -856,6 +860,9 @@ footer {
             max-height: 100%;
             width: auto;
         }
+        video{
+            max-width: 100%;
+        }
         @include media('<=large') {
             padding-top: 64px;
             @include media('<=tablet') {
@@ -942,6 +949,9 @@ footer {
     }
     ul li{
         list-style-type: disc;
+        span{
+            margin-left : -0.3rem;
+        }
     }
     i{
         float: right;
@@ -1253,4 +1263,14 @@ footer {
             }
         }
     }
+}
+
+
+/*Notifs*/
+.woocommerce-notices-wrapper{
+    position: absolute;
+    li{
+        font-size: 1.6rem!important;
+    }
+
 }

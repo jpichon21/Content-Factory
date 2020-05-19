@@ -33,6 +33,9 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden; }
 
+*:focus, *:active, *:hover {
+  box-shadow: none !important; }
+
 * {
   box-sizing: border-box; }
 
@@ -689,6 +692,8 @@ footer {
   #Exemples .image-container img, #Exemples .image-container video, #Exemples .video-container img, #Exemples .video-container video, .Section1 .image-container img, .Section1 .image-container video, .Section1 .video-container img, .Section1 .video-container video, .Section3 .image-container img, .Section3 .image-container video, .Section3 .video-container img, .Section3 .video-container video, .Section2 .image-container img, .Section2 .image-container video, .Section2 .video-container img, .Section2 .video-container video, .Section4 .image-container img, .Section4 .image-container video, .Section4 .video-container img, .Section4 .video-container video {
     max-height: 100%;
     width: auto; }
+  #Exemples .image-container video, #Exemples .video-container video, .Section1 .image-container video, .Section1 .video-container video, .Section3 .image-container video, .Section3 .video-container video, .Section2 .image-container video, .Section2 .video-container video, .Section4 .image-container video, .Section4 .video-container video {
+    max-width: 100%; }
   @media (max-width: 1024px) {
     #Exemples .image-container, #Exemples .video-container, .Section1 .image-container, .Section1 .video-container, .Section3 .image-container, .Section3 .video-container, .Section2 .image-container, .Section2 .video-container, .Section4 .image-container, .Section4 .video-container {
       padding-top: 64px; } }
@@ -759,6 +764,8 @@ footer {
 
 .Section1 ul li, .Section2 ul li {
   list-style-type: disc; }
+  .Section1 ul li span, .Section2 ul li span {
+    margin-left: -0.3rem; }
 
 .Section1 i, .Section2 i {
   float: right; }
@@ -971,3 +978,9 @@ footer {
       #Contact form input[type=submit]:hover, #Contact form input[type=submit]:active, #Contact form input[type=submit]:focus {
         /* transform: scale(1.01);
                 transition: 0.5s ease;*/ }
+
+/*Notifs*/
+.woocommerce-notices-wrapper {
+  position: absolute; }
+  .woocommerce-notices-wrapper li {
+    font-size: 1.6rem !important; }
