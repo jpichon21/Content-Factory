@@ -900,12 +900,21 @@ footer {
             padding: 0px;
         }
     }
+    strong{
+        font-family: 'Helvetica Neue Bold', sans-serif;
+    }
     .buttonContainer{
         margin-top: 64px;
     }
     h3,p,li {
         font-family: 'Helvetica Neue', sans-serif;
         font-weight: 600;
+    }
+    li{
+        list-style-type: disc;
+        span{
+            margin-left: -0.3rem;
+        }
     }
     .content{
         transform: translateY(-118px);

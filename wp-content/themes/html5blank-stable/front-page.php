@@ -295,133 +295,264 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <!----------------------------------->
             <section id="Exemples">
+      
+            <section id="Section1">
+                <?php
+                    $exemple1 = get_field('exemple_format_1');
+                    if( $exemple1 ): ?>
 
-            <?php if (get_field('contenu_section_1_titre')) { ?>
-                <section id="Section1">
-                    <div class="content column col-9 centered">
-                        <div class="row columns">
+                <?php 
+                    $titre = $exemple1['titre'];
+                    $image = $exemple1['image'];
+                    $video_mp4 = $exemple1['video'];
+                    $embed = $exemple1['embed'];
+                    $description = $exemple1['description'];
+                    $volume = $exemple1['volume'];
+                    $element1 = $exemple1['element_1'];
+                    $element2 = $exemple1['element_2'];
+                    $element3 = $exemple1['element_3'];
+                    $element4 = $exemple1['element_4'];
+                    $production1 = $exemple1['production_1'];
+                    $production2 = $exemple1['production_2'];
+                    $production3 = $exemple1['production_3'];
+                    $production4 = $exemple1['production_4'];
+                    $hide_credits = $exemple1['hide_credits'];
+                    $credits = $exemple1['nb_credits'];
+                ?>
+                        
+                <div class="content column col-9 centered">
+                    <div class="row columns">
 
+                        <?php if( $image) { ?>
                             <div class="image-container  col-6 ">
-                                <?php $imgsec1 = get_field('image_section_1');
-                                        if( !empty( $imgsec1 ) ): ?>
-                                <img src="<?php echo esc_url($imgsec1['url']); ?>"
-                                    alt="<?php echo esc_attr($imgsec1['alt']); ?>" />
-                                <?php endif; ?>
+                                <a data-lightbox="image" href="<?php echo $image['url']; ?>" >
+                                    <img data-lightbox="image" src="<?php echo $image['url']; ?>" />
+                                </a>
                             </div>
+                        <?php } ?>
+
+                        <?php if( $video_mp4) { ?>
+                                <div class="video-container col-6 ">
+                                    <video controls muted loop>
+                                        <source src="<?php echo $video_mp4['url']; ?>" />
+                                    </video>
+                                </div>
+                        <?php } ?>
+
+                        <?php if( $embed) { ?>
+                                <div class="video-container col-6 ">
+                                    <?php echo $embed ?>
+                                </div>
+                        <?php } ?>
+
+                        <div class="column col-1"></div>
+                        <div class="title-container col-5">
+                            <h3><?php echo $titre ?></h3>
+                            <h4>Cas d'usage</h4>
+                            <p><?php echo $description  ?><br>
+                                <strong>Volume : <?php echo $volume  ?></strong>
+                            </p>
+                            <h4>Eléments à fournir pour la production</h4>
+
+                            <ul>
+                                <?php if( $element1) { ?>
+                                    <li><span><?php echo $element1; ?></span></li>
+                                <?php } ?>
+                                <?php if( $element2) { ?>
+                                    <li><span><?php echo $element2; ?></span></li>
+                                <?php } ?>
+                                <?php if( $element3) { ?>
+                                    <li><span><?php echo $element3; ?></span></li>
+                                <?php } ?>
+                                <?php if( $element4) { ?>
+                                    <li><span><?php echo $element4; ?></span></li>
+                                <?php } ?>
                             
-                            <div class="column col-1"></div>
-                            
-                            <div class="title-container col-5">
-                                <?php $contenusec1 = get_field('contenu_section_1');
-                                    if( $contenusec1 ): ?>
-                                        <h3><?php echo $contenusec1['titre']; ?></h3>
-                                        <h4>Cas d'usage</h4>
-                                            <p><?php echo $contenusec1['description']; ?><br>
-                                            <strong>Durée : <?php echo $contenusec1['duree']; ?></strong>
-                                            </p>
-                                        <h4>Eléments à fournir pour la production</h4>
-                                            <ul>
-                                                <?php if( $contenusec1['element_1']) { ?>
-                                                    <li><?php echo $contenusec1['element_1']; ?></li>
-                                                <?php } ?>
-                                                <?php if( $contenusec1['element_2']) { ?>
-                                                    <li><?php echo $contenusec1['element_2']; ?></li>
-                                                <?php } ?>
-                                                <?php if( $contenusec1['element_3']) { ?>
-                                                    <li><?php echo $contenusec1['element_3']; ?></li>
-                                                <?php } ?>
-                                                <?php if( $contenusec1['element_4']) { ?>
-                                                    <li><?php echo $contenusec1['element_4']; ?></li>
-                                                <?php } ?>
-                                            </ul>
-                                        <h4>Estimation en crédits*</h4>
-                                        <div class="bar-infos col-9">
-                                                <div class="bar">
-                                                    <?php 
-                                                        $valuesec1 = $contenusec1['nb_credits'];
-                                                        $valuebarsec1 = ($valuesec1/15)*100;
-                                                    ?>
-                                                    <div class="bar-item" role="progressbar" style="width:<?php echo $valuebarsec1 ?>%;" aria-valuenow="<?php echo $contenusec1['nb_credits']; ?>0" aria-valuemin="0" aria-valuemax="150"></div>
-                                                </div>
-                                            <p><strong><?php echo $contenusec1['nb_credits']; ?> Crédits </strong> <i>*1 crédit = 1 heure de travail</i></p>
-                                        </div>
-                                <?php endif; ?>
-                            </div>
-                            
+                            </ul>
+
+                            <h4>Production comprenant</h4>
+
+                            <ul>
+                                <?php if( $production1) { ?>
+                                    <li><span><?php echo $production1; ?></span></li>
+                                <?php } ?>
+                                <?php if( $production2) { ?>
+                                    <li><span><?php echo $production2; ?></span></li>
+                                <?php } ?>
+                          
+                                <?php if( $production3) { ?>
+                                    <li><span><?php echo $production3; ?></span></li>
+                                <?php } ?>
+                          
+                                <?php if( $production4) { ?>
+                                    <li><span><?php echo $production4; ?></span></li>
+                                <?php } ?>
+                            </ul>
+                        
+                            <h4>Estimation en crédits*</h4>
+                            <!----------------------------------->
+                            <?php if( $hide_credits ): ?>
+                                <div class="bar-infos col-9">
+                                    <p> Crédits à estimer en fonction du besoin </p>
+                                </div>
+                            <?php endif; ?>
+                            <!----------------------------------->
+
+                            <!----------------------------------->
+                            <?php if(! $hide_credits ): ?>
+                                <div class="bar-infos col-9">
+                                    <div class="bar">
+                                        <?php 
+                                                                            $valuesec1 = $credits;
+                                                                            $valuebarsec1 = ($valuesec1/40)*100;
+                                                                        ?>
+                                        <div class="bar-item" role="progressbar" style="width:<?php echo $valuebarsec1 ?>%;"
+                                            aria-valuenow="<?php the_sub_field('nb_credits'); ?>0" aria-valuemin="0"
+                                            aria-valuemax="400"></div>
+
+                                    </div>
+                                    <p><strong><?php echo($credits) ?> Crédits </strong> <i>*1 crédit = 1 heure de travail</i></p>
+                                </div>
+                            <?php endif; ?>
+                            <!----------------------------------->
+                                                
+                                                    
                         </div>
                     </div>
-                    
-                </section>
-            <?php } ?>
+                </div>
+            </section>
+            <?php endif ?>
             <!----------------------------------->
 
             <!----------------------------------->
-            <?php if (get_field('contenu_section_2_titre')) { ?>
-                <section id="Section2">
+            
+            <section id="Section2">
+            
+                <?php
+                    $exemple2 = get_field('exemple_format_2');
+                    if( $exemple2 ): ?>
+
+                    <?php 
+                        $titre = $exemple2['titre'];
+                        $image = $exemple2['image'];
+                        $video_mp4 = $exemple2['video'];
+                        $embed = $exemple2['embed'];
+                        $description = $exemple2['description'];
+                        $volume = $exemple2['volume'];
+                        $element1 = $exemple2['element_1'];
+                        $element2 = $exemple2['element_2'];
+                        $element3 = $exemple2['element_3'];
+                        $element4 = $exemple2['element_4'];
+                        $production1 = $exemple2['production_1'];
+                        $production2 = $exemple2['production_2'];
+                        $production3 = $exemple2['production_3'];
+                        $production4 = $exemple2['production_4'];
+                        $hide_credits = $exemple2['hide_credits'];
+                        $credits = $exemple2['nb_credits'];
+                    ?>
+                      
                     <div class="content column col-9 centered">
                         <div class="row columns">
 
-                            <div class="title-container col-6">
-                                <?php $contenusec2 = get_field('contenu_section_2');
-                                    if( $contenusec2 ): ?>
-                                        <h3><?php echo $contenusec2['titre']; ?></h3>
-                                        <h4>Cas d'usage</h4>
-                                            <p><?php echo $contenusec2['description']; ?><br>
-                                            <strong>Durée : <?php echo $contenusec2['duree']; ?></strong>
-                                            </p>
-                                        <h4>Eléments à fournir pour la production</h4>
-                                            <ul>
-                                                <?php if( $contenusec2['element_1']) { ?>
-                                                    <li><?php echo $contenusec2['element_1']; ?></li>
-                                                <?php } ?>
-                                                <?php if( $contenusec2['element_2']) { ?>
-                                                    <li><?php echo $contenusec2['element_2']; ?></li>
-                                                <?php } ?>
-                                                <?php if( $contenusec2['element_3']) { ?>
-                                                    <li><?php echo $contenusec2['element_3']; ?></li>
-                                                <?php } ?>
-                                                <?php if( $contenusec2['element_4']) { ?>
-                                                    <li><?php echo $contenusec2['element_4']; ?></li>
-                                                <?php } ?>
-                                            </ul>
-                                        <h4>Estimation en crédits*</h4>
-                                        <div class="bar-infos col-8">
-                                            <div class="bar">
-                                                    <?php 
-                                                        $valuesec2 = $contenusec2['nb_credits'];
-                                                        $valuebarsec2 = ($valuesec2/15)*100;
-                                                    ?>
-                                                <div class="bar-item" role="progressbar" style="width:<?php echo $valuebarsec2 ?>%;" aria-valuenow="<?php echo $contenusec2['nb_credits']; ?>0" aria-valuemin="0" aria-valuemax="150"></div>
-                                            </div>
-                                        <p><strong><?php echo $contenusec2['nb_credits']; ?> Crédits </strong> <i>*1 crédit = 1 heure de travail</i></p>
-                                        </div>
+                            <div class="title-container col-5">
+                                <h3><?php echo $titre; ?></h3>
+                                <h4>Cas d'usage</h4>
+                                <p><?php echo $description; ?><br>
+                                    <strong>Volume : <?php echo $volume;  ?></strong>
+                                </p>
+
+                                <h4>Eléments à fournir pour la production</h4>
+                                    <ul>
+                                        <?php if( $element1) { ?>
+                                            <li><span><?php echo $element1; ?></span></li>
+                                        <?php } ?>
+                                        <?php if( $element2) { ?>
+                                            <li><span><?php echo $element2; ?></span></li>
+                                        <?php } ?>
+                                        <?php if( $element3) { ?>
+                                            <li><span><?php echo $element3; ?></span></li>
+                                        <?php } ?>
+                                        <?php if( $element4) { ?>
+                                            <li><span><?php echo $element4; ?></span></li>
+                                        <?php } ?>
+                                    </ul>
+
+                                <h4>Production comprenant</h4>
+                                    <ul>
+                                        <?php if( $production1) { ?>
+                                            <li><span><?php echo $production1; ?></span></li>
+                                        <?php } ?>
+                                        <?php if( $production2) { ?>
+                                            <li><span><?php echo $production2; ?></span></li>
+                                        <?php } ?>
+                                
+                                        <?php if( $production3) { ?>
+                                            <li><span><?php echo $production3; ?></span></li>
+                                        <?php } ?>
+                                
+                                        <?php if( $production4) { ?>
+                                            <li><span><?php echo $production4; ?></span></li>
+                                        <?php } ?>
+                                    </ul>
+
+                                <h4>Estimation en crédits*</h4>
+
+                                <!----------------------------------->
+                                <?php if( $hide_credits ): ?>
+                                    <div class="bar-infos col-9">
+                                        <p> Crédits à estimer en fonction du besoin </p>
+                                    </div>
                                 <?php endif; ?>
+                                <!----------------------------------->
+
+                                <!----------------------------------->
+                                <?php if(! $hide_credits ): ?>
+                                    <div class="bar-infos col-9">
+                                        <div class="bar">
+                                            <?php 
+                                                                                $valuesec1 = $credits;
+                                                                                $valuebarsec1 = ($valuesec1/40)*100;
+                                                                            ?>
+                                            <div class="bar-item" role="progressbar" style="width:<?php echo $valuebarsec1 ?>%;"
+                                                aria-valuenow="<?php the_sub_field('nb_credits'); ?>0" aria-valuemin="0"
+                                                aria-valuemax="400"></div>
+
+                                        </div>
+                                        <p><strong><?php echo($credits) ?> Crédits </strong> <i>*1 crédit = 1 heure de travail</i></p>
+                                    </div>
+                                <?php endif; ?>
+                                <!----------------------------------->
+                    
                             </div>
+                
 
                             <div class="column col-1"></div>
 
-                            <div class="image-container  col-5 ">
-                                <?php $imgsec2 = get_field('image_section_2');
-                                        if( !empty( $imgsec2 ) ): ?>
-                                <img src="<?php echo esc_url($imgsec2['url']); ?>"
-                                    alt="<?php echo esc_attr($imgsec2['alt']); ?>" />
-                                <?php endif; ?>
-                            </div>
-                            
-                            </div>
-
-                            <div class="row columns">
-                                <div class="col-12 buttonContainer ">
-                                    <a href="<?php echo $catalogue ?>" class="button button-black col-4 centered"><?php echo get_field('bouton_exemples'); ?></a>
+                            <?php if( $image) { ?>
+                                <div class="image-container  col-6 ">
+                                    <a data-lightbox="image" href="<?php echo $image['url']; ?>" >
+                                        <img data-lightbox="image" src="<?php echo $image['url']; ?>" />
+                                    </a>
                                 </div>
-                            </div>              
-                  
-                        </div>
+                            <?php } ?>
 
-                 
-                            
-                </section>
-            <?php } ?>
+                            <?php if( $video_mp4) { ?>
+                                    <div class="video-container col-6 ">
+                                        <video controls muted loop>
+                                            <source src="<?php echo $video_mp4['url']; ?>" />
+                                        </video>
+                                    </div>
+                            <?php } ?>
+
+                            <?php if( $embed) { ?>
+                                    <div class="video-container col-6 ">
+                                        <?php echo $embed; ?>
+                                    </div>
+                            <?php } ?>
+                    </div>
+                </div>
+            </section>
+            <?php endif ?>
        
 
             </section>

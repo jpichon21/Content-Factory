@@ -724,11 +724,17 @@ footer {
     background-color: #f0f0f0 !important; }
     #Exemples .Section1 .content, #Exemples .Section2 .content {
       padding: 0px; }
+  #Exemples strong {
+    font-family: 'Helvetica Neue Bold', sans-serif; }
   #Exemples .buttonContainer {
     margin-top: 64px; }
   #Exemples h3, #Exemples p, #Exemples li {
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: 600; }
+  #Exemples li {
+    list-style-type: disc; }
+    #Exemples li span {
+      margin-left: -0.3rem; }
   #Exemples .content {
     transform: translateY(-118px);
     margin-bottom: -118px; }
