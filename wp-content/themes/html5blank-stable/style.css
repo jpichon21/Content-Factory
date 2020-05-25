@@ -258,14 +258,17 @@ footer {
   color: #fff;
   text-align: center;
   padding: 16px 0px;
-  font-size: 18px; }
+  font-size: 17px; }
   @media (max-width: 1780px) {
     #catalogueBlueNav {
       padding: 8px 0px; } }
   #catalogueBlueNav a, #catalogueBlueNav a:active, #catalogueBlueNav a:focus, #catalogueBlueNav a:visited, #catalogueBlueNav a:hover {
-    color: #fff; }
+    color: #fff;
+    border-bottom: 1px solid #fff; }
   #catalogueBlueNav a:hover, #catalogueBlueNav .active {
     font-weight: bolder; }
+  #catalogueBlueNav .separator a {
+    border-bottom: none !important; }
   #catalogueBlueNav ul li {
     font-family: 'Helvetia Neue Bold', sans-serif;
     font-weight: bolder;
@@ -323,12 +326,27 @@ footer {
     padding: 20px 0px;
     margin-left: 12px; }
 
+#scrollToTop {
+  font-size: 24px;
+  text-align: center;
+  padding: 24px 0px;
+  position: fixed;
+  right: 12px;
+  bottom: 0px; }
+
 #headerHero {
   position: relative;
   min-height: calc(100vh - 84px);
   background-image: url("img/content/hero-img.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
+  #headerHero .tagline {
+    font-family: 'Helvetica Neue Bold', sans-serif;
+    font-style: italic;
+    font-size: 18px !important;
+    line-height: 24px !important;
+    padding-top: 26px;
+    display: inline-block; }
   #headerHero .col-8 {
     width: 66.66666667% !important; }
     @media (max-width: 435px) {
@@ -641,116 +659,116 @@ footer {
       #Formats .slider .slick-dots {
         bottom: 72px; } }
 
-#Exemples h3, #Exemples p, #Exemples li, .Section1 h3, .Section1 p, .Section1 li, .Section3 h3, .Section3 p, .Section3 li, .Section2 h3, .Section2 p, .Section2 li, .Section4 h3, .Section4 p, .Section4 li {
+#Exemples-S h3, #Exemples-S p, #Exemples-S li, .Section1 h3, .Section1 p, .Section1 li, .Section3 h3, .Section3 p, .Section3 li, .Section2 h3, .Section2 p, .Section2 li, .Section4 h3, .Section4 p, .Section4 li {
   font-family: 'Helvetica Neue', sans-serif;
   font-weight: 600; }
 
-#Exemples p, #Exemples h4, #Exemples li, .Section1 p, .Section1 h4, .Section1 li, .Section3 p, .Section3 h4, .Section3 li, .Section2 p, .Section2 h4, .Section2 li, .Section4 p, .Section4 h4, .Section4 li {
+#Exemples-S p, #Exemples-S h4, #Exemples-S li, .Section1 p, .Section1 h4, .Section1 li, .Section3 p, .Section3 h4, .Section3 li, .Section2 p, .Section2 h4, .Section2 li, .Section4 p, .Section4 h4, .Section4 li {
   font-size: 16px; }
 
-#Exemples ul, .Section1 ul, .Section3 ul, .Section2 ul, .Section4 ul {
+#Exemples-S ul, .Section1 ul, .Section3 ul, .Section2 ul, .Section4 ul {
   margin-left: 0px; }
   @media (max-width: 1024px) {
-    #Exemples ul, .Section1 ul, .Section3 ul, .Section2 ul, .Section4 ul {
+    #Exemples-S ul, .Section1 ul, .Section3 ul, .Section2 ul, .Section4 ul {
       margin: 0px; } }
 
-#Exemples h3, .Section1 h3, .Section3 h3, .Section2 h3, .Section4 h3 {
+#Exemples-S h3, .Section1 h3, .Section3 h3, .Section2 h3, .Section4 h3 {
   font-size: 46px; }
   @media (max-width: 435px) {
-    #Exemples h3, .Section1 h3, .Section3 h3, .Section2 h3, .Section4 h3 {
+    #Exemples-S h3, .Section1 h3, .Section3 h3, .Section2 h3, .Section4 h3 {
       font-size: 36px; } }
-  #Exemples h3 span, .Section1 h3 span, .Section3 h3 span, .Section2 h3 span, .Section4 h3 span {
+  #Exemples-S h3 span, .Section1 h3 span, .Section3 h3 span, .Section2 h3 span, .Section4 h3 span {
     font-family: 'Helvetica Neue Bold', sans-serif; }
 
-#Exemples h4, .Section1 h4, .Section3 h4, .Section2 h4, .Section4 h4 {
+#Exemples-S h4, .Section1 h4, .Section3 h4, .Section2 h4, .Section4 h4 {
   font-family: 'Helvetica Neue Bold', sans-serif;
   color: #0000ff;
   font-weight: 600;
   margin-bottom: 16px; }
 
-#Exemples p, .Section1 p, .Section3 p, .Section2 p, .Section4 p {
+#Exemples-S p, .Section1 p, .Section3 p, .Section2 p, .Section4 p {
   font-weight: 600; }
 
-#Exemples li, .Section1 li, .Section3 li, .Section2 li, .Section4 li {
+#Exemples-S li, .Section1 li, .Section3 li, .Section2 li, .Section4 li {
   margin-top: 0px; }
 
 @media (max-width: 768px) {
-  #Exemples .content, .Section1 .content, .Section3 .content, .Section2 .content, .Section4 .content {
+  #Exemples-S .content, .Section1 .content, .Section3 .content, .Section2 .content, .Section4 .content {
     text-align: center; } }
 
 @media (max-width: 435px) {
-  #Exemples .content, .Section1 .content, .Section3 .content, .Section2 .content, .Section4 .content {
+  #Exemples-S .content, .Section1 .content, .Section3 .content, .Section2 .content, .Section4 .content {
     text-align: left; } }
 
-#Exemples .title-container, .Section1 .title-container, .Section3 .title-container, .Section2 .title-container, .Section4 .title-container {
+#Exemples-S .title-container, .Section1 .title-container, .Section3 .title-container, .Section2 .title-container, .Section4 .title-container {
   padding-top: 0px; }
 
-#Exemples .image-container, #Exemples .video-container, .Section1 .image-container, .Section1 .video-container, .Section3 .image-container, .Section3 .video-container, .Section2 .image-container, .Section2 .video-container, .Section4 .image-container, .Section4 .video-container {
+#Exemples-S .image-container, #Exemples-S .video-container, .Section1 .image-container, .Section1 .video-container, .Section3 .image-container, .Section3 .video-container, .Section2 .image-container, .Section2 .video-container, .Section4 .image-container, .Section4 .video-container {
   overflow: hidden;
   height: 700px;
   text-align: center; }
-  #Exemples .image-container img, #Exemples .image-container video, #Exemples .video-container img, #Exemples .video-container video, .Section1 .image-container img, .Section1 .image-container video, .Section1 .video-container img, .Section1 .video-container video, .Section3 .image-container img, .Section3 .image-container video, .Section3 .video-container img, .Section3 .video-container video, .Section2 .image-container img, .Section2 .image-container video, .Section2 .video-container img, .Section2 .video-container video, .Section4 .image-container img, .Section4 .image-container video, .Section4 .video-container img, .Section4 .video-container video {
+  #Exemples-S .image-container img, #Exemples-S .image-container video, #Exemples-S .video-container img, #Exemples-S .video-container video, .Section1 .image-container img, .Section1 .image-container video, .Section1 .video-container img, .Section1 .video-container video, .Section3 .image-container img, .Section3 .image-container video, .Section3 .video-container img, .Section3 .video-container video, .Section2 .image-container img, .Section2 .image-container video, .Section2 .video-container img, .Section2 .video-container video, .Section4 .image-container img, .Section4 .image-container video, .Section4 .video-container img, .Section4 .video-container video {
     max-height: 100%;
     width: auto; }
-  #Exemples .image-container video, #Exemples .video-container video, .Section1 .image-container video, .Section1 .video-container video, .Section3 .image-container video, .Section3 .video-container video, .Section2 .image-container video, .Section2 .video-container video, .Section4 .image-container video, .Section4 .video-container video {
+  #Exemples-S .image-container video, #Exemples-S .video-container video, .Section1 .image-container video, .Section1 .video-container video, .Section3 .image-container video, .Section3 .video-container video, .Section2 .image-container video, .Section2 .video-container video, .Section4 .image-container video, .Section4 .video-container video {
     max-width: 100%; }
   @media (max-width: 1024px) {
-    #Exemples .image-container, #Exemples .video-container, .Section1 .image-container, .Section1 .video-container, .Section3 .image-container, .Section3 .video-container, .Section2 .image-container, .Section2 .video-container, .Section4 .image-container, .Section4 .video-container {
+    #Exemples-S .image-container, #Exemples-S .video-container, .Section1 .image-container, .Section1 .video-container, .Section3 .image-container, .Section3 .video-container, .Section2 .image-container, .Section2 .video-container, .Section4 .image-container, .Section4 .video-container {
       padding-top: 64px; } }
   @media (max-width: 1024px) and (max-width: 768px) {
-    #Exemples .image-container, #Exemples .video-container, .Section1 .image-container, .Section1 .video-container, .Section3 .image-container, .Section3 .video-container, .Section2 .image-container, .Section2 .video-container, .Section4 .image-container, .Section4 .video-container {
+    #Exemples-S .image-container, #Exemples-S .video-container, .Section1 .image-container, .Section1 .video-container, .Section3 .image-container, .Section3 .video-container, .Section2 .image-container, .Section2 .video-container, .Section4 .image-container, .Section4 .video-container {
       text-align: center;
       padding-top: 32px; } }
   @media (max-width: 1024px) and (max-width: 435px) {
-    #Exemples .image-container, #Exemples .video-container, .Section1 .image-container, .Section1 .video-container, .Section3 .image-container, .Section3 .video-container, .Section2 .image-container, .Section2 .video-container, .Section4 .image-container, .Section4 .video-container {
+    #Exemples-S .image-container, #Exemples-S .video-container, .Section1 .image-container, .Section1 .video-container, .Section3 .image-container, .Section3 .video-container, .Section2 .image-container, .Section2 .video-container, .Section4 .image-container, .Section4 .video-container {
       text-align: center; } }
 
 @media (max-width: 768px) {
-  #Exemples .title-container, .Section1 .title-container, .Section3 .title-container, .Section2 .title-container, .Section4 .title-container {
+  #Exemples-S .title-container, .Section1 .title-container, .Section3 .title-container, .Section2 .title-container, .Section4 .title-container {
     padding-top: 32px; } }
 
-#Exemples .image-left, .Section1 .image-left, .Section3 .image-left, .Section2 .image-left, .Section4 .image-left {
+#Exemples-S .image-left, .Section1 .image-left, .Section3 .image-left, .Section2 .image-left, .Section4 .image-left {
   text-align: left !important; }
 
-#Exemples .image-right, .Section1 .image-right, .Section3 .image-right, .Section2 .image-right, .Section4 .image-right {
+#Exemples-S .image-right, .Section1 .image-right, .Section3 .image-right, .Section2 .image-right, .Section4 .image-right {
   text-align: right !important; }
 
-#Exemples img, .Section1 img, .Section3 img, .Section2 img, .Section4 img {
+#Exemples-S img, .Section1 img, .Section3 img, .Section2 img, .Section4 img {
   max-width: 100%; }
 
-#Exemples {
+#Exemples-S {
   background-color: #f0f0f0; }
-  #Exemples .Section1, #Exemples .Section2 {
+  #Exemples-S .Section1, #Exemples-S .Section2 {
     background-color: #f0f0f0 !important; }
-    #Exemples .Section1 .content, #Exemples .Section2 .content {
+    #Exemples-S .Section1 .content, #Exemples-S .Section2 .content {
       padding: 0px; }
-  #Exemples strong {
+  #Exemples-S strong {
     font-family: 'Helvetica Neue Bold', sans-serif; }
-  #Exemples .buttonContainer {
+  #Exemples-S .buttonContainer {
     margin-top: 64px; }
-  #Exemples h3, #Exemples p, #Exemples li {
+  #Exemples-S h3, #Exemples-S p, #Exemples-S li {
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: 600; }
-  #Exemples li {
+  #Exemples-S li {
     list-style-type: disc; }
-    #Exemples li span {
+    #Exemples-S li span {
       margin-left: -0.3rem; }
-  #Exemples .content {
+  #Exemples-S .content {
     transform: translateY(-118px);
     margin-bottom: -118px; }
     @media (max-width: 1024px) {
-      #Exemples .content {
+      #Exemples-S .content {
         transform: translateY(0px);
         margin-bottom: 0px; } }
-  #Exemples .title-container {
+  #Exemples-S .title-container {
     padding-top: 64px; }
     @media (max-width: 435px) {
-      #Exemples .title-container {
+      #Exemples-S .title-container {
         padding-top: 32px; } }
-  #Exemples .row.last {
+  #Exemples-S .row.last {
     padding-bottom: 64px; }
     @media (max-width: 435px) {
-      #Exemples .row.last {
+      #Exemples-S .row.last {
         padding-top: 32px; } }
 
 .Section1 {

@@ -1,4 +1,5 @@
 <?php /* Template Name: catalogue footer */  ?>
+
 <footer id="footer">
     <nav id="footerNav" class="column col-9 centered">
         <?php 

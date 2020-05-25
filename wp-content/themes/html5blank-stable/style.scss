@@ -314,15 +314,20 @@ footer {
     color: #fff;
     text-align: center;
     padding: 16px 0px;
-    font-size: 18px;
+    font-size: 17px;
+  
     @include media('<=hirez') {
         padding: 8px 0px;
     }
-    a, a:active, a:focus, a:visited, a:hover{
+    a, a:active, a:focus, a:visited, a:hover {
         color: #fff;
+        border-bottom: 1px solid #fff;
     }
     a:hover, .active{
         font-weight: bolder;
+    }
+    .separator a{
+        border-bottom: none!important;
     }
     ul{
         li{
@@ -397,12 +402,29 @@ footer {
     }
 }
 
+#scrollToTop{
+    font-size: 24px;
+    text-align: center;
+    padding: 24px 0px;
+    position: fixed;
+    right: 12px;
+    bottom: 0px;
+}
+
 #headerHero {
     position: relative;
     min-height: calc(100vh - 84px);
     background-image: url('img/content/hero-img.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    .tagline{
+        font-family: 'Helvetica Neue Bold', sans-serif;
+        font-style: italic;
+        font-size: 18px!important;
+        line-height: 24px!important;
+        padding-top: 26px;
+        display: inline-block;
+    }
     .col-8 {
         width: 66.66666667% !important;
         @include media('<=mobile') {
@@ -806,7 +828,7 @@ footer {
     }
 }
 
-#Exemples, .Section1, .Section3, .Section2, .Section4 {
+#Exemples-S, .Section1, .Section3, .Section2, .Section4 {
     h3,p,li {
         font-family: 'Helvetica Neue', sans-serif;
         font-weight: 600;
@@ -892,7 +914,7 @@ footer {
     }
 }
 
-#Exemples{
+#Exemples-S{
     background-color: #f0f0f0;
     .Section1, .Section2{
        background-color: #f0f0f0!important;

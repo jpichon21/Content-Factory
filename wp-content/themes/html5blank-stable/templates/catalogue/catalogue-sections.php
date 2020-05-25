@@ -227,4 +227,5 @@
 
 <?php endwhile; ?>
 <?php endif; ?>
+<div id="scrollToTop"><a href="#catalogueBlueNav"><i class="fas fa-arrow-up"></i></a></div>
 <!----------------------------------->

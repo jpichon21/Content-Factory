@@ -46,6 +46,7 @@
 		<script src="<?php echo get_template_directory_uri() . '/js/jquery-3.4.1.min.js'; ?>"></script>
 		<script src="<?php echo get_template_directory_uri() . '/js/slick.min.js'; ?>"></script>
 		<script src="<?php echo get_template_directory_uri() . '/js/lightbox.js'; ?>"></script>
+		<script src="https://kit.fontawesome.com/6164dace53.js" crossorigin="anonymous"></script>
 
 		<?php wp_head(); ?>
 		<script>

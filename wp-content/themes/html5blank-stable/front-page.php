@@ -26,8 +26,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <li class="separator"> | </li>
                         <li><a href="#Exemples">Exemples</a></li>
                         <li class="separator"> | </li>
-                        <li><a href="#Stats">Chiffres</a></li>
-                        <li class="separator"> | </li>
                         <li><a href="#Credits">Prix</a></li>
                         <li class="separator"> | </li>
                         <li><a href="#Contact">Contact</a></li>
@@ -36,10 +34,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </header>
 
             <!----------------------------------->
-            <section id="headerHero" class="container">
+            <?php $herobg = get_field('herobg') ?>
+            <section id="headerHero" class="container" style="background-image: url(<?php echo $herobg['url']; ?>);">
                 <div class="content column col-9 centered">
                     <div class="row columns">
-                        <h2 class="column col-6"> <?php echo get_field('headerhero'); ?> </h2>
+                        <h2 class="column col-6"> <?php echo get_field('headerhero'); ?><br><span class="tagline">Story, Social Content, Podcast, Film Tv, Packshot, Video, Motion, Infographie, Photo Lifestyle, Photo Mannequin</span> </h2>
+    
                     </div>
                     <div class="row columns">
                         <a id="headerHeroBtn" 
@@ -83,41 +83,174 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="row columns">
                         <div class="column col-1"></div>
 
-                        <?php 
+                        <div class="col-12 slider multiple-items-2">
+
+                     
+                            <?php 
                                             $image_reference_1 = get_field('image_reference_1');
                                             if( !empty( $image_reference_1 ) ): ?>
-                        <div class="column col-2"><img src="<?php echo esc_url($image_reference_1['url']); ?>"
-                                alt="<?php echo esc_attr($image_reference_1['alt']); ?>" /></div>
-                        <?php endif; ?>
+                                <div>
+                                <img src="<?php echo esc_url($image_reference_1['url']); ?>"
+                                    alt="<?php echo esc_attr($image_reference_1['alt']); ?>" />
+                                <p><?php echo esc_attr($image_reference_1['alt']); ?></p>
+                                </div>
+                            <?php endif; ?>
 
-                        <?php 
+                            <?php 
                                             $image_reference_2 = get_field('image_reference_2');
                                             if( !empty( $image_reference_2 ) ): ?>
-                        <div class="column col-2"><img src="<?php echo esc_url($image_reference_2['url']); ?>"
-                                alt="<?php echo esc_attr($image_reference_2['alt']); ?>" /></div>
-                        <?php endif; ?>
+                                <div>
+                                <img src="<?php echo esc_url($image_reference_2['url']); ?>"
+                                    alt="<?php echo esc_attr($image_reference_2['alt']); ?>" />
+                                <p><?php echo esc_attr($image_reference_2['alt']); ?></p>
+                                </div>
+                            <?php endif; ?>
 
-                        <?php 
+                            <?php 
                                             $image_reference_3 = get_field('image_reference_3');
                                             if( !empty( $image_reference_3 ) ): ?>
-                        <div class="column col-2"><img src="<?php echo esc_url($image_reference_3['url']); ?>"
-                                alt="<?php echo esc_attr($image_reference_3['alt']); ?>" /></div>
-                        <?php endif; ?>
+                                <div>
+                                <img src="<?php echo esc_url($image_reference_3['url']); ?>"
+                                    alt="<?php echo esc_attr($image_reference_3['alt']); ?>" />
+                                <p><?php echo esc_attr($image_reference_3['alt']); ?></p>
+                                </div>
+                            <?php endif; ?>
 
-                        <?php 
+                            <?php 
                                             $image_reference_4 = get_field('image_reference_4');
                                             if( !empty( $image_reference_4 ) ): ?>
-                        <div class="column col-2"><img src="<?php echo esc_url($image_reference_4['url']); ?>"
-                                alt="<?php echo esc_attr($image_reference_4['alt']); ?>" /></div>
-                        <?php endif; ?>
+                                <div>
+                                <img src="<?php echo esc_url($image_reference_4['url']); ?>"
+                                    alt="<?php echo esc_attr($image_reference_4['alt']); ?>" />
+                                <p><?php echo esc_attr($image_reference_4['alt']); ?></p>
+                                </div>
+                            <?php endif; ?>
 
-                        <?php 
+                            <?php 
                                             $image_reference_5 = get_field('image_reference_5');
                                             if( !empty( $image_reference_5 ) ): ?>
-                        <div class="column col-2"><img src="<?php echo esc_url($image_reference_5['url']); ?>"
-                                alt="<?php echo esc_attr($image_reference_5['alt']); ?>" /></div>
-                        <?php endif; ?>
+                                <div>
+                                <img src="<?php echo esc_url($image_reference_5['url']); ?>"
+                                    alt="<?php echo esc_attr($image_reference_5['alt']); ?>" />
+                                <p><?php echo esc_attr($image_reference_5['alt']); ?></p>
+                                </div>
+                            <?php endif; ?>
 
+                            
+                     
+                            <?php 
+                                            $image_reference_6 = get_field('image_reference_6');
+                                            if( !empty( $image_reference_6 ) ): ?>
+                                <div>
+                                <img src="<?php echo esc_url($image_reference_6['url']); ?>"
+                                    alt="<?php echo esc_attr($image_reference_6['alt']); ?>" />
+                                <p><?php echo esc_attr($image_reference_6['alt']); ?></p>
+                                </div>
+                            <?php endif; ?>
+
+                            <?php 
+                                            $image_reference_7 = get_field('image_reference_7');
+                                            if( !empty( $image_reference_7 ) ): ?>
+                                <div>
+                                <img src="<?php echo esc_url($image_reference_7['url']); ?>"
+                                    alt="<?php echo esc_attr($image_reference_7['alt']); ?>" />
+                                <p><?php echo esc_attr($image_reference_7['alt']); ?></p>
+                                </div>
+                            <?php endif; ?>
+
+                            <?php 
+                                            $image_reference_8 = get_field('image_reference_8');
+                                            if( !empty( $image_reference_8 ) ): ?>
+                                <div>
+                                <img src="<?php echo esc_url($image_reference_8['url']); ?>"
+                                    alt="<?php echo esc_attr($image_reference_8['alt']); ?>" />
+                                <p><?php echo esc_attr($image_reference_8['alt']); ?></p>
+                                </div>
+                            <?php endif; ?>
+
+                            <?php 
+                                            $image_reference_9 = get_field('image_reference_9');
+                                            if( !empty( $image_reference_9 ) ): ?>
+                                <div>
+                                <img src="<?php echo esc_url($image_reference_9['url']); ?>"
+                                    alt="<?php echo esc_attr($image_reference_9['alt']); ?>" />
+                                <p><?php echo esc_attr($image_reference_9['alt']); ?></p>
+                                </div>
+                            <?php endif; ?>
+
+                            <?php 
+                                            $image_reference_10 = get_field('image_reference_10');
+                                            if( !empty( $image_reference_10 ) ): ?>
+                                <div>
+                                <img src="<?php echo esc_url($image_reference_10['url']); ?>"
+                                    alt="<?php echo esc_attr($image_reference_10['alt']); ?>" />
+                                <p><?php echo esc_attr($image_reference_10['alt']); ?></p>
+                                </div>
+                            <?php endif; ?>
+
+                            
+                            <?php 
+                                            $image_reference_11 = get_field('image_reference_11');
+                                            if( !empty( $image_reference_11 ) ): ?>
+                                <div>
+                                <img src="<?php echo esc_url($image_reference_11['url']); ?>"
+                                    alt="<?php echo esc_attr($image_reference_11['alt']); ?>" />
+                                <p><?php echo esc_attr($image_reference_11['alt']); ?></p>
+                                </div>
+                            <?php endif; ?>
+
+                            <?php 
+                                            $image_reference_12 = get_field('image_reference_12');
+                                            if( !empty( $image_reference_12 ) ): ?>
+                                <div>
+                                <img src="<?php echo esc_url($image_reference_12['url']); ?>"
+                                    alt="<?php echo esc_attr($image_reference_12['alt']); ?>" />
+                                <p><?php echo esc_attr($image_reference_12['alt']); ?></p>
+                                </div>
+                            <?php endif; ?>
+
+                            
+                            <?php 
+                                            $image_reference_13 = get_field('image_reference_13');
+                                            if( !empty( $image_reference_13 ) ): ?>
+                                <div>
+                                <img src="<?php echo esc_url($image_reference_13['url']); ?>"
+                                    alt="<?php echo esc_attr($image_reference_13['alt']); ?>" />
+                                <p><?php echo esc_attr($image_reference_13['alt']); ?></p>
+                                </div>
+                            <?php endif; ?>
+
+                            
+                            <?php 
+                                            $image_reference_14 = get_field('image_reference_14');
+                                            if( !empty( $image_reference_14 ) ): ?>
+                                <div>
+                                <img src="<?php echo esc_url($image_reference_14['url']); ?>"
+                                    alt="<?php echo esc_attr($image_reference_14['alt']); ?>" />
+                                <p><?php echo esc_attr($image_reference_14['alt']); ?></p>
+                                </div>
+                            <?php endif; ?>
+
+                            
+                            <?php 
+                                            $image_reference_15 = get_field('image_reference_15');
+                                            if( !empty( $image_reference_15 ) ): ?>
+                                <div>
+                                <img src="<?php echo esc_url($image_reference_15['url']); ?>"
+                                    alt="<?php echo esc_attr($image_reference_15['alt']); ?>" />
+                                <p><?php echo esc_attr($image_reference_15['alt']); ?></p>
+                                </div>
+                            <?php endif; ?>
+                      
+                      
+                      
+                      
+
+                       
+
+                        </div>
+
+                    
 
                         <div class="column col-1"></div>
                     </div>
@@ -167,7 +300,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
 
                         <div class="column col-6 rightContent">
-                            <h3> Comment <strong>cela marche ?</strong></h3>
+                            <h3> Comment <strong>ça marche ?</strong></h3>
                             <div>
                                 <h4><?php echo get_field('titre_ccm_1'); ?></h4>
                                 <p><?php echo get_field('texte_ccm_1'); ?></p>
@@ -207,94 +340,185 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     <div class="col-12 slider multiple-items">
 
-                        <div>
+                     
                             <?php 
                                         $icon_formats_1 = get_field('icon_formats_1');
                                         if( !empty( $icon_formats_1 ) ): ?>
-                            <img src="<?php echo esc_url($icon_formats_1['url']); ?>"
-                                alt="<?php echo esc_attr($icon_formats_1['alt']); ?>" />
-                            <p><?php echo esc_attr($icon_formats_1['alt']); ?></p>
+                                    <div>
+                                        <img src="<?php echo esc_url($icon_formats_1['url']); ?>"
+                                            alt="<?php echo esc_attr($icon_formats_1['alt']); ?>" />
+                                        <p><?php echo esc_attr($icon_formats_1['alt']); ?></p>
+                                    </div>
                             <?php endif; ?>
-                        </div>
 
-                        <div>
+                            
                             <?php 
                                         $icon_formats_2 = get_field('icon_formats_2');
                                         if( !empty( $icon_formats_2 ) ): ?>
-                            <img src="<?php echo esc_url($icon_formats_2['url']); ?>"
-                                alt="<?php echo esc_attr($icon_formats_2['alt']); ?>" />
-                            <p><?php echo esc_attr($icon_formats_2['alt']); ?></p>
+                                    <div>
+                                        <img src="<?php echo esc_url($icon_formats_2['url']); ?>"
+                                            alt="<?php echo esc_attr($icon_formats_2['alt']); ?>" />
+                                        <p><?php echo esc_attr($icon_formats_2['alt']); ?></p>
+                                    </div>
                             <?php endif; ?>
-                        </div>
+                      
 
-                        <div>
+                            
                             <?php 
                                         $icon_formats_3 = get_field('icon_formats_3');
                                         if( !empty( $icon_formats_3 ) ): ?>
-                            <img src="<?php echo esc_url($icon_formats_3['url']); ?>"
-                                alt="<?php echo esc_attr($icon_formats_3['alt']); ?>" />
-                            <p><?php echo esc_attr($icon_formats_3['alt']); ?></p>
+                                    <div>
+                                        <img src="<?php echo esc_url($icon_formats_3['url']); ?>"
+                                            alt="<?php echo esc_attr($icon_formats_3['alt']); ?>" />
+                                        <p><?php echo esc_attr($icon_formats_3['alt']); ?></p>
+                                    </div>
                             <?php endif; ?>
-                        </div>
-
-                        <div>
+                      
+                            
                             <?php 
                                         $icon_formats_4 = get_field('icon_formats_4');
                                         if( !empty( $icon_formats_4 ) ): ?>
-                            <img src="<?php echo esc_url($icon_formats_4['url']); ?>"
-                                alt="<?php echo esc_attr($icon_formats_4['alt']); ?>" />
-                            <p><?php echo esc_attr($icon_formats_4['alt']); ?></p>
+                                    <div>
+                                        <img src="<?php echo esc_url($icon_formats_4['url']); ?>"
+                                            alt="<?php echo esc_attr($icon_formats_4['alt']); ?>" />
+                                        <p><?php echo esc_attr($icon_formats_4['alt']); ?></p>
+                                    </div>
                             <?php endif; ?>
-                        </div>
-
-                        <div>
+                      
+                            
                             <?php 
                                         $icon_formats_5 = get_field('icon_formats_5');
                                         if( !empty( $icon_formats_5 ) ): ?>
-                            <img src="<?php echo esc_url($icon_formats_5['url']); ?>"
-                                alt="<?php echo esc_attr($icon_formats_5['alt']); ?>" />
-                            <p><?php echo esc_attr($icon_formats_5['alt']); ?></p>
+                                    <div>
+                                        <img src="<?php echo esc_url($icon_formats_5['url']); ?>"
+                                            alt="<?php echo esc_attr($icon_formats_5['alt']); ?>" />
+                                        <p><?php echo esc_attr($icon_formats_5['alt']); ?></p>
+                                    </div>
                             <?php endif; ?>
-                        </div>
-
-                        <div>
+                      
+                            
                             <?php 
                                         $icon_formats_6 = get_field('icon_formats_6');
                                         if( !empty( $icon_formats_6 ) ): ?>
-                            <img src="<?php echo esc_url($icon_formats_6['url']); ?>"
-                                alt="<?php echo esc_attr($icon_formats_6['alt']); ?>" />
-                            <p><?php echo esc_attr($icon_formats_6['alt']); ?></p>
+                                    <div>
+                                        <img src="<?php echo esc_url($icon_formats_6['url']); ?>"
+                                            alt="<?php echo esc_attr($icon_formats_6['alt']); ?>" />
+                                        <p><?php echo esc_attr($icon_formats_6['alt']); ?></p>
+                                    </div>
                             <?php endif; ?>
-                        </div>
-
-                        <div>
+                      
+                            
                             <?php 
                                         $icon_formats_7 = get_field('icon_formats_7');
                                         if( !empty( $icon_formats_7 ) ): ?>
-                            <img src="<?php echo esc_url($icon_formats_7['url']); ?>"
-                                alt="<?php echo esc_attr($icon_formats_7['alt']); ?>" />
-                            <p><?php echo esc_attr($icon_formats_7['alt']); ?></p>
+                                    <div>
+                                        <img src="<?php echo esc_url($icon_formats_7['url']); ?>"
+                                            alt="<?php echo esc_attr($icon_formats_7['alt']); ?>" />
+                                        <p><?php echo esc_attr($icon_formats_7['alt']); ?></p>
+                                    </div>
                             <?php endif; ?>
-                        </div>
-
-                        <div>
+                      
+                            
                             <?php 
                                         $icon_formats_8 = get_field('icon_formats_8');
                                         if( !empty( $icon_formats_8 ) ): ?>
-                            <img src="<?php echo esc_url($icon_formats_8['url']); ?>"
-                                alt="<?php echo esc_attr($icon_formats_8['alt']); ?>" />
-                            <p><?php echo esc_attr($icon_formats_8['alt']); ?></p>
+                                    <div>
+                                        <img src="<?php echo esc_url($icon_formats_8['url']); ?>"
+                                            alt="<?php echo esc_attr($icon_formats_8['alt']); ?>" />
+                                        <p><?php echo esc_attr($icon_formats_8['alt']); ?></p>
+                                    </div>
                             <?php endif; ?>
-                        </div>
 
-                    </div>
+                            <?php 
+                                        $icon_formats_9 = get_field('icon_formats_9');
+                                        if( !empty( $icon_formats_9 ) ): ?>
+                                    <div>
+                                        <img src="<?php echo esc_url($icon_formats_9['url']); ?>"
+                                            alt="<?php echo esc_attr($icon_formats_9['alt']); ?>" />
+                                        <p><?php echo esc_attr($icon_formats_9['alt']); ?></p>
+                                    </div>
+                            <?php endif; ?>
+
+                            <?php 
+                                        $icon_formats_10 = get_field('icon_formats_10');
+                                        if( !empty( $icon_formats_10 ) ): ?>
+                                    <div>
+                                        <img src="<?php echo esc_url($icon_formats_10['url']); ?>"
+                                            alt="<?php echo esc_attr($icon_formats_10['alt']); ?>" />
+                                        <p><?php echo esc_attr($icon_formats_10['alt']); ?></p>
+                                    </div>
+                            <?php endif; ?>
+
+                            <?php 
+                                        $icon_formats_11 = get_field('icon_formats_11');
+                                        if( !empty( $icon_formats_11 ) ): ?>
+                                    <div>
+                                        <img src="<?php echo esc_url($icon_formats_11['url']); ?>"
+                                            alt="<?php echo esc_attr($icon_formats_11['alt']); ?>" />
+                                        <p><?php echo esc_attr($icon_formats_11['alt']); ?></p>
+                                    </div>
+                            <?php endif; ?>
+
+                            <?php 
+                                        $icon_formats_12 = get_field('icon_formats_12');
+                                        if( !empty( $icon_formats_12 ) ): ?>
+                                    <div>
+                                        <img src="<?php echo esc_url($icon_formats_12['url']); ?>"
+                                            alt="<?php echo esc_attr($icon_formats_12['alt']); ?>" />
+                                        <p><?php echo esc_attr($icon_formats_12['alt']); ?></p>
+                                    </div>
+                            <?php endif; ?>
+
+                            <?php 
+                                        $icon_formats_13 = get_field('icon_formats_13');
+                                        if( !empty( $icon_formats_13 ) ): ?>
+                                    <div>
+                                        <img src="<?php echo esc_url($icon_formats_13['url']); ?>"
+                                            alt="<?php echo esc_attr($icon_formats_13['alt']); ?>" />
+                                        <p><?php echo esc_attr($icon_formats_13['alt']); ?></p>
+                                    </div>
+                            <?php endif; ?>
+
+                            <?php 
+                                        $icon_formats_14 = get_field('icon_formats_14');
+                                        if( !empty( $icon_formats_14 ) ): ?>
+                                    <div>
+                                        <img src="<?php echo esc_url($icon_formats_14['url']); ?>"
+                                            alt="<?php echo esc_attr($icon_formats_14['alt']); ?>" />
+                                        <p><?php echo esc_attr($icon_formats_14['alt']); ?></p>
+                                    </div>
+                            <?php endif; ?>
+
+                            <?php 
+                                        $icon_formats_15 = get_field('icon_formats_15');
+                                        if( !empty( $icon_formats_15 ) ): ?>
+                                    <div>
+                                        <img src="<?php echo esc_url($icon_formats_15['url']); ?>"
+                                            alt="<?php echo esc_attr($icon_formats_15['alt']); ?>" />
+                                        <p><?php echo esc_attr($icon_formats_15['alt']); ?></p>
+                                    </div>
+                            <?php endif; ?>
+
+                            <?php 
+                                        $icon_formats_16 = get_field('icon_formats_16');
+                                        if( !empty( $icon_formats_16 ) ): ?>
+                                    <div>
+                                        <img src="<?php echo esc_url($icon_formats_16['url']); ?>"
+                                            alt="<?php echo esc_attr($icon_formats_16['alt']); ?>" />
+                                        <p><?php echo esc_attr($icon_formats_16['alt']); ?></p>
+                                    </div>
+                            <?php endif; ?>
+                      
+                      
+        
 
             </section>
+ 
             <!----------------------------------->
 
 
             <!----------------------------------->
-            <section id="Exemples">
+            <section id="Exemples-S">
       
             <section id="Section1">
                 <?php
@@ -324,7 +548,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="row columns">
 
                         <?php if( $image) { ?>
-                            <div class="image-container  col-6 ">
+                            <div class="image-container  col-6 " id="Exemples">
                                 <a data-lightbox="image" href="<?php echo $image['url']; ?>" >
                                     <img data-lightbox="image" src="<?php echo $image['url']; ?>" />
                                 </a>
@@ -792,8 +1016,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <li class="separator"> | </li>
                     <li><a href="#Exemples">Exemples</a></li>
                     <li class="separator"> | </li>
-                    <li><a href="#Stats">Chiffres</a></li>
-                    <li class="separator"> | </li>
                     <li><a href="#Credits">Prix</a></li>
                     <li class="separator"> | </li>
                     <li><a href="#Contact">Contact</a></li>
@@ -807,9 +1029,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 dots: true,
                 infinite: true,
                 autoplay: true,
-                speed: 300,
+                speed: 200,
                 slidesToShow: 4,
-                slidesToScroll: 4,
+                slidesToScroll: 1,
                 responsive: [{
                         breakpoint: 1024,
                         settings: {
@@ -836,6 +1058,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 ]
             });
         </script>
+         <script>
+            $('.multiple-items-2').slick({
+                dots: false,
+                arrows: false,
+                infinite: true,
+                autoplay: true,
+                speed: 200,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                responsive: [{
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        </script>
+
 
 
     </body>
