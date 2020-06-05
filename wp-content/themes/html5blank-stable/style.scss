@@ -424,6 +424,7 @@ footer {
         line-height: 24px!important;
         padding-top: 26px;
         display: inline-block;
+        color: #fff!important;
     }
     .col-8 {
         width: 66.66666667% !important;
@@ -454,7 +455,7 @@ footer {
     }
     h2 {
         font-family: 'Helvetica Neue Bold', sans-serif;
-        color: $color-black;
+        color: #fff;
         font-size: 72px;
         line-height: 72px;
         @include media('<=hirez') {
@@ -511,7 +512,7 @@ footer {
     }
 
     #bottomHeaderBanner {
-        background: linear-gradient(355deg, rgba(75, 75, 246, 1) 0%, rgba(145, 145, 240, 0.2780509691559867) 100%);
+        background: #0000ffad;
         position: absolute;
         bottom: 0px;
         @include media('<=mobile') {
@@ -590,7 +591,7 @@ footer {
     }
 
     .content {
-        padding: 46px 0px;
+        padding: 46px 0px 26px 0px;
         text-align: center;
         img {
             max-width: 220px;
@@ -877,12 +878,15 @@ footer {
     .image-container, .video-container {
         overflow: hidden;
         height: 700px;
+        @include media('<=mobile') {
+            height: auto;
+        }
         text-align: center;
         img, video{
             max-height: 100%;
             width: auto;
         }
-        video{
+        video, iframe{
             max-width: 100%;
         }
         @include media('<=large') {
@@ -927,6 +931,10 @@ footer {
     }
     .buttonContainer{
         margin-top: 64px;
+        @include media('<=mobile') {
+            margin-bottom: 64px;
+        }
+        
     }
     h3,p,li {
         font-family: 'Helvetica Neue', sans-serif;

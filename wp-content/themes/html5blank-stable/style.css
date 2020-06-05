@@ -346,7 +346,8 @@ footer {
     font-size: 18px !important;
     line-height: 24px !important;
     padding-top: 26px;
-    display: inline-block; }
+    display: inline-block;
+    color: #fff !important; }
   #headerHero .col-8 {
     width: 66.66666667% !important; }
     @media (max-width: 435px) {
@@ -373,7 +374,7 @@ footer {
         padding: 16vh 0vh; } }
   #headerHero h2 {
     font-family: 'Helvetica Neue Bold', sans-serif;
-    color: #131313;
+    color: #fff;
     font-size: 72px;
     line-height: 72px; }
     @media (max-width: 1780px) {
@@ -422,7 +423,7 @@ footer {
       #headerHero #headerHeroBtn {
         font-size: 15px; } }
   #headerHero #bottomHeaderBanner {
-    background: linear-gradient(355deg, #4b4bf6 0%, rgba(145, 145, 240, 0.278051) 100%);
+    background: #0000ffad;
     position: absolute;
     bottom: 0px; }
     @media (max-width: 435px) {
@@ -484,7 +485,7 @@ footer {
       #blackBanner .col-2 {
         width: 100% !important; } }
   #blackBanner .content {
-    padding: 46px 0px;
+    padding: 46px 0px 26px 0px;
     text-align: center; }
     #blackBanner .content img {
       max-width: 220px; }
@@ -707,10 +708,13 @@ footer {
   overflow: hidden;
   height: 700px;
   text-align: center; }
+  @media (max-width: 435px) {
+    #Exemples-S .image-container, #Exemples-S .video-container, .Section1 .image-container, .Section1 .video-container, .Section3 .image-container, .Section3 .video-container, .Section2 .image-container, .Section2 .video-container, .Section4 .image-container, .Section4 .video-container {
+      height: auto; } }
   #Exemples-S .image-container img, #Exemples-S .image-container video, #Exemples-S .video-container img, #Exemples-S .video-container video, .Section1 .image-container img, .Section1 .image-container video, .Section1 .video-container img, .Section1 .video-container video, .Section3 .image-container img, .Section3 .image-container video, .Section3 .video-container img, .Section3 .video-container video, .Section2 .image-container img, .Section2 .image-container video, .Section2 .video-container img, .Section2 .video-container video, .Section4 .image-container img, .Section4 .image-container video, .Section4 .video-container img, .Section4 .video-container video {
     max-height: 100%;
     width: auto; }
-  #Exemples-S .image-container video, #Exemples-S .video-container video, .Section1 .image-container video, .Section1 .video-container video, .Section3 .image-container video, .Section3 .video-container video, .Section2 .image-container video, .Section2 .video-container video, .Section4 .image-container video, .Section4 .video-container video {
+  #Exemples-S .image-container video, #Exemples-S .image-container iframe, #Exemples-S .video-container video, #Exemples-S .video-container iframe, .Section1 .image-container video, .Section1 .image-container iframe, .Section1 .video-container video, .Section1 .video-container iframe, .Section3 .image-container video, .Section3 .image-container iframe, .Section3 .video-container video, .Section3 .video-container iframe, .Section2 .image-container video, .Section2 .image-container iframe, .Section2 .video-container video, .Section2 .video-container iframe, .Section4 .image-container video, .Section4 .image-container iframe, .Section4 .video-container video, .Section4 .video-container iframe {
     max-width: 100%; }
   @media (max-width: 1024px) {
     #Exemples-S .image-container, #Exemples-S .video-container, .Section1 .image-container, .Section1 .video-container, .Section3 .image-container, .Section3 .video-container, .Section2 .image-container, .Section2 .video-container, .Section4 .image-container, .Section4 .video-container {
@@ -746,6 +750,9 @@ footer {
     font-family: 'Helvetica Neue Bold', sans-serif; }
   #Exemples-S .buttonContainer {
     margin-top: 64px; }
+    @media (max-width: 435px) {
+      #Exemples-S .buttonContainer {
+        margin-bottom: 64px; } }
   #Exemples-S h3, #Exemples-S p, #Exemples-S li {
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: 600; }
