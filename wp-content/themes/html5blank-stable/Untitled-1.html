@@ -1,0 +1,89 @@
+<?php
+/*
+ * CDV 2016
+  Template Name: Nos certificats
+ */
+?>
+<?php get_header(); ?>
+<div class="container">
+
+    <section id="navigation">
+        <?php include'partials/navigation.php' ?>
+    </section>
+
+    <div class="jumbotron">
+        <img class="img-responsive" id="image-header" src="<?php echo bloginfo('url'); ?>/wp-content/themes/cdv/images/image-header.jpg" alt="CDV Transports"/>
+    </div>
+
+    <div class="row" id="section-certificats">
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <section class="container-certificats">
+                        <div class="blocs-certificats">
+                            <div id="bloc-gauche-fp-certificats" class="col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
+                            <div id="bloc-droit-fp-certificats" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                             <div class="blocs-paragraphes" id="bloc-certificats">
+                                <h2 class="titre-certificats">CRITÈRES DE CONFIANCE</h2>
+                                    <a href="/wp-content/uploads/2020/06/2.pdf" target="_blank">AUTORISATION D'EXERCER LA PROFESSION DE TRANSPORTEUR PUBLIC ROUTIER AU MOYEN DE VEHICULES MOTORISES</a>
+                                    <a href="/wp-content/uploads/2020/06/ATTESTATION-SUR-LHONNEUR-2020-1.pdf" target="_blank">ATTESTATION SUR L'HONNEUR 2020</a>
+                                    <a href="/wp-content/uploads/2020/06/ATTESTATION-DE-LUTTE-CONTRE-LE-TRAVAIL-DISSIMILLE-2020-1.pdf" target="_blank">ATTESTATION SUR L'HONNEUR LUTTE CONTRE LE TRAVAIL DISSIMULE</a>
+                                    <a href="/wp-content/uploads/2020/06/60.pdf" target="_blank">DECLARATION ANNUELLE DE CAPACITE FINANCIERE</a>
+                                    <a href="/wp-content/uploads/2020/06/ATTESTATION-ASSURANCE-FLOTTE-AVIVA-2020-1.pdf" target="_blank">ATTESTATION ASSURANCE FLOTTE 2020</a>
+                                    <a href="/wp-content/uploads/2018/05/helvetia_2018.pdf" target="_blank">ATTESTATION ASSURANCE MARCHANDISES 2018</a>
+                                    <a href="/wp-content/uploads/2020/06/ATTESTATION-REGULARITE-FISCALE-2020-1.pdf" target="_blank">ATTESTATION DE REGULARITE FISCALE 2020</a>
+                                    <a href="/wp-content/uploads/2020/06/35.pdf" target="_blank">LICENCE 2014-2024</a>
+                                    <a href="/wp-content/uploads/2020/06/37.pdf" target="_blank">TABLEAU VEHICULE 44T</a>
+                                    <a href="/wp-content/uploads/2020/06/64.pdf" target="_blank">ATTESTATION CONSEILLER SECURITE</a>
+                                    <a href="/wp-content/uploads/2020/06/ATTESTATION-VIGILANCE-URSSAF-13-05-2020-1.pdf" target="_blank">ATTESTATION DE VIGILANCE &amp; MARCHE PUBLIC 2020</a>
+                                    <a href="/wp-content/uploads/2020/06/KBIS2019.pdf" target="_blank">KBIS 12 05 2020</a>
+                                    <a href="/wp-content/uploads/2020/06/QUALIMAT-2020-1.pdf" target="_blank">ATTESTATION QUALIMAT</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <?php
+            endwhile;
+        endif;
+        ?>
+    </div>
+
+    <div class="row" id="section-autorisations">
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <section class="container-page-autorisations">
+                        <div class="blocs-contenu-autorisations">
+                            <div id="bloc-gauche-fp-autorisations" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="blocs-paragraphes" id="bloc-autorisations">
+                                    <h2 class="titre-autorisations">AUTORISATION</h2>
+
+                                    <a href="/wp-content/uploads/2020/06/ENREGISTREMENT-TPS-DECHETS-LUXEMBOURG-26-06-2022-1.pdf" target="_blank">AUTORISATION TRANSPORTS DECHETS Luxembourg</a>
+                                    <a href="/wp-content/uploads/2020/06/RENOUVELLEMENT-AUTORISATION-WALLONIE-2020.pdf" target="_blank">RENOUVELLEMENT AUTORISATION WALLONIE 2020</a>
+                                    <a href="/wp-content/uploads/2020/06/ALBO-N°4.pdf" target="_blank">ALBO 4</a>
+                                    <a href="/wp-content/uploads/2020/06/ALBO-N°5.pdf" target="_blank">ALBO 5</a>
+                                    
+                                    <a href="<?php echo bloginfo('url'); ?>/wp-content/themes/cdv/images/pdf/61.pdf" target="_blank">RECEPISSE DE DECLARATION POUR L'EXERCICE DE L'ACTIVITE DE TRANSPORT PAR ROUTE DE DECHETS 2014 2019</a>
+                                    <a href="<?php echo bloginfo('url'); ?>/wp-content/uploads/2019/10/AUTORISATION-TPS-DECHETS-FRANCE-2019-2024.pdf" target="_blank">RECEPISSE DE DECLARATION POUR L'EXERCICE DE L'ACTIVITE DE TRANSPORT PAR ROUTE DE DECHETS 2019 2024</a>
+                                    <a href="<?php echo bloginfo('url'); ?>/wp-content/themes/cdv/images/pdf/10.pdf" target="_blank">AUTORISATION DE TRANSPORT DES DECHETS POUR LA BELGIQUE, REGION FLAMANDE</a>
+                                    <a href="<?php echo bloginfo('url'); ?>/wp-content/themes/cdv/images/pdf/11.pdf" target="_blank">AUTORISATION DE TRANSPORT DES DECHETS POUR LA BELGIQUE, REGION WALLONE</a>
+                                    <a href="<?php echo bloginfo('url'); ?>/wp-content/themes/cdv/images/pdf/65.pdf" target="_blank">AUTORISATION DE TRANSPORTS DE DECHETS PAYS BAS - 03-03-2020</a>
+                                    <a href="<?php echo bloginfo('url'); ?>/wp-content/uploads/2019/10/AUTORISATION-TRANSPORTS-DECHETS-PAYS-BAS-513575VXXX.pdf" target="_blank">AUTORISATION DE TRANSPORTS DE DECHETS PAYS BAS</a>
+                                    <a href="<?php echo bloginfo('url'); ?>/wp-content/themes/cdv/images/pdf/21.pdf" target="_blank">AUTORISATION ALLEMANDE</a>
+                                    <a href="<?php echo bloginfo('url'); ?>/wp-content/uploads/2019/04/ALBO-2017.pdf" target="_blank">AUTORISATION ALBO INITIALE</a>
+                                    <a href="<?php echo bloginfo('url'); ?>/wp-content/uploads/2019/03/AO01604_PR_2019_37.pdf" target="_blank">AUTORISATION ALBO 1</a>
+                                    <a href="<?php echo bloginfo('url'); ?>/wp-content/uploads/2019/03/AO01604_Provv_2018_2844.pdf" target="_blank">AUTORISATION ALBO 2</a>
+                                    <a href="<?php echo bloginfo('url'); ?>/wp-content/uploads/2019/10/AUTORISATION-ALBO-3.pdf" target="_blank">AUTORISATION ALBO 3</a>
+                                </div>
+                            </div>
+                            <div id="bloc-droit-fp-autorisations" class="col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
+                        </div>
+                    </section>
+                </div>
+                <?php
+            endwhile;
+        endif;
+        ?>
+    </div>
+
+</div>
+<?php get_footer(); ?>

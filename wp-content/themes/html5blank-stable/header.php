@@ -16,12 +16,12 @@
 		<!-- End Google Tag Manager -->
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162004483-1"></script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167934282-1"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
-			gtag('config', 'UA-162004483-1');
+			gtag('config', 'UA-167934282-1');
 		</script>
 		<!-- End -->
 
