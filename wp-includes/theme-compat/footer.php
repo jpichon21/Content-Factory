@@ -17,24 +17,74 @@ _deprecated_file(
 ?>
 
 <hr />
-<div id="footer" role="contentinfo">
-<!-- If you'd like to support WordPress, having the "powered by" link somewhere on your blog is the best way; it's our only promotion or advertising. -->
-	<p>
-		<?php
-		printf(
-			/* translators: 1: Blog name, 2: WordPress */
-			__( '%1$s is proudly powered by %2$s' ),
-			get_bloginfo( 'name' ),
-			'<a href="https://wordpress.org/">WordPress</a>'
-		);
-		?>
-	</p>
-</div>
+
 </div>
 
 <!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
 <?php /* "Just what do you think you're doing Dave?" */ ?>
 
-		<?php wp_footer(); ?>
+	<!-- footer -->
+			
+
+				<?php wp_footer(); ?>
+
+
+	
+			<!-- /footer -->
+
+			</div>
+			<!-- /wrapper -->
+
+
+			<!-- analytics -->
+			<script>
+				(function (f, i, r, e, s, h, l) {
+					i['GoogleAnalyticsObject'] = s;
+					f[s] = f[s] || function () {
+						(f[s].q = f[s].q || []).push(arguments)
+					}, f[s].l = 1 * new Date();
+					h = i.createElement(r),
+						l = i.getElementsByTagName(r)[0];
+					h.async = 1;
+					h.src = e;
+					l.parentNode.insertBefore(h, l)
+				})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+				ga('create', 'UA-XXXXXXXX-XX', 'yourdomain.com');
+				ga('send', 'pageview');
+			</script>
+
+			<script>
+				Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
+					get: function () {
+						return (this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
+					}
+				});
+			</script>
+
+
+			<!-- Insight TAG -->
+			<script type="text/javascript">
+				_linkedin_partner_id = "2106594";
+				window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+				window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+			</script>
+			<script type="text/javascript">
+				(function () {
+					var s = document.getElementsByTagName("script")[0];
+					var b = document.createElement("script");
+					b.type = "text/javascript";
+					b.async = true;
+					b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+					s.parentNode.insertBefore(b, s);
+				})();
+			</script> <noscript> <img height="1" width="1" style="display:none;" alt=""
+					src="https://px.ads.linkedin.com/collect/?pid=2106594&fmt=gif" /> </noscript>
+			<!-- -->
+
+			
+			<?php wp_footer(); ?>
+			</body>
+
+			</html>
 </body>
 </html>

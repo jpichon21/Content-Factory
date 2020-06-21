@@ -1015,3 +1015,6 @@ footer {
   position: absolute; }
   .woocommerce-notices-wrapper li {
     font-size: 1.6rem !important; }
+
+.footer {
+  display: none !important; }

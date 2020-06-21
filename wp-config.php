@@ -38,6 +38,9 @@ define( 'DB_CHARSET', 'utf8mb4' );
   */
 define('DB_COLLATE', '');
 
+//CF7
+define('WPCF7_LOAD_CSS', false);
+
 /**#@+
  * Clés uniques d’authentification et salage.
  *

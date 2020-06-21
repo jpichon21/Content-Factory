@@ -103,6 +103,7 @@ function html5blank_header_scripts()
 
         wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('html5blankscripts'); // Enqueue it!
+
     }
 }
 
@@ -372,6 +373,10 @@ function enqueue_script() {
     wp_enqueue_script('slick'); // Enqueue it!
     wp_register_script('wow', '/js/wow.js', array(), '1.0');
     wp_enqueue_script('wow'); // Enqueue it!
+    wp_register_script('cf7scripts', get_template_directory_uri() . '/js/cf7.js', array(''), '1.0.0'); // Custom scripts
+    wp_enqueue_script('cf7scripts'); // Enqueue it!
+
+
 }
 
 // Modifier les images de la page ateliers
